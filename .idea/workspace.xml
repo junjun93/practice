@@ -79,11 +79,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/permission/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-853" />
+            <state relative-caret-position="-627" />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="git.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/permission/git.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="169">
+                <caret line="27" column="32" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="32" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".igitinore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/permission/.igitinore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -911,6 +928,7 @@
         <option value="$PROJECT_DIR$/micro-weather-basic/src/main/resources/templates/weather/report.html" />
         <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/micro-weather-basic/README.md" />
+        <option value="$PROJECT_DIR$/permission/git.md" />
       </list>
     </option>
   </component>
@@ -951,57 +969,7 @@
           <expand>
             <path>
               <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="micro-weather-basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="micro-weather-basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="micro-weather-basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="micro-weather-basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="micro-weather-basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="microweatherbasic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="micro-weather-basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="microweatherbasic" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="micro-weather-basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="micro-weather-basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="permission" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1305,7 +1273,7 @@
       <workItem from="1527407499256" duration="262000" />
       <workItem from="1527408272103" duration="261000" />
       <workItem from="1527408624585" duration="8000" />
-      <workItem from="1527408647252" duration="277000" />
+      <workItem from="1527408647252" duration="556000" />
     </task>
     <servers />
   </component>
@@ -1315,7 +1283,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55624000" />
+    <option name="totallyTimeSpent" value="55903000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1328,9 +1296,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.42891762" side_tool="true" weight="0.37660486" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.4630593" side_tool="true" weight="0.32239658" />
       <window_info anchor="bottom" x="719" y="29" width="561" height="247" id="Application Servers" order="15" type="FLOATING" weight="0.32933334" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
@@ -1343,7 +1312,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3997155" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.31866667" />
-      <window_info active="true" anchor="bottom" id="Messages" order="2" visible="true" weight="0.32239658" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.5369407" weight="0.32239658" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3287483" />
@@ -1353,7 +1322,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3281027" />
       <window_info anchor="bottom" id="Spring" order="14" weight="0.3281027" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.5710824" weight="0.37660486" />
-      <window_info content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" visible="true" weight="0.22374798" />
+      <window_info active="true" content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" visible="true" weight="0.22374798" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32956383" />
       <window_info id="Web" order="5" side_tool="true" weight="0.34087238" />
       <window_info anchor="right" id="Gradle" order="11" weight="0.32956383" />
@@ -1425,8 +1394,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/config/RestConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherDataServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/README.md" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherDataServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/build.gradle" />
@@ -1507,8 +1474,21 @@
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/README.md" />
     <entry file="file://$PROJECT_DIR$/permission/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-853" />
+        <state relative-caret-position="-627" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/git.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="169">
+            <caret line="27" column="32" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/.igitinore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
