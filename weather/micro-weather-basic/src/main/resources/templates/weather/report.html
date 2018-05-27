@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>全省天气预报</title>
+    <style>
+        #selectCityId{width:7%;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h3 th:text="${reportModel.title}">waylau</h3>
+            <select class="custom-select" id="selectCityId">
+                <option th:each="city : ${reportModel.cityList}"
+                        th:value="${city.cityId}" th:text="${city.cityName}"
+                        th:selected="${city.cityId eq reportModel.cityId}"></option>
+            </select>
+        </div>
+        <div class="row">
+            <h1 class="text-success" th:text="${reportModel.report.city}">深圳</h1>
+        </div>
+        <div class="row">
+            <p>
+                空气质量指数：<span th:text="${reportModel.report.aqi}"></span>
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                当前温度：<span th:text="${reportModel.report.wendu}"></span>
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                温馨提示：<span th:text="${reportModel.report.ganmao}"></span>
+            </p>
+        </div>
+        <div class="row">
+            <div class="card border-info" th:each="forecast : ${reportModel.report.forecast}">
+                <div class="card-body text-info">
+                    <p class="card-text" th:text="${forecast.date}">日期</p>
+                    <p class="card-text" th:text="${forecast.type}">天气类型</p>
+                    <p class="card-text" th:text="${forecast.high}">最高温度</p>
+                    <p class="card-text" th:text="${forecast.low}">最低温度</p>
+                    <p class="card-text" th:text="${forecast.fengxiang}">风向</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script th:src="@{/js/weather/report.js}"></script>
+</body>
+</html>
