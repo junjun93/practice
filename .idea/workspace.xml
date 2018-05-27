@@ -33,6 +33,20 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/hello_world$MicroWeatherBasicApplication.coverage" NAME="MicroWeatherBasicApplication Coverage Results" MODIFIED="1521860222431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/hello-world">
       <ProjectState />
@@ -79,28 +93,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/permission/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-627" />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="git.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/permission/git.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="169">
-                <caret line="27" column="32" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="32" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".igitinore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/permission/.igitinore">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -929,6 +926,9 @@
         <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/micro-weather-basic/README.md" />
         <option value="$PROJECT_DIR$/permission/git.md" />
+        <option value="$PROJECT_DIR$/permission/.igitinore" />
+        <option value="$PROJECT_DIR$/permission/.gitignore" />
+        <option value="$PROJECT_DIR$/permission/init.sql" />
       </list>
     </option>
   </component>
@@ -970,6 +970,24 @@
             <path>
               <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
               <item name="permission" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="permission" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="permission" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="permission" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1273,7 +1291,7 @@
       <workItem from="1527407499256" duration="262000" />
       <workItem from="1527408272103" duration="261000" />
       <workItem from="1527408624585" duration="8000" />
-      <workItem from="1527408647252" duration="556000" />
+      <workItem from="1527408647252" duration="1080000" />
     </task>
     <servers />
   </component>
@@ -1283,7 +1301,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55903000" />
+    <option name="totallyTimeSpent" value="56427000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1394,7 +1412,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/micro-weather-basic/README.md" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherDataServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/build.gradle" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/WeatherDataService.java" />
@@ -1472,11 +1489,6 @@
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherDataServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/resources/templates/weather/report.html" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/README.md" />
-    <entry file="file://$PROJECT_DIR$/permission/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-627" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/permission/git.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1487,8 +1499,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permission/.igitinore">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/permission/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="186" column="25" lean-forward="true" selection-start-line="186" selection-start-column="25" selection-end-line="186" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-627" />
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
@@ -1545,11 +1573,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>hello-world</last-edited>
+          <last-edited>permission</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
