@@ -15,7 +15,7 @@
       <module name="hello-world_test" target="1.8" />
       <module name="micro-weather-basic_main" target="1.8" />
       <module name="micro-weather-basic_test" target="1.8" />
-      <module name="permission" target="1.5" />
+      <module name="permission" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

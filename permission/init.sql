@@ -190,3 +190,30 @@ BEGIN;
 INSERT INTO `sys_user` VALUES ('1', 'Admin', '18612344321', 'admin@qq.com', '25D55AD283AA400AF464C76D713C07AD', '1', '1', 'admin', 'system', '2017-10-13 08:46:16', '127.0.0.1'), ('2', 'Jimin', '13188889999', 'jimin@qq.com', '25D55AD283AA400AF464C76D713C07AD', '1', '1', 'jimin.zheng', 'Admin', '2017-10-14 14:45:19', '127.0.0.1'), ('3', 'Jimmy', '13812344311', 'jimmy@qq.com', '25D55AD283AA400AF464C76D713C07AD', '2', '1', '', 'Admin', '2017-10-16 12:57:35', '0:0:0:0:0:0:0:1'), ('4', 'Kate', '13144445555', 'kate@qq.com', '25D55AD283AA400AF464C76D713C07AD', '1', '1', 'sss', 'Admin', '2017-10-16 23:02:51', '0:0:0:0:0:0:0:1'), ('5', '服务员A', '18677778888', 'service@qq.com', '25D55AD283AA400AF464C76D713C07AD', '12', '1', '', 'Admin', '2017-10-17 00:22:15', '0:0:0:0:0:0:0:1');
 COMMIT;
 
+
+SELECT * FROM SYSTA WHERE TA002 = '批准扣款单';
+SELECT * FROM ADMMF WHERE MF002 LIKE '%章%';
+
+--批量插入
+DECLARE @i INT
+SET @i = 0
+WHILE @i < 1065
+  BEGIN
+    INSERT INTO Attatch(DataOwner, FileExt, CreateDate) VALUES('JS.. PURTD','.pdf', GETDATE());
+    SET @i = +1
+  END
+GO
+
+--批量更新
+UPDATE Attatch WHERE FileName IS NULL;
+UPDATE Attatch SET FileName= FileName + '.PDF';
+
+--供应商图纸
+SELECT TD001,TD002,TD003,TD004,MB029,TD005,TD006,TD008
+FROM JS..PURTD
+INNER JOIN JS..PURTC ON TC001 = TD001 AND TC002 = TD002
+INNER JOIN JS..INVMB ON MB001 = TD004
+WHERE CAST(SUBSTRING(TD002,1,8) AS INT) > 20180101 AND MB029 != '' AND TD016 = 'N'
+AND TC004 = @LoginCode;
+
+
