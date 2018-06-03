@@ -10,7 +10,6 @@ mybatis-generator使用
  pom.xml-plugin放入架包
  Maven Projects-Plugins-build
  
- 一行末尾快捷键
  单词末尾快捷键
  6-2JsonData
  6-3SpringExceptionResolver
@@ -26,3 +25,9 @@ mybatis-generator使用
  ApplicationContextHelper
  HttpInterceptor
  NotBlank及各种注解
+
+ 7-1
+    DeptParam   LevelUtil   SysTreeService  DeptLevelDto
+    BeanUtils.copyProperties(dept, dto);
+    一个集合中所有数据存入另一个集合
+     
