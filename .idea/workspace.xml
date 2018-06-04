@@ -97,44 +97,52 @@
         <entry file="file://$PROJECT_DIR$/permission/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="109">
-                <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <first_editor relative-caret-position="349">
+                <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysTreeService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysTreeService.java">
+      <file leaf-file-name="SysDeptService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysDeptService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+            <state relative-caret-position="-6">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1531#1532#0" expanded="true" />
-                <element signature="e#1595#1596#0" expanded="true" />
-                <element signature="e#2424#2425#0" expanded="true" />
-                <element signature="e#2488#2489#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LevelUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/util/LevelUtil.java">
+      <file leaf-file-name="SysDeptMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/permission/src/main/resources/mappers/SysDeptMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="-117">
+              <caret line="277" column="4" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeptLevelDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/dto/DeptLevelDto.java">
+      <file leaf-file-name="SysDeptMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/dao/SysDeptMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="74">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysDept.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/model/SysDept.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,6 +177,9 @@
       <find>mmall</find>
       <find>德</find>
       <find>dtoList</find>
+      <find>CollectionUtils</find>
+      <find>德世</find>
+      <find>check</find>
     </findStrings>
     <replaceStrings>
       <replace>WeatherResponse</replace>
@@ -953,13 +964,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/config/weatherDataSyncJobDetail.java" />
-        <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/config/QuartzConfiguration.java" />
-        <option value="$PROJECT_DIR$/micro-weather-basic/src/main/resources/cityList.xml" />
-        <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/vo/CityList.java" />
-        <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/CityDataService.java" />
-        <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/vo/City.java" />
-        <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/CityDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/WeatherReportService.java" />
         <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherReportServiceImpl.java" />
         <option value="$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/controller/WeatherReportController.java" />
@@ -998,12 +1002,19 @@
         <option value="$PROJECT_DIR$/permission/init.sql" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/param/DeptParam.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/common/aa.html" />
-        <option value="$PROJECT_DIR$/试用期.md" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/model/SysTreeService.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/util/LevelUtil.java" />
-        <option value="$PROJECT_DIR$/permission/README.md" />
-        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysTreeService.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/dto/DeptLevelDto.java" />
+        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysTreeService.java" />
+        <option value="$PROJECT_DIR$/试用期.md" />
+        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/param/TestVo.java" />
+        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysDeptController.java" />
+        <option value="$PROJECT_DIR$/permission/README.md" />
+        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/dao/SysDeptMapper.java" />
+        <option value="$PROJECT_DIR$/permission/src/main/resources/mappers/SysDeptMapper.xml" />
+        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysDeptService.java" />
+        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/model/SysDept.java" />
       </list>
     </option>
   </component>
@@ -1047,10 +1058,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="435" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="5" />
+    <option name="y" value="475" />
     <option name="width" value="1280" />
-    <option name="height" value="365" />
+    <option name="height" value="325" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -1103,6 +1115,24 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="junjun" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="permission" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="junjun" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="permission" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="junjun" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
@@ -1170,6 +1200,14 @@
               <item name="permission" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
+              <item name="permission" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1196,7 +1234,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="dept&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/dto/DeptLevelDto.java&#10;r&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;试用&#9;FILE&#9;file:///Users/junjun/IDEA/practice/试用期.md&#10;试用期.txt&#9;null&#9;null&#10;rea&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;re&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;init&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/init.sql&#10;wea&#9;FILE&#9;file:///Users/junjun/IDEA/weather/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherDataServiceImpl.java&#10;lis&#9;FILE&#9;file:///Users/junjun/IDEA/weather/micro-weather-basic/src/main/resources/cityList.xml&#10;read&#9;FILE&#9;file:///Users/junjun/IDEA/weather/micro-weather-basic/README.md&#10;httpres&#9;FILE&#9;jar:///Users/junjun/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.4.RELEASE/addcf1caa22613c474bd6dde8c7134fef940b1f0/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/resource/HttpResource.class" />
+    <property name="SearchEverywhereHistoryKey" value="rea&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;dept&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/dto/DeptLevelDto.java&#10;r&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;试用&#9;FILE&#9;file:///Users/junjun/IDEA/practice/试用期.md&#10;试用期.txt&#9;null&#9;null&#10;re&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;init&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/init.sql&#10;wea&#9;FILE&#9;file:///Users/junjun/IDEA/weather/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherDataServiceImpl.java&#10;lis&#9;FILE&#9;file:///Users/junjun/IDEA/weather/micro-weather-basic/src/main/resources/cityList.xml&#10;read&#9;FILE&#9;file:///Users/junjun/IDEA/weather/micro-weather-basic/README.md&#10;httpres&#9;FILE&#9;jar:///Users/junjun/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.4.RELEASE/addcf1caa22613c474bd6dde8c7134fef940b1f0/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/resource/HttpResource.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
@@ -1501,7 +1539,7 @@
       <workItem from="1527597557642" duration="8145000" />
       <workItem from="1527648863332" duration="7477000" />
       <workItem from="1527689162834" duration="11178000" />
-      <workItem from="1527782743878" duration="8710000" />
+      <workItem from="1527782743878" duration="18102000" />
     </task>
     <servers />
   </component>
@@ -1511,7 +1549,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122092000" />
+    <option name="totallyTimeSpent" value="131484000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1523,8 +1561,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="435" width="1280" height="365" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" x="20" y="552" width="1238" height="227" id="Event Log" order="11" show_stripe_button="false" sideWeight="0.4630593" side_tool="true" type="FLOATING" weight="0.32290184" />
@@ -1539,19 +1576,20 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2584814" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3997155" />
-      <window_info anchor="bottom" id="TODO" internal_type="SLIDING" order="10" type="SLIDING" weight="0.31863442" />
+      <window_info anchor="bottom" id="TODO" internal_type="SLIDING" order="10" show_stripe_button="false" type="SLIDING" weight="0.31863442" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" x="21" y="296" width="1238" height="231" id="Java Enterprise" internal_type="SLIDING" order="12" type="SLIDING" weight="0.32859176" />
+      <window_info anchor="bottom" x="21" y="296" width="1238" height="231" id="Java Enterprise" internal_type="SLIDING" order="12" show_stripe_button="false" type="SLIDING" weight="0.32859176" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Run Dashboard" internal_type="SLIDING" order="1" sideWeight="0.62520194" type="SLIDING" weight="0.4110953" />
       <window_info anchor="bottom" x="735" y="52" width="545" height="186" id="Run" order="6" weight="0.32859176" />
-      <window_info anchor="bottom" id="Version Control" internal_type="SLIDING" order="13" type="SLIDING" weight="0.32716927" />
+      <window_info active="true" anchor="bottom" id="Version Control" internal_type="SLIDING" order="13" type="SLIDING" visible="true" weight="0.3262032" />
       <window_info anchor="bottom" id="Spring" internal_type="SLIDING" order="14" type="SLIDING" weight="0.32716927" />
-      <window_info anchor="bottom" x="19" y="498" width="1241" height="280" id="Terminal" internal_type="SLIDING" order="0" sideWeight="0.5710824" type="SLIDING" weight="0.83214796" />
+      <window_info anchor="bottom" x="19" y="498" width="1241" height="280" id="Terminal" internal_type="SLIDING" order="0" sideWeight="0.5710824" type="SLIDING" weight="0.49402392" />
       <window_info content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" weight="0.24394184" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32956383" />
       <window_info id="Web" order="5" side_tool="true" weight="0.34087238" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32933334" />
       <window_info anchor="right" id="Gradle" order="11" weight="0.32956383" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" sideWeight="0.51715684" side_tool="true" weight="0.28271407" />
@@ -1559,7 +1597,6 @@
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32933334" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.5369407" weight="0.32239658" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1577,22 +1614,22 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2584814" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="6" sideWeight="0.51715684" side_tool="true" weight="0.28271407" />
-      <window_info anchor="bottom" x="19" y="498" width="1241" height="280" id="Terminal" internal_type="SLIDING" order="0" sideWeight="0.5710824" type="SLIDING" weight="0.83214796" />
+      <window_info anchor="bottom" x="19" y="498" width="1241" height="280" id="Terminal" internal_type="SLIDING" order="0" sideWeight="0.5710824" type="SLIDING" weight="0.49217638" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Inspection Results" order="3" weight="0.32859176" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" x="20" y="552" width="1238" height="227" id="Event Log" order="11" show_stripe_button="false" sideWeight="0.4630593" side_tool="true" type="FLOATING" weight="0.32290184" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.5369407" weight="0.32239658" />
-      <window_info anchor="bottom" id="TODO" internal_type="SLIDING" order="10" type="SLIDING" weight="0.31863442" />
+      <window_info anchor="bottom" id="TODO" internal_type="SLIDING" order="10" show_stripe_button="false" type="SLIDING" weight="0.31863442" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32933334" />
-      <window_info anchor="bottom" x="21" y="296" width="1238" height="231" id="Java Enterprise" internal_type="SLIDING" order="12" type="SLIDING" weight="0.32859176" />
+      <window_info anchor="bottom" x="21" y="296" width="1238" height="231" id="Java Enterprise" internal_type="SLIDING" order="12" show_stripe_button="false" type="SLIDING" weight="0.32859176" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" internal_type="SLIDING" order="13" type="SLIDING" weight="0.32716927" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32956383" />
       <window_info anchor="right" id="Gradle" order="11" weight="0.32956383" />
-      <window_info content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" visible="true" weight="0.24394184" />
+      <window_info active="true" content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" visible="true" weight="0.24394184" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info id="Web" order="5" side_tool="true" weight="0.34087238" />
@@ -1609,6 +1646,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -1622,13 +1685,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/vo/City.java" />
-    <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/CityDataService.java" />
-    <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/WeatherDataService.java" />
-    <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/WeatherReportService.java" />
-    <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/vo/WeatherResponse.java" />
-    <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherReportServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/CityDataServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/resources/cityList.xml" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/controller/WeatherReportController.java" />
     <entry file="file://$PROJECT_DIR$/micro-weather-basic/src/main/resources/static/js/weather/report.js" />
@@ -1777,6 +1833,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1831,16 +1891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/util/BeanValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/util/JsonMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -1865,13 +1915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/model/SysDept.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/permission/init.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
@@ -1883,21 +1926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/试用期.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="2220">
-            <caret line="111" column="25" lean-forward="true" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1918,19 +1946,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permission/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="109">
-            <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/dto/DeptLevelDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="335">
           <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1940,14 +1958,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysTreeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+        <state relative-caret-position="660">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1531#1532#0" expanded="true" />
             <element signature="e#1595#1596#0" expanded="true" />
             <element signature="e#2424#2425#0" expanded="true" />
             <element signature="e#2488#2489#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/试用期.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="286">
+            <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/param/TestVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="349">
+            <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysDeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="59" column="58" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/util/BeanValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="61" column="28" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar!/sun/util/logging/LoggingSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/dao/SysDeptMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/resources/mappers/SysDeptMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="277" column="4" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysDeptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/model/SysDept.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

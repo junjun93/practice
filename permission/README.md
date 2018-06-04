@@ -30,4 +30,14 @@ mybatis-generator使用
     DeptParam   LevelUtil   SysTreeService  DeptLevelDto
     BeanUtils.copyProperties(dept, dto);
     一个集合中所有数据存入另一个集合
+7-2
+    SysDeptController int
+    SyDeptService
+    树形结构的各种方法，在有前台页面时一一验证
+    
+7-3
+    findUsages
+    Integer int区别
+    curl+链接，测试接口
+    周末看工具类1h、书1h
      

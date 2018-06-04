@@ -1,13 +1,20 @@
 package com.junjun.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
 import java.util.Date;
 
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class SysDept {
     private Integer id;
 
     private String name;
 
-    private Integer parentId;
+    private Integer parentId = 0;
 
     private String level;
 

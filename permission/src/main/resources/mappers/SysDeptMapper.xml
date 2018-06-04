@@ -275,4 +275,15 @@
       operate_ip = #{operateIp,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+    <select id="countByNameAndParentId" parameterType="map" resultType="int">
+      SELECT COUNT(1)
+      FROM sys_dept
+      WHERE name = #{name}
+      <if test="parent_id != NULL">
+        AND parent_id = #{parentId}
+      </if>
+      <if test="id != NULL">
+        AND id != #{id}
+      </if>
+    </select>
 </mapper>
