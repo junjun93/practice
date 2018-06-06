@@ -40,4 +40,7 @@ mybatis-generator使用
     Integer int区别
     curl+链接，测试接口
     周末看工具类1h、书1h
+    
+    sql全部要用包装类
+    SysDeptService update方法
      
