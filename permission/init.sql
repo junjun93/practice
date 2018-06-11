@@ -231,3 +231,44 @@ WHERE MB029 != '' AND MB025 = 'M'
 EXEC HAHAHA '20180509002','0171'
 
 
+--mysql和sql server 多表连接修改 update sql语句总结
+--假定我们有两张表，一张表为Product表存放产品信息，其中有产品价格列Price；
+--另外一张表是ProductPrice表，我们要将ProductPrice表中的价格字段Price更新为Price表中价格字段的80%。
+
+UPDATE product p, productPrice pp
+SET pp.price = pp.price *0.8
+WHERE p.productId = pp.productId
+AND p.dateCreated <'2004-01-01'
+--另外一种方法是使用inner join然后更新：
+
+UPDATE product p
+INNER JOIN productPrice pp
+ON p.productId = pp.productId
+SET pp.price = pp.price *0.8
+WHERE p.dateCreated <'2004-01-01'
+
+--有两个表：student & city，现在需要取出 city.name 来更新 student.city_name。两表关联条件是 student.city_code=city.code。
+
+update student s, city c
+   set s.city_name = c.name
+ where s.city_code = c.code;
+
+--update muliable tables
+begin try
+begin tran
+update table1 set c1=2
+update  table2 set c1=2
+commit
+end try
+begin catch
+rollback
+end catch
+
+
+
+
+
+
+
+
+

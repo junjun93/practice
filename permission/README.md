@@ -43,4 +43,8 @@ mybatis-generator使用
     
     sql全部要用包装类
     SysDeptService update方法
-     
+    
+    function updateDept
+    handleDeptSelected
+    
+    loadUserList
