@@ -89,9 +89,9 @@ public class SysDeptService {
         if(sysDeptMapper.countByParentId(dept.getId()) > 0){
             throw  new ParamException("当前部门下有子部门，无法删除");
         }
-        if(sysDeptMapper.countByDeptId(dept.getId()) > 0){
+        /*if(sysDeptMapper.countByDeptId(dept.getId()) > 0){
             throw  new ParamException("当前部门下有用户，无法删除");
-        }
+        }*/
         sysDeptMapper.deleteByPrimaryKey(deptId);
     }
 

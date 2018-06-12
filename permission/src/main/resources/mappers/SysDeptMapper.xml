@@ -172,7 +172,7 @@
         WHERE parent_id = #{deptId}
     </select>
 
-    <select id="countByDeptId">
+    <!--<select id="countByDeptId">
 
-    </select>
+    </select>-->
 </mapper>

@@ -12,6 +12,7 @@ import java.util.Map;
 /**
  * @author junjun
  * @date 2018/5/27 21:34:18
+ * 打印所有代码运行的记录，含框架
  **/
 @Slf4j
 public class HttpInterceptor extends HandlerInterceptorAdapter {

@@ -26,6 +26,6 @@ public interface SysDeptMapper {
 
     int countByParentId(@Param("deptId") Integer deptId);
 
-    int countByDeptId(@Param("deptId") Integer deptId);
+    /*int countByDeptId(@Param("deptId") Integer deptId);*/
 
 }

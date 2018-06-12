@@ -1,7 +1,10 @@
 package com.junjun.model;
 
+import lombok.Builder;
+
 import java.util.Date;
 
+@Builder
 public class SysUser {
     private Integer id;
 

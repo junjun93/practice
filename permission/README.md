@@ -48,3 +48,10 @@ mybatis-generator使用
     handleDeptSelected
     
     loadUserList
+    mybatis Configuration   safeRowBoundEnbled safeRowBoundsEnabled
+
+Controller、Service都要看看
+
+第八章，UserParam
+周末远程客户、看框架配置文件  passwordUtil
+notblank notnull
