@@ -53,5 +53,9 @@ mybatis-generator使用
 Controller、Service都要看看
 
 第八章，UserParam
-周末远程客户、看框架配置文件  passwordUtil
-notblank notnull
+看框架配置文件  Md5Util passwordUtil回写
+notblank notnull 
+BeanValidator.check(param);
+Preconditions.checkNotNull(before, "待更新的用户不存在");
+
+option+/ 替换
