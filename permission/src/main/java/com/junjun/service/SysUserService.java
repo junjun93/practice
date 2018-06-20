@@ -65,11 +65,15 @@ public class SysUserService {
         after.setOperateTime(new Date());
     }
 
+    public SysUser findByKeyword(String keyword){
+        return sysUserMapper.findByKeyword(keyword);
+    }
+
     public boolean checkTelephoneExist(String telephone, Integer userId){
-        return false;
+        return sysUserMapper.countByTelephone(telephone, userId) > 0;
     }
 
     public boolean checkMailExist(String mail, Integer userId){
-        return false;
+        return sysUserMapper.countByMail(mail, userId) > 0;
     }
 }
