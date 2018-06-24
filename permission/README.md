@@ -64,4 +64,22 @@ curl http://localhost:8080/sys/user/save.json\?username\=技术部\&telephone\=1
     结合业务去建立自己的知识体系，多想多敲
     option+/ 替换
     user update.json测试失败
+    页面css、js加载失败->druid
+    UserMapper.xml在哪，在shiro文件夹中
+    GET http://localhost:8080/bootstrap3.3.5/css/signin.jsp 404
+
+模板引擎 Mustache/zTree
+public class Config extends WebMvcConfigurerAdapter{
+   @Override
+   public void addResourceHandlers(ResourceHandlerRegistry registry) {  
+    registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+   }
+}
+    intellij idea difference between war war exploded
+    
+botched
+Dude, your paths are botched
+issue
+I was facing the same issue with a font
+
 

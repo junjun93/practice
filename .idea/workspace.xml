@@ -102,56 +102,45 @@
         <entry file="file://$PROJECT_DIR$/permission/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="1300">
-                <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+              <first_editor relative-caret-position="831">
+                <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/UserController.java">
+      <file leaf-file-name="dept.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/views/dept.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="-465">
+              <caret line="196" selection-start-line="196" selection-end-line="196" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#td#1;n#tr#4;n#table#0;n#form#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#4838#5446#0#HTML" />
+                <element signature="e#5516#6006#0#HTML" />
+                <element signature="e#6063#9013#0#HTML" />
+                <element signature="e#9078#9572#0#HTML" />
+                <element signature="e#9632#9644#0#HTML" />
+                <element signature="e#10290#12120#0#HTML" />
+                <element signature="e#12234#12258#0#HTML" />
+                <element signature="e#13325#13984#0#HTML" />
+                <element signature="e#13371#13973#0#HTML" />
+                <element signature="e#9686#10721#0#HTML" />
+                <element signature="e#10785#11564#0#HTML" />
+                <element signature="e#17971#18535#0#HTML" />
+                <element signature="e#11634#12278#0#HTML" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysUserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
-              <folding>
-                <element signature="e#2516#2517#0" expanded="true" />
-                <element signature="e#2542#2543#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysUserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/dao/SysUserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysUserMapper.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/permission/src/main/resources/mappers/SysUserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -164,19 +153,13 @@
         <option value="Interface" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sel</find>
-      <find>多公司信息</find>
-      <find>安全门</find>
-      <find>方法</find>
-      <find>$PROJECT_DIR$/../../../jimin/Desktop/permission/generator/src</find>
-      <find>mmall</find>
       <find>德</find>
       <find>dtoList</find>
       <find>CollectionUtils</find>
@@ -201,6 +184,12 @@
       <find>incl</find>
       <find>Base_Column_List</find>
       <find>BaseResultMap</find>
+      <find>欠料</find>
+      <find>导入</find>
+      <find>handleDeptSelected</find>
+      <find>$(&quot;.user-add&quot;)</find>
+      <find>bindUserClick</find>
+      <find>updateUser</find>
     </findStrings>
     <replaceStrings>
       <replace>WeatherResponse</replace>
@@ -986,16 +975,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/exception/PermissionException.java" />
-        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/exception/ParamException.java" />
-        <option value="$PROJECT_DIR$/permission/src/main/resources/spring-servlet.xml" />
-        <option value="$PROJECT_DIR$/permission/src/main/webapp/exception/pageException.jsp" />
-        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/common/SpringExceptionResolver.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/common/ApplicationContextHelper.java" />
         <option value="$PROJECT_DIR$/permission/pom.xml" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/util/BeanValidator.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/util/JsonMapper.java" />
-        <option value="$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/spring-servlet.xml" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/param/DeptParam.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/common/aa.html" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/model/SysTreeService.java" />
@@ -1023,20 +1006,26 @@
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysDeptService.java" />
         <option value="$PROJECT_DIR$/permission/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/common/HttpInterceptor.java" />
-        <option value="$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/views/dept.jsp" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/model/SysUser.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/util/Md5Util.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/common/a.txt" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/util/PasswordUtil.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysUserController.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/param/UserParam.java" />
-        <option value="$PROJECT_DIR$/正式期.md" />
-        <option value="$PROJECT_DIR$/permission/README.md" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysUserService.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/dao/SysUserMapper.java" />
         <option value="$PROJECT_DIR$/permission/src/main/resources/mappers/SysUserMapper.xml" />
+        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysUserService.java" />
+        <option value="$PROJECT_DIR$/permission/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/permission/src/main/webapp/signig.jsp" />
+        <option value="$PROJECT_DIR$/permission/src/main/webapp/page.jsp" />
+        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/正式期.md" />
+        <option value="$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/permission/src/main/webapp/signin.jsp" />
+        <option value="$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/spring-servlet.xml" />
+        <option value="$PROJECT_DIR$/permission/README.md" />
+        <option value="$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/views/dept.jsp" />
       </list>
     </option>
   </component>
@@ -1088,9 +1077,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="243" />
+    <option name="y" value="143" />
     <option name="width" value="1280" />
-    <option name="height" value="557" />
+    <option name="height" value="657" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -1102,7 +1091,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1134,105 +1122,6 @@
               <item name="permission" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-              <item name="param" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="SysUserService" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junjun" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1248,29 +1137,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello-world" type="b2602c69:ProjectViewProjectNode" />
-              <item name="permission" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1281,7 +1154,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/controller/AdminController.java&#10;userm&#9;PSI&#9;JAVA://com.junjun.dao.SysUserMapper&#10;mapper&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/mappers/SysDeptMapper.xml&#10;readm&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;userp&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/param/UserParam.java&#10;sysuser&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/model/SysUser.java&#10;read&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;user&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/controller/SysUserController.java&#10;dept.jsp&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/webapp/WEB-INF/views/dept.jsp&#10;rea&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;mybatis-config.xml&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/mybatis-config.xml&#10;applicationContext.xml&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/applicationContext.xml&#10;applicationContext&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/applicationContext.xml&#10;logback.xml&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/logback.xml&#10;readme&#9;FILE&#9;file:///Users/junjun/IDEA/practice/README.md&#10;init&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/init.sql&#10;试用&#9;FILE&#9;file:///Users/junjun/IDEA/practice/试用期.md&#10;s&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/service/SysDeptService.java&#10;试用期&#9;FILE&#9;file:///Users/junjun/IDEA/practice/试用期.md&#10;contro&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/controller/SysDeptController.java&#10;ini&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/init.sql&#10;dept&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/dto/DeptLevelDto.java&#10;r&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;试用期.txt&#9;null&#9;null&#10;re&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;wea&#9;FILE&#9;file:///Users/junjun/IDEA/weather/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherDataServiceImpl.java&#10;lis&#9;FILE&#9;file:///Users/junjun/IDEA/weather/micro-weather-basic/src/main/resources/cityList.xml&#10;httpres&#9;FILE&#9;jar:///Users/junjun/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.4.RELEASE/addcf1caa22613c474bd6dde8c7134fef940b1f0/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/resource/HttpResource.class" />
+    <property name="SearchEverywhereHistoryKey" value="page.jsp&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/webapp/common/page.jsp&#10;dept.jsp&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/webapp/WEB-INF/views/dept.jsp&#10;we&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/webapp/WEB-INF/web.xml&#10;UserM&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/mappers/SysUserMapper.xml&#10;userMapper&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/mappers/SysUserMapper.xml&#10;readme&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;re&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;web.xml&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/webapp/WEB-INF/web.xml&#10;sign&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/webapp/signin.jsp&#10;rea&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;正式期&#9;FILE&#9;file:///Users/junjun/IDEA/practice/正式期.md&#10;userm&#9;PSI&#9;JAVA://com.junjun.dao.SysUserMapper&#10;mapper&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/mappers/SysDeptMapper.xml&#10;readm&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;userp&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/param/UserParam.java&#10;sysuser&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/model/SysUser.java&#10;read&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;user&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/controller/SysUserController.java&#10;mybatis-config.xml&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/mybatis-config.xml&#10;applicationContext.xml&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/applicationContext.xml&#10;applicationContext&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/applicationContext.xml&#10;logback.xml&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/logback.xml&#10;init&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/init.sql&#10;试用&#9;FILE&#9;file:///Users/junjun/IDEA/practice/试用期.md&#10;s&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/service/SysDeptService.java&#10;试用期&#9;FILE&#9;file:///Users/junjun/IDEA/practice/试用期.md&#10;contro&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/controller/SysDeptController.java&#10;ini&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/init.sql&#10;dept&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/dto/DeptLevelDto.java&#10;r&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/README.md&#10;试用期.txt&#9;null&#9;null&#10;wea&#9;FILE&#9;file:///Users/junjun/IDEA/weather/micro-weather-basic/src/main/java/com/imooc/microweatherbasic/service/impl/WeatherDataServiceImpl.java&#10;lis&#9;FILE&#9;file:///Users/junjun/IDEA/weather/micro-weather-basic/src/main/resources/cityList.xml&#10;httpres&#9;FILE&#9;jar:///Users/junjun/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.4.RELEASE/addcf1caa22613c474bd6dde8c7134fef940b1f0/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/resource/HttpResource.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
@@ -1404,6 +1277,16 @@
       </option>
       <patterns />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="hello-world_test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
     <configuration name="HelloWorldApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="hello-world_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.helloworld.HelloWorldApplication" />
@@ -1505,16 +1388,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="hello-world_test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -1611,7 +1484,9 @@
       <workItem from="1528961075160" duration="15151000" />
       <workItem from="1529080142966" duration="1219000" />
       <workItem from="1529370849246" duration="3991000" />
-      <workItem from="1529388844659" duration="14458000" />
+      <workItem from="1529388844659" duration="22086000" />
+      <workItem from="1529563517862" duration="8297000" />
+      <workItem from="1529658852770" duration="9550000" />
     </task>
     <servers />
   </component>
@@ -1621,7 +1496,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231444000" />
+    <option name="totallyTimeSpent" value="256919000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1648,7 +1523,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.24959612" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2584814" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.6699858" />
+      <window_info anchor="bottom" id="Debug" order="7" visible="true" weight="0.6685633" />
       <window_info anchor="bottom" id="TODO" internal_type="SLIDING" order="10" show_stripe_button="false" type="SLIDING" weight="0.31863442" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.5369407" weight="0.32147938" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
@@ -1656,14 +1531,13 @@
       <window_info anchor="bottom" x="21" y="296" width="1238" height="231" id="Java Enterprise" internal_type="SLIDING" order="12" show_stripe_button="false" type="SLIDING" weight="0.32859176" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Run Dashboard" internal_type="SLIDING" order="1" sideWeight="0.62520194" type="SLIDING" weight="0.4110953" />
-      <window_info anchor="bottom" id="Version Control" internal_type="SLIDING" order="13" type="SLIDING" weight="0.3257468" />
       <window_info anchor="bottom" x="735" y="52" width="545" height="186" id="Run" order="6" weight="0.6699858" />
+      <window_info anchor="bottom" id="Version Control" internal_type="SLIDING" order="13" type="SLIDING" weight="0.3257468" />
       <window_info anchor="bottom" id="Spring" internal_type="SLIDING" order="14" type="SLIDING" weight="0.32716927" />
       <window_info anchor="bottom" x="19" y="498" width="1241" height="280" id="Terminal" internal_type="SLIDING" order="0" sideWeight="0.5710824" type="SLIDING" weight="0.5078236" />
-      <window_info content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" weight="0.24798061" />
+      <window_info content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" weight="0.25201938" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32956383" />
       <window_info id="Web" order="5" side_tool="true" weight="0.34087238" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32933334" />
       <window_info anchor="right" id="Gradle" order="11" weight="0.32956383" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" sideWeight="0.51715684" side_tool="true" weight="0.28271407" />
@@ -1671,6 +1545,7 @@
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32933334" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -1702,7 +1577,7 @@
       <window_info anchor="bottom" id="Version Control" internal_type="SLIDING" order="13" type="SLIDING" weight="0.3257468" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32956383" />
       <window_info anchor="right" id="Gradle" order="11" weight="0.32956383" />
-      <window_info active="true" content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" visible="true" weight="0.24798061" />
+      <window_info content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" visible="true" weight="0.25201938" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info id="Web" order="5" side_tool="true" weight="0.34087238" />
@@ -1711,7 +1586,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.24959612" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32956383" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.6699858" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.6685633" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32956383" />
       <window_info anchor="bottom" id="Run Dashboard" internal_type="SLIDING" order="1" sideWeight="0.62520194" type="SLIDING" weight="0.4110953" />
     </layout-to-restore>
@@ -1757,7 +1632,7 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1765,42 +1640,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/model/SysLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/common/aa.html" />
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/param/DeptParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/util/LevelUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/dto/DeptLevelDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/param/TestVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1937,27 +1776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/webapp/common/page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/common/SpringExceptionResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -1983,13 +1801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/views/dept.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -2049,24 +1860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/正式期.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="138">
-            <caret line="180" column="39" selection-start-line="180" selection-start-column="33" selection-end-line="180" selection-end-column="39" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/QQ20180612-210405@2x.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -2100,51 +1893,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/dao/SysUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/webapp/page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="635">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/正式期.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-2005">
+            <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/resources/mappers/SysUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3340">
+          <caret line="167" column="23" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/resources/datasource.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/spring-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/webapp/signin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/webapp/common/page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1460">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/permission/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="1300">
-            <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <first_editor relative-caret-position="831">
+            <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysUserService.java">
+    <entry file="file://$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/views/dept.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+        <state relative-caret-position="-465">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
           <folding>
-            <element signature="e#2516#2517#0" expanded="true" />
-            <element signature="e#2542#2543#0" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#td#1;n#tr#4;n#table#0;n#form#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#4838#5446#0#HTML" />
+            <element signature="e#5516#6006#0#HTML" />
+            <element signature="e#6063#9013#0#HTML" />
+            <element signature="e#9078#9572#0#HTML" />
+            <element signature="e#9632#9644#0#HTML" />
+            <element signature="e#10290#12120#0#HTML" />
+            <element signature="e#12234#12258#0#HTML" />
+            <element signature="e#13325#13984#0#HTML" />
+            <element signature="e#13371#13973#0#HTML" />
+            <element signature="e#9686#10721#0#HTML" />
+            <element signature="e#10785#11564#0#HTML" />
+            <element signature="e#17971#18535#0#HTML" />
+            <element signature="e#11634#12278#0#HTML" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/dao/SysUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/resources/mappers/SysUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
         </state>
       </provider>
     </entry>

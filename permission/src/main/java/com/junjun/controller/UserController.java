@@ -18,7 +18,6 @@ import java.io.IOException;
  * @date 2018/6/20 21:30:44
  **/
 @Controller
-@RequestMapping("/user")
 public class UserController {
 
     @Resource
