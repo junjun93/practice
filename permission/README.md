@@ -67,8 +67,11 @@ curl http://localhost:8080/sys/user/save.json\?username\=技术部\&telephone\=1
     页面css、js加载失败->druid
     UserMapper.xml在哪，在shiro文件夹中
     GET http://localhost:8080/bootstrap3.3.5/css/signin.jsp 404
-
-模板引擎 Mustache/zTree
+项目启动配置文件报错常见原因：
+    模板引擎 Mustache/zTree-》有问题，css、js全部显示不了
+    GET http://localhost:8080/js/signin.jsp 404 () 配置文件导致路径错误
+    shiro realm注入不要注入service、注入dao
+    
 public class Config extends WebMvcConfigurerAdapter{
    @Override
    public void addResourceHandlers(ResourceHandlerRegistry registry) {  

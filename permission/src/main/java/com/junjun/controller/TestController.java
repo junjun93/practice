@@ -2,7 +2,6 @@ package com.junjun.controller;
 
 import com.junjun.common.JsonData;
 import com.junjun.exception.ParamException;
-import com.junjun.exception.PermissionException;
 import com.junjun.param.TestVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -22,8 +21,8 @@ public class TestController {
     @ResponseBody
     public JsonData hello(){
         log.info("hello");
-        throw new PermissionException("test exception");
-        // return JsonData.success("hello, permission");
+        //throw new PermissionException("test exception");
+        return JsonData.success("hello, permission");
     }
 
     @RequestMapping("/validate.json")

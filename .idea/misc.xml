@@ -2,11 +2,15 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/permission" />
+    <file type="web" url="file://$PROJECT_DIR$/SSM-Demo" />
+    <file type="web" url="file://$PROJECT_DIR$/SSMDemo" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/permission/pom.xml" />
+        <option value="$PROJECT_DIR$/SSMDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SSM-Demo/pom.xml" />
       </list>
     </option>
   </component>

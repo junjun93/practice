@@ -14,3 +14,16 @@ not a valid identifier
  更新修改后，验证是否成功安装  
 输入命令：gradle -v
 
+<property/>快捷键
+
+找工作项目：慕课网项目+淘宝项目，结合起来写成自己的业务。看能不能整个开源项目，尽早自己实现一个全栈项目
+webapp下
+    web.xml 
+    spring-servlet.xml
+resources下
+    applicationContext.xml
+    mybatisConfig.xml
+    datasource.properties
+    generatorConfig.xml
+    logback.xml
+

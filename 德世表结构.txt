@@ -171,3 +171,8 @@ FROM DEMO..MOCTA AS MOCTA
 	INNER JOIN DEMO..INVMB ON MB001 = TA006
 	LEFT JOIN DEMO..PURMA ON MA001=TA032
 
+德世
+    审批是这样的  2 建立扣款单 -选审批流程（（a、生产扣款 b、品质扣款，c、代垫费用),2、解析流程a、b为采购审核，c为财务直接批准 ，不在审核，3,解析流程，a流程为生产部人员批准，表为品质部人员批准，c转财务批准（不审核）
+    显示按照 流程和部门来对照，你看一下，是否可以改程序过程
+
+

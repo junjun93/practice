@@ -152,7 +152,7 @@
     </form>
 </div>
 
---这段代码有问题，或与数据库字段对应不上
+<%--这段代码有问题，或与数据库字段对应不上--%>
 <script id="deptListTemplate" type="x-tmpl-mustache">
 <ol class="dd-list">
     {{#deptList}}
