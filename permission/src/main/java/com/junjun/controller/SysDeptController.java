@@ -15,10 +15,6 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.annotation.Resource;
 import java.util.List;
 
-/**
- * @author junjun
- * @date 2018/6/4 21:35:19
- **/
 @Controller
 @RequestMapping("/sys/dept")
 @Slf4j
@@ -30,35 +26,36 @@ public class SysDeptController {
     private SysTreeService sysTreeService;
 
     @RequestMapping("/dept.page")
-    public ModelAndView page(){
+    public ModelAndView page() {
         return new ModelAndView("dept");
     }
 
     @RequestMapping("/save.json")
     @ResponseBody
-    public JsonData saveDept(DeptParam param){
+    public JsonData saveDept(DeptParam param) {
         sysDeptService.save(param);
         return JsonData.success();
     }
 
     @RequestMapping("/tree.json")
     @ResponseBody
-    public JsonData tree(){
+    public JsonData tree() {
         List<DeptLevelDto> dtoList = sysTreeService.deptTree();
         return JsonData.success(dtoList);
     }
 
     @RequestMapping("/update.json")
     @ResponseBody
-    public JsonData updateDept(DeptParam param){
+    public JsonData updateDept(DeptParam param) {
         sysDeptService.update(param);
         return JsonData.success();
     }
 
     @RequestMapping("/delete.json")
     @ResponseBody
-    public JsonData deleteDept(@RequestParam("deptId") Integer deptId){
-        sysDeptService.delete(deptId);
+    public JsonData delete(@RequestParam("id") int id) {
+        sysDeptService.delete(id);
         return JsonData.success();
     }
+
 }

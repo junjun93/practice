@@ -2,19 +2,22 @@ package com.junjun.util;
 
 import org.apache.commons.lang3.StringUtils;
 
-/**
- * @author junjun
- * @date 2018/6/3 20:27:52
- **/
 public class LevelUtil {
 
     public final static String SEPARATOR = ".";
+
     public final static String ROOT = "0";
 
-    public static String calculateLevel(String parentLevel, int parentId){
-        if(StringUtils.isBlank(parentLevel)){
+    // 0
+    // 0.1
+    // 0.1.2
+    // 0.1.3
+    // 0.4
+    public static String calculateLevel(String parentLevel, int parentId) {
+        if (StringUtils.isBlank(parentLevel)) {
             return ROOT;
+        } else {
+            return StringUtils.join(parentLevel, SEPARATOR, parentId);
         }
-        return StringUtils.join(parentLevel, SEPARATOR, parentId);
     }
 }

@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$USER_HOME$/Downloads/Java开发企业级权限管理系统/permission2" />
+    <file type="web" url="file://$PROJECT_DIR$/demo" />
     <file type="web" url="file://$PROJECT_DIR$/permission" />
+    <file type="web" url="file://$PROJECT_DIR$/permission2" />
+    <file type="web" url="file://$PROJECT_DIR$/SCM" />
     <file type="web" url="file://$PROJECT_DIR$/SSM-Demo" />
     <file type="web" url="file://$PROJECT_DIR$/SSMDemo" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/permission/pom.xml" />
         <option value="$PROJECT_DIR$/SSMDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SSM-Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/SCM/pom.xml" />
+        <option value="$PROJECT_DIR$/permission2/pom.xml" />
+        <option value="$PROJECT_DIR$/permission/pom.xml" />
+        <option value="$USER_HOME$/Downloads/Java开发企业级权限管理系统/permission2/pom.xml" />
       </list>
     </option>
   </component>

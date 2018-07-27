@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SCM/SCM.iml" filepath="$PROJECT_DIR$/SCM/SCM.iml" />
       <module fileurl="file://$PROJECT_DIR$/SSM-Demo/SSM-Demo.iml" filepath="$PROJECT_DIR$/SSM-Demo/SSM-Demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SSMDemo/SSMDemo.iml" filepath="$PROJECT_DIR$/SSMDemo/SSMDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hello-world/hello-world.iml" filepath="$PROJECT_DIR$/hello-world/hello-world.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hello-world_main.iml" filepath="$PROJECT_DIR$/.idea/modules/hello-world_main.iml" group="hello-world" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hello-world_test.iml" filepath="$PROJECT_DIR$/.idea/modules/hello-world_test.iml" group="hello-world" />
-      <module fileurl="file://$PROJECT_DIR$/micro-weather-basic/micro-weather-basic.iml" filepath="$PROJECT_DIR$/micro-weather-basic/micro-weather-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Train/Train.iml" filepath="$PROJECT_DIR$/Train/Train.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TrainSys/TrainSys.iml" filepath="$PROJECT_DIR$/TrainSys/TrainSys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day15/day15.iml" filepath="$PROJECT_DIR$/day15/day15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day16/day16.iml" filepath="$PROJECT_DIR$/day16/day16.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/micro-weather-basic_test.iml" filepath="$PROJECT_DIR$/.idea/modules/micro-weather-basic_test.iml" group="micro-weather-basic" />
       <module fileurl="file://$PROJECT_DIR$/permission/permission.iml" filepath="$PROJECT_DIR$/permission/permission.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/weather.iml" filepath="$PROJECT_DIR$/.idea/weather.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/Java开发企业级权限管理系统/permission2/permission2.iml" filepath="$USER_HOME$/Downloads/Java开发企业级权限管理系统/permission2/permission2.iml" />
     </modules>
   </component>
 </project>

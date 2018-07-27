@@ -9,10 +9,6 @@ import org.springframework.beans.BeanUtils;
 
 import java.util.List;
 
-/**
- * @author junjun
- * @date 2018/5/31 21:49:37
- **/
 @Getter
 @Setter
 @ToString
@@ -20,7 +16,7 @@ public class DeptLevelDto extends SysDept {
 
     private List<DeptLevelDto> deptList = Lists.newArrayList();
 
-    public static DeptLevelDto adapt(SysDept dept){
+    public static DeptLevelDto adapt(SysDept dept) {
         DeptLevelDto dto = new DeptLevelDto();
         BeanUtils.copyProperties(dept, dto);
         return dto;

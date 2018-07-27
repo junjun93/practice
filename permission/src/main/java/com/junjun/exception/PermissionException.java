@@ -1,28 +1,24 @@
 package com.junjun.exception;
 
-/**
- * @author junjun
- * @date 2018/5/29 21:55:44
- **/
 public class PermissionException extends RuntimeException {
 
-    public PermissionException(){
+    public PermissionException() {
         super();
     }
 
-    public PermissionException(String message){
+    public PermissionException(String message) {
         super(message);
     }
 
-    public PermissionException(String message, Throwable cause){
+    public PermissionException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public PermissionException(Throwable cause){
+    public PermissionException(Throwable cause) {
         super(cause);
     }
 
-    protected PermissionException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace){
-      super(message, cause, enableSuppression, writableStackTrace);
+    protected PermissionException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
     }
 }

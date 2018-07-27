@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="permission:war">
     <output-path>$PROJECT_DIR$/permission/target</output-path>
-    <root id="archive" name="junjun.war">
+    <root id="archive" name="permission.war">
       <element id="artifact" artifact-name="permission:war exploded" />
     </root>
   </artifact>

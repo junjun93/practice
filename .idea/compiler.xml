@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -8,18 +9,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="permission" />
+        <module name="permission2" />
+        <module name="SCM" />
         <module name="SSM-Demo" />
-        <module name="SSMDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="hello-world_main" target="1.8" />
-      <module name="hello-world_test" target="1.8" />
-      <module name="micro-weather-basic_main" target="1.8" />
       <module name="micro-weather-basic_test" target="1.8" />
       <module name="permission" target="1.8" />
+      <module name="permission2" target="1.8" />
+      <module name="SCM" target="1.8" />
       <module name="SSM-Demo" target="1.8" />
-      <module name="SSMDemo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

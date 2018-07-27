@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="TrainSys"
+  id="myeclipse.1507536071108"
+  context-root="/TrainSys"
+  j2ee-spec="5.0"
+  archive="TrainSys.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

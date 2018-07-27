@@ -1,7 +1,9 @@
 package com.junjun.service;
 
 import com.google.common.base.Preconditions;
+import com.junjun.common.RequestHolder;
 import com.junjun.dao.SysDeptMapper;
+import com.junjun.dao.SysUserMapper;
 import com.junjun.exception.ParamException;
 import com.junjun.model.SysDept;
 import com.junjun.param.DeptParam;
@@ -15,64 +17,64 @@ import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author junjun
- * @date 2018/6/4 21:34:55
- **/
 @Service
 public class SysDeptService {
 
     @Resource
-    private SysDeptService sysDeptService;
-    @Resource
     private SysDeptMapper sysDeptMapper;
+    @Resource
+    private SysUserMapper sysUserMapper;
+    /*@Resource
+    private SysLogService sysLogService;*/
 
-    public void save(DeptParam param){
+    public void save(DeptParam param) {
         BeanValidator.check(param);
-        if(checkExist(param.getParentId(), param.getName(), param.getId())){
+        if(checkExist(param.getParentId(), param.getName(), param.getId())) {
             throw new ParamException("同一层级下存在相同名称的部门");
         }
-        SysDept dept = SysDept.builder().name(param.getName()).parentId(param.getParentId()).seq(param.getSeq()).
-                remark(param.getRemark()).build();
+        SysDept dept = SysDept.builder().name(param.getName()).parentId(param.getParentId())
+                .seq(param.getSeq()).remark(param.getRemark()).build();
+
         dept.setLevel(LevelUtil.calculateLevel(getLevel(param.getParentId()), param.getParentId()));
-        dept.setOperator(""); //TODO
-        dept.setOperateIp("");
+        dept.setOperator(RequestHolder.getCurrentUser().getUsername());
+        dept.setOperateIp(IpUtil.getRemoteIp(RequestHolder.getCurrentRequest()));
         dept.setOperateTime(new Date());
         sysDeptMapper.insertSelective(dept);
+        //sysLogService.saveDeptLog(null, dept);
     }
 
-    /**
-     * 更新前、更新时判断下是否存在同名部门
-     * */
-    public void update(DeptParam param){
+    public void update(DeptParam param) {
         BeanValidator.check(param);
-        if(checkExist(param.getParentId(), param.getName(), param.getId())){
+        if(checkExist(param.getParentId(), param.getName(), param.getId())) {
             throw new ParamException("同一层级下存在相同名称的部门");
         }
         SysDept before = sysDeptMapper.selectByPrimaryKey(param.getId());
         Preconditions.checkNotNull(before, "待更新的部门不存在");
-        if(checkExist(param.getParentId(), param.getName(), param.getId())){
+        if(checkExist(param.getParentId(), param.getName(), param.getId())) {
             throw new ParamException("同一层级下存在相同名称的部门");
         }
-        SysDept after = SysDept.builder().id(param.getId()).name(param.getName()).parentId(param.getParentId()).
-                seq(param.getSeq()).remark(param.getRemark()).build();
+
+        SysDept after = SysDept.builder().id(param.getId()).name(param.getName()).parentId(param.getParentId())
+                .seq(param.getSeq()).remark(param.getRemark()).build();
         after.setLevel(LevelUtil.calculateLevel(getLevel(param.getParentId()), param.getParentId()));
-        after.setOperator("");
-        after.setOperateIp("");
+        after.setOperator(RequestHolder.getCurrentUser().getUsername());
+        after.setOperateIp(IpUtil.getRemoteIp(RequestHolder.getCurrentRequest()));
         after.setOperateTime(new Date());
+
         updateWithChild(before, after);
+        //sysLogService.saveDeptLog(before, after);
     }
 
     @Transactional
-    public void updateWithChild(SysDept before, SysDept after){
+    private void updateWithChild(SysDept before, SysDept after) {
         String newLevelPrefix = after.getLevel();
         String oldLevelPrefix = before.getLevel();
-        if(!after.getLevel().equals(before.getLevel())){
+        if (!after.getLevel().equals(before.getLevel())) {
             List<SysDept> deptList = sysDeptMapper.getChildDeptListByLevel(before.getLevel());
-            if(CollectionUtils.isNotEmpty(deptList)){
-                for(SysDept dept : deptList){
+            if (CollectionUtils.isNotEmpty(deptList)) {
+                for (SysDept dept : deptList) {
                     String level = dept.getLevel();
-                    if(level.indexOf(oldLevelPrefix) == 0){
+                    if (level.indexOf(oldLevelPrefix) == 0) {
                         level = newLevelPrefix + level.substring(oldLevelPrefix.length());
                         dept.setLevel(level);
                     }
@@ -83,27 +85,27 @@ public class SysDeptService {
         sysDeptMapper.updateByPrimaryKey(after);
     }
 
-    public void delete(Integer deptId){
-        SysDept dept = sysDeptMapper.selectByPrimaryKey(deptId);
-        Preconditions.checkNotNull(dept, "待删除的部门不存在，无法删除");
-        if(sysDeptMapper.countByParentId(dept.getId()) > 0){
-            throw  new ParamException("当前部门下有子部门，无法删除");
-        }
-        /*if(sysDeptMapper.countByDeptId(dept.getId()) > 0){
-            throw  new ParamException("当前部门下有用户，无法删除");
-        }*/
-        sysDeptMapper.deleteByPrimaryKey(deptId);
+    private boolean checkExist(Integer parentId, String deptName, Integer deptId) {
+        return sysDeptMapper.countByNameAndParentId(parentId, deptName, deptId) > 0;
     }
 
-    private boolean checkExist(Integer parentId, String name, Integer id){
-        return sysDeptMapper.countByNameAndParentId(parentId, name, id) > 0;
-    }
-
-    private String getLevel(Integer deptId){
+    private String getLevel(Integer deptId) {
         SysDept dept = sysDeptMapper.selectByPrimaryKey(deptId);
-        if(dept == null){
+        if (dept == null) {
             return null;
         }
         return dept.getLevel();
+    }
+
+    public void delete(int deptId) {
+        SysDept dept = sysDeptMapper.selectByPrimaryKey(deptId);
+        Preconditions.checkNotNull(dept, "待删除的部门不存在，无法删除");
+        if (sysDeptMapper.countByParentId(dept.getId()) > 0) {
+            throw new ParamException("当前部门下面有子部门，无法删除");
+        }
+        if(sysUserMapper.countByDeptId(dept.getId()) > 0) {
+            throw new ParamException("当前部门下面有用户，无法删除");
+        }
+        sysDeptMapper.deleteByPrimaryKey(deptId);
     }
 }

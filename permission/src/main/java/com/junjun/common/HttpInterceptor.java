@@ -11,8 +11,7 @@ import java.util.Map;
 
 /**
  * @author junjun
- * @date 2018/5/27 21:34:18
- * 打印所有代码运行的记录，含框架
+ * @date 2018/7/26 14:32:09
  **/
 @Slf4j
 public class HttpInterceptor extends HandlerInterceptorAdapter {
@@ -21,7 +20,7 @@ public class HttpInterceptor extends HandlerInterceptorAdapter {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String url = request.getRequestURI();
+        String url = request.getRequestURI().toString();
         Map parameterMap = request.getParameterMap();
         log.info("request start. url:{}, params:{}", url, JsonMapper.obj2String(parameterMap));
         long start = System.currentTimeMillis();
@@ -31,22 +30,24 @@ public class HttpInterceptor extends HandlerInterceptorAdapter {
 
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-        String url = request.getRequestURI();
-        long start = (Long) request.getAttribute(START_TIME);
-        long end = System.currentTimeMillis();
-        log.info("request finished. url:{}, cost:{}", url, end -start);
+//        String url = request.getRequestURI().toString();
+//        long start = (Long) request.getAttribute(START_TIME);
+//        long end = System.currentTimeMillis();
+//        log.info("request finished. url:{}, cost:{}", url, end - start);
         removeThreadLocalInfo();
     }
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-        String url = request.getRequestURI();
+        String url = request.getRequestURI().toString();
         long start = (Long) request.getAttribute(START_TIME);
         long end = System.currentTimeMillis();
-        log.info("request completed. url:{}, cost:{}", url, end -start);
+        log.info("request completed. url:{}, cost:{}", url, end - start);
+
+        removeThreadLocalInfo();
     }
 
-    private void removeThreadLocalInfo(){
-        //RequestHolder.remove();
+    public void removeThreadLocalInfo() {
+        RequestHolder.remove();
     }
 }

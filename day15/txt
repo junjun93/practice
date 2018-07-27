@@ -1,0 +1,26 @@
+1: Junit测试工具
+	1): Junit的作用
+		方便测试,可以使用@Test注解来测试方法,而不需要写一个main方法来调用
+	2): Junit的引入 
+		使用Junit需要导入jar包,可以在工具中直接导入
+	3): Junit使用
+		在要测试的方法前加上@Test注解,然后选中方法名,右击界面RunAS>Junit执行即可
+		也可以在eclipse中选中方法后 按下F11
+		如果出现绿条则表示测试成功,如果是红条则失败
+	4): Juni测试注意
+		不能直接测试带有static或者有返回值或者带有参数的方法
+	5): 命名规范
+		测试类命名时则是: 要测试的类名+Test  (如:MathUtilTest)
+		测试方法命名: test+要测试的方法名	(如: testGetMaxValue)
+	6): 断言
+		 ps: Assert.assertSame(10, mu.getMaxValue(5, 10));  assertSame方法使用的是==来比较
+		 	 Assert.assertEquals(new String("小红"), "小红");  assertEquals方法使用equals来比较
+	7): 如果选中类执行测试,则会把整个类下的所有测试方法都执行,如果选中整个包,整个工程,则同理它们下的所有测试方法都会执行
+	8): 当需要准备测试的初始化环境和销毁环境时,可以考虑使用@Before和@After
+		 @Before注解的方法  在要测试的方法之前则会执行
+		 @After注解的方法    在要测试的方法执行完之后则会执行
+		 此外还有
+		 @BeforeClass   在要测试的方法之前则会执行   但只会执行一次
+		 @AfterClass	在要测试的方法执行完之后则会执行  但只会执行一次
+		 ps:@BeforeClass,@AfterClass注解的方法需要是静态的
+		 

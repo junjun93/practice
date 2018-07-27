@@ -1,10 +1,16 @@
 package com.junjun.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.Date;
 
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class SysUser {
     private Integer id;
 
