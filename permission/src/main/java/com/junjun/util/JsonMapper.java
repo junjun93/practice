@@ -1,7 +1,6 @@
 package com.junjun.util;
 
 import lombok.extern.slf4j.Slf4j;
-import org.codehaus.jackson.map.DeserializationConfig;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.SerializationConfig;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
@@ -15,7 +14,7 @@ public class JsonMapper {
 
     static {
         // config
-        objectMapper.disable(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES);
+        //objectMapper.diable(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES);
         objectMapper.configure(SerializationConfig.Feature.FAIL_ON_EMPTY_BEANS, false);
         objectMapper.setFilters(new SimpleFilterProvider().setFailOnUnknownId(false));
         objectMapper.setSerializationInclusion(JsonSerialize.Inclusion.NON_EMPTY);

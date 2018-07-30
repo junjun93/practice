@@ -4,6 +4,8 @@ Navicat Premium快捷键：右移光标、左移光标、上下行移动、添�
     部门模块SysDept LevelUtil SysTreeService
     用户模块SysUser User Admin
     权限模块
+        校验传入的参数、校验菜单是否重名
+        SysAclService补代码
     权限点模块
     角色模块
     角色权限关系

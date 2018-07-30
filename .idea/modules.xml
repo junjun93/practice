@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/TrainSys/TrainSys.iml" filepath="$PROJECT_DIR$/TrainSys/TrainSys.iml" />
       <module fileurl="file://$PROJECT_DIR$/day15/day15.iml" filepath="$PROJECT_DIR$/day15/day15.iml" />
       <module fileurl="file://$PROJECT_DIR$/day16/day16.iml" filepath="$PROJECT_DIR$/day16/day16.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/micro-weather-basic_test.iml" filepath="$PROJECT_DIR$/.idea/modules/micro-weather-basic_test.iml" group="micro-weather-basic" />
       <module fileurl="file://$PROJECT_DIR$/permission/permission.iml" filepath="$PROJECT_DIR$/permission/permission.iml" />
       <module fileurl="file://$USER_HOME$/Downloads/Java开发企业级权限管理系统/permission2/permission2.iml" filepath="$USER_HOME$/Downloads/Java开发企业级权限管理系统/permission2/permission2.iml" />
     </modules>

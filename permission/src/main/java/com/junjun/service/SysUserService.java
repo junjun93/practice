@@ -3,11 +3,13 @@ package com.junjun.service;
 import com.google.common.base.Preconditions;
 import com.junjun.beans.PageQuery;
 import com.junjun.beans.PageResult;
+import com.junjun.common.RequestHolder;
 import com.junjun.dao.SysUserMapper;
 import com.junjun.exception.ParamException;
 import com.junjun.model.SysUser;
 import com.junjun.param.UserParam;
 import com.junjun.util.BeanValidator;
+import com.junjun.util.IpUtil;
 import com.junjun.util.MD5Util;
 import com.junjun.util.PasswordUtil;
 import org.springframework.stereotype.Service;
@@ -21,8 +23,6 @@ public class SysUserService {
 
     @Resource
     private SysUserMapper sysUserMapper;
-    @Resource
-    private SysLogService sysLogService;
 
     public void save(UserParam param) {
         BeanValidator.check(param);
@@ -45,7 +45,7 @@ public class SysUserService {
         // TODO: sendEmail
 
         sysUserMapper.insertSelective(user);
-        sysLogService.saveUserLog(null, user);
+        //sysLogService.saveUserLog(null, user);
     }
 
     public void update(UserParam param) {
@@ -64,7 +64,7 @@ public class SysUserService {
         after.setOperateIp(IpUtil.getRemoteIp(RequestHolder.getCurrentRequest()));
         after.setOperateTime(new Date());
         sysUserMapper.updateByPrimaryKeySelective(after);
-        sysLogService.saveUserLog(before, after);
+        //sysLogService.saveUserLog(before, after);
     }
 
     public boolean checkEmailExist(String mail, Integer userId) {

@@ -8,6 +8,7 @@ import com.junjun.exception.ParamException;
 import com.junjun.model.SysDept;
 import com.junjun.param.DeptParam;
 import com.junjun.util.BeanValidator;
+import com.junjun.util.IpUtil;
 import com.junjun.util.LevelUtil;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.stereotype.Service;

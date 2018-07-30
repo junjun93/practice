@@ -10,6 +10,10 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
+/**
+ * @author junjun
+ * @date 2018/7/27 15:34:34
+ **/
 @Getter
 @Setter
 @ToString
@@ -21,7 +25,7 @@ public class AclParam {
     @Length(min = 2, max = 20, message = "权限点名称长度需要在2-20个字之间")
     private String name;
 
-    @NotNull(message = "必须指定权限模块")
+    @NotNull(message = "必须制定权限模块")
     private Integer aclModuleId;
 
     @Length(min = 6, max = 100, message = "权限点URL长度需要在6-100个字符之间")
@@ -34,10 +38,10 @@ public class AclParam {
 
     @NotNull(message = "必须指定权限点的状态")
     @Min(value = 0, message = "权限点状态不合法")
-    @Max(value = 1, message = "权限点状态不合法")
+    @Max(value = 0, message = "权限点状态不合法")
     private Integer status;
 
-    @NotNull(message = "必须指定权限点的展示顺序")
+    @NotNull(message = "必须制定权限点的展示顺序")
     private Integer seq;
 
     @Length(min = 0, max = 200, message = "权限点备注长度需要在200个字符以内")

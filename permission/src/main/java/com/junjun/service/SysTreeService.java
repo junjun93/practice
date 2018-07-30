@@ -9,8 +9,6 @@ import com.junjun.dao.SysDeptMapper;
 import com.junjun.dto.AclDto;
 import com.junjun.dto.AclModuleLevelDto;
 import com.junjun.dto.DeptLevelDto;
-import com.junjun.model.SysAcl;
-import com.junjun.model.SysAclModule;
 import com.junjun.model.SysDept;
 import com.junjun.util.LevelUtil;
 import org.apache.commons.collections.CollectionUtils;
@@ -20,8 +18,6 @@ import javax.annotation.Resource;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @Service
 public class SysTreeService {
@@ -31,11 +27,9 @@ public class SysTreeService {
     @Resource
     private SysAclModuleMapper sysAclModuleMapper;
     @Resource
-    private SysCoreService sysCoreService;
-    @Resource
     private SysAclMapper sysAclMapper;
 
-    public List<AclModuleLevelDto> userAclTree(int userId) {
+    /*public List<AclModuleLevelDto> userAclTree(int userId) {
         List<SysAcl> userAclList = sysCoreService.getUserAclList(userId);
         List<AclDto> aclDtoList = Lists.newArrayList();
         for (SysAcl acl : userAclList) {
@@ -87,7 +81,7 @@ public class SysTreeService {
         bindAclsWithOrder(aclModuleLevelList, moduleIdAclMap);
         return aclModuleLevelList;
     }
-
+*/
     public void bindAclsWithOrder(List<AclModuleLevelDto> aclModuleLevelList, Multimap<Integer, AclDto> moduleIdAclMap) {
         if (CollectionUtils.isEmpty(aclModuleLevelList)) {
             return;
@@ -101,7 +95,7 @@ public class SysTreeService {
             bindAclsWithOrder(dto.getAclModuleList(), moduleIdAclMap);
         }
     }
-
+/*
     public List<AclModuleLevelDto> aclModuleTree() {
         List<SysAclModule> aclModuleList = sysAclModuleMapper.getAllAclModule();
         List<AclModuleLevelDto> dtoList = Lists.newArrayList();
@@ -109,7 +103,7 @@ public class SysTreeService {
             dtoList.add(AclModuleLevelDto.adapt(aclModule));
         }
         return aclModuleListToTree(dtoList);
-    }
+    }*/
 
     public List<AclModuleLevelDto> aclModuleListToTree(List<AclModuleLevelDto> dtoList) {
         if (CollectionUtils.isEmpty(dtoList)) {

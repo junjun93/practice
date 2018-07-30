@@ -49,7 +49,7 @@ public class SysUserController {
 
     @RequestMapping("/page.json")
     @ResponseBody
-    public JsonData page(@RequestParam("deptId") int deptId, PageQuery pageQuery) {
+    public JsonData page(@RequestParam("deptId") Integer deptId, PageQuery pageQuery) {
         PageResult<SysUser> result = sysUserService.getPageByDeptId(deptId, pageQuery);
         return JsonData.success(result);
     }
@@ -58,7 +58,7 @@ public class SysUserController {
     @ResponseBody
     public JsonData acls(@RequestParam("userId") int userId) {
         Map<String, Object> map = Maps.newHashMap();
-        map.put("acls", sysTreeService.userAclTree(userId));
+        //map.put("acls", sysTreeService.userAclTree(userId));
         //map.put("roles", sysRoleService.getRoleListByUserId(userId));
         return JsonData.success(map);
     }
