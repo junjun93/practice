@@ -17,25 +17,11 @@
       <change beforePath="$PROJECT_DIR$/../concurrency/src/main/java/com/mmall/concurrency/ServletInitializer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../concurrency/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../concurrency/src/test/java/com/mmall/concurrency/ConcurrencyApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/micro-weather-basic_test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysAclController.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysAclController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysDeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysDeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/junjun/dao/SysAclMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/junjun/dao/SysAclMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/junjun/param/AclModuleParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/junjun/param/AclParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysDeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysDeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysTreeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysTreeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/java/com/junjun/util/JsonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/java/com/junjun/util/JsonMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/src/main/resources/mapper/SysAclMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/permission/src/main/resources/mapper/SysAclMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permission/target/classes/mapper/SysAclMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/permission/target/classes/mapper/SysAclMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permission/接口文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/permission/接口文档.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-manage-system" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manage-system" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-manage-system/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manage-system/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/正式期.md" beforeDir="false" afterPath="$PROJECT_DIR$/正式期.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/hello-world/.gradle/" />
     <ignored path="$PROJECT_DIR$/hello-world/build/" />
@@ -125,26 +111,27 @@
     <session id="-1021219579">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="87" />
-          <entry key="md" value="12" />
+          <entry key="java" value="92" />
+          <entry key="md" value="14" />
           <entry key="txt" value="1" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="87" />
-          <entry key="Markdown" value="12" />
+          <entry key="JAVA" value="92" />
+          <entry key="Markdown" value="14" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -152,14 +139,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="3539" />
-          <entry key="md" value="346" />
+          <entry key="md" value="392" />
           <entry key="xml" value="141" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3539" />
-          <entry key="Markdown" value="346" />
+          <entry key="Markdown" value="392" />
           <entry key="SQL" value="4" />
           <entry key="XML" value="137" />
         </counts>
@@ -172,14 +159,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysAclController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="86">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysAclModuleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/正式期.md">
+        <entry file="file://$PROJECT_DIR$/permission/接口文档.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="860">
-                <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="39" />
+              <first_editor relative-caret-position="1208">
+                <caret line="108" column="6" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="6" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysAclModuleService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -200,10 +223,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>CacheInterceptor</find>
-      <find>ssm</find>
-      <find>sqlSessionFactory</find>
-      <find>defaultExecutoType</find>
       <find>display</find>
       <find>LevelUtil</find>
       <find>海王</find>
@@ -230,6 +249,10 @@
       <find>countByNameAndParentId</find>
       <find>tree</find>
       <find>新建</find>
+      <find>7</find>
+      <find>程序主表</find>
+      <find>修改</find>
+      <find>login</find>
     </findStrings>
     <replaceStrings>
       <replace>WeatherResponse</replace>
@@ -295,7 +318,6 @@
         <option value="$PROJECT_DIR$/permission/src/main/webapp/WEB-INF/web.xml" />
         <option value="$USER_HOME$/Downloads/Java开发企业级权限管理系统/permission2/src/main/java/com/mmall/util/IpUtil.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/util/IpUtil.java" />
-        <option value="$PROJECT_DIR$/正式期.md" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/beans/Mail.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/util/MailUtil.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/param/AclParam.java" />
@@ -310,11 +332,12 @@
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysAclModuleService.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysDeptService.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysTreeService.java" />
-        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysAclModuleController.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/util/JsonMapper.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysUserService.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysDeptController.java" />
         <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysUserController.java" />
+        <option value="$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysAclModuleController.java" />
+        <option value="$PROJECT_DIR$/正式期.md" />
         <option value="$PROJECT_DIR$/permission/接口文档.md" />
       </list>
     </option>
@@ -369,7 +392,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -514,8 +537,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,7 +552,7 @@
     <property name="SearchEverywhereHistoryKey" value="正式期&#9;FILE&#9;file:///Users/junjun/IDEA/practice/正式期.md&#10;SysUser&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/controller/SysUserController.java&#10;SysDept&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/controller/SysDeptController.java&#10;SysAclController&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/controller/SysAclModuleController.java&#10;readm&#9;FILE&#9;file:///Users/junjun/IDEA/practice/README.md&#10;SysAcl&#9;FILE&#9;file:///Users/junjun/Downloads/Java开发企业级权限管理系统/permission2/src/main/java/com/mmall/service/SysAclService.java&#10;sysaclcon&#9;PSI&#9;JAVA://com.mmall.controller.SysAclController&#10;SysAclModuleService&#9;PSI&#9;JAVA://com.mmall.service.SysAclModuleService&#10;SysAclS&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/service/SysAclService.java&#10;AclModuleP&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/param/AclModuleParam.java&#10;SysAclModuleMapper&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/mapper/SysAclModuleMapper.xml&#10;sysacl&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/service/SysAclModuleService.java&#10;Read&#9;FILE&#9;file:///Users/junjun/IDEA/practice/README.md&#10;AclParam&#9;PSI&#9;JAVA://com.mmall.param.AclParam&#10;SysAclMapper&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/resources/mapper/SysAclMapper.xml&#10;sysaclmap&#9;FILE&#9;file:///Users/junjun/Downloads/Java开发企业级权限管理系统/permission2/src/main/resources/mapper/SysAclMapper.xml&#10;rea&#9;FILE&#9;file:///Users/junjun/IDEA/practice/README.md&#10;SysAclService&#9;FILE&#9;file:///Users/junjun/Downloads/Java开发企业级权限管理系统/permission2/src/main/java/com/mmall/service/SysAclService.java&#10;SysAclModuleController&#9;PSI&#9;JAVA://com.mmall.controller.SysAclModuleController&#10;CONTRO&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/controller/SysDeptController.java&#10;aclp&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/param/AclParam.java&#10;sysaclmo&#9;PSI&#9;JAVA://com.junjun.model.SysAclModule&#10;AclModuleParam&#9;PSI&#9;JAVA://com.mmall.param.AclModuleParam&#10;m&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/beans/Mail.java&#10;mailu&#9;PSI&#9;JAVA://com.mmall.util.MailUtil&#10;mail&#9;PSI&#9;JAVA://com.mmall.beans.Mail&#10;README&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/Readme.txt&#10;ip&#9;PSI&#9;JAVA://com.alibaba.druid.support.http.util.IPAddress&#10;sysdepts&#9;PSI&#9;JAVA://com.mmall.service.SysDeptService&#10;web&#9;FILE&#9;file:///Users/junjun/IDEA/practice/Train/web/WEB-INF/web.xml&#10;web.xml&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/webapp/WEB-INF/web.xml&#10;Filter.class&#9;FILE&#9;jar:///Users/junjun/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar!/javax/servlet/Filter.class&#10;Filter.c&#9;FILE&#9;jar:///Users/junjun/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.28/b684c98cf77c6528079c4e59fc1feeb218bf82f1/tomcat-embed-core-8.5.28.jar!/javax/servlet/Filter.class&#10;filter&#9;FILE&#9;jar:///Users/junjun/.m2/repository/org/apache/tomcat/servlet-api/6.0.36/servlet-api-6.0.36.jar!/javax/servlet/Filter.class&#10;login&#9;PSI&#9;JAVA://com.mmall.filter.LoginFilter&#10;http&#9;PSI&#9;JAVA://com.junjun.common.HttpInterceptor&#10;htt&#9;PSI&#9;JAVA://com.junjun.common.HttpInterceptor&#10;httpi&#9;PSI&#9;JAVA://com.junjun.common.HttpInterceptor&#10;request&#9;PSI&#9;JAVA://com.mmall.common.RequestHolder&#10;service&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/service/SysDeptService.java&#10;read&#9;FILE&#9;file:///Users/junjun/IDEA/practice/README.md&#10;sign&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/webapp/signin.jsp&#10;user&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/controller/UserController.java&#10;admin&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/webapp/WEB-INF/views/admin.jsp&#10;userc&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission2/src/main/java/com/mmall/controller/UserController.java&#10;UserC&#9;PSI&#9;JAVA://com.mmall.controller.UserController&#10;sys&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/service/SysDeptService.java&#10;SysTreeService&#9;PSI&#9;JAVA://com.junjun.service.SysTreeService&#10;LevelUtil&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/java/com/junjun/util/LevelUtil.java&#10;w&#9;FILE&#9;file:///Users/junjun/IDEA/practice/permission/src/main/webapp/WEB-INF/web.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532942923005" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533039614824" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -981,7 +1004,8 @@
       <workItem from="1532606076933" duration="540000" />
       <workItem from="1532616634688" duration="32000" />
       <workItem from="1532616822424" duration="22928000" />
-      <workItem from="1532939899742" duration="802000" />
+      <workItem from="1532939899742" duration="2625000" />
+      <workItem from="1533001546748" duration="9430000" />
     </task>
     <servers />
   </component>
@@ -991,7 +1015,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="460785000" />
+    <option name="totallyTimeSpent" value="472038000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1006,7 +1030,7 @@
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" visible="true" weight="0.2641357" />
+      <window_info active="true" content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48410758" visible="true" weight="0.26332796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24959612" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1284,9 +1308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1304,23 +1325,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysAclModuleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Java开发企业级权限管理系统/permission2/src/main/java/com/mmall/service/SysAclModuleService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-175">
           <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1356,32 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="47" column="46" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="46" />
-          <folding>
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysAclModuleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="58" column="53" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysAclController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1392,24 +1374,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/permission/接口文档.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="40">
-            <caret line="2" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1426,8 +1394,48 @@
     <entry file="file://$PROJECT_DIR$/正式期.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="860">
-            <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="39" />
+          <first_editor relative-caret-position="241">
+            <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysAclController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/service/SysAclModuleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/src/main/java/com/junjun/controller/SysAclModuleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission/接口文档.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1208">
+            <caret line="108" column="6" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
