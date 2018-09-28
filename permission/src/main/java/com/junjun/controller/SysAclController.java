@@ -39,7 +39,7 @@ public class SysAclController {
 
     @RequestMapping("/page.json")
     @ResponseBody
-    public JsonData list(@RequestParam("aclModuleId") Integer aclModuleId, PageQuery pageQuery){
-        return JsonData.success(sysAclService.getPageByAclModuleId(aclModuleId, pageQuery));
+    public JsonData list(@RequestParam("aclModuleId") Integer aclModuleId, PageQuery page){
+        return JsonData.success(sysAclService.getPageByAclModuleId(aclModuleId, page));
     }
 }

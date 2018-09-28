@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SCM/SCM.iml" filepath="$PROJECT_DIR$/SCM/SCM.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SSM-Demo/SSM-Demo.iml" filepath="$PROJECT_DIR$/SSM-Demo/SSM-Demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Train/Train.iml" filepath="$PROJECT_DIR$/Train/Train.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TrainSys/TrainSys.iml" filepath="$PROJECT_DIR$/TrainSys/TrainSys.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day15/day15.iml" filepath="$PROJECT_DIR$/day15/day15.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day16/day16.iml" filepath="$PROJECT_DIR$/day16/day16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeeProject/LeeProject.iml" filepath="$PROJECT_DIR$/LeeProject/LeeProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServletDemo/ServletDemo.iml" filepath="$PROJECT_DIR$/ServletDemo/ServletDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miaosha/miaosha.iml" filepath="$PROJECT_DIR$/miaosha/miaosha.iml" />
       <module fileurl="file://$PROJECT_DIR$/permission/permission.iml" filepath="$PROJECT_DIR$/permission/permission.iml" />
-      <module fileurl="file://$USER_HOME$/Downloads/Java开发企业级权限管理系统/permission2/permission2.iml" filepath="$USER_HOME$/Downloads/Java开发企业级权限管理系统/permission2/permission2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spike/spike.iml" filepath="$PROJECT_DIR$/spike/spike.iml" />
     </modules>
   </component>
 </project>

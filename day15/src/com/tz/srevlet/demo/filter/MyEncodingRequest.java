@@ -1,6 +1,7 @@
 package com.tz.srevlet.demo.filter;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 
@@ -16,12 +17,8 @@ public class MyEncodingRequest extends HttpServletRequestWrapper{
 	@Override
 	public String getParameter(String name) {
 		String value = request.getParameter(name);
-		try {
-			value = new String(value.getBytes("iso-8859-1"), "UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-		return value;
+        value = new String(value.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
+        return value;
 	}
 	
 }

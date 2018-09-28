@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.lee.dao.UserMapper">
+	<resultMap id="UserMap" type="com.lee.bean.User">
+		<id column="id" property="id" />
+		<result column="username" property="username" />
+		<result column="password" property="password" />
+		<result column="gender" property="gender" />
+		<result column="tel" property="tel" />
+		<result column="createTime" property="createTime" />
+		<result column="birthday" property="birthday" />
+		<result column="lastLoginTime" property="lastLoginTime" />
+		<result column="lastUpdateTime" property="lastUpdateTime" />
+		<result column="email" property="email" />
+		<result column="address" property="address" />
+		<result column="job" property="job" />
+		<result column="photoURL" property="photoURL" />
+		<result column="school" property="school" />
+		<result column="qq" property="qq" />
+		<result column="company" property="company" />
+		<result column="country" property="country" />
+		<result column="info" property="info" />
+	</resultMap>
+
+	<sql id="allCol">
+		id,username,password,tel,gender,createTime,birthday,lastLoginTime,lastUpdateTime,email,address,job,
+		photoURL,school,qq,company,country,info
+	</sql>
+
+	<select id="selectByPrimaryKey" resultMap="UserMap"
+		parameterType="com.lee.bean.User">
+		select
+		<include refid="allCol" />
+		from t_user
+		where id = #{id}
+	</select>
+
+	<select id="selectByUsernameAndPassword" resultMap="UserMap"
+		parameterType="com.lee.bean.User">
+		select * from t_user
+		where username = #{username} and
+		password = #{password}
+	</select>
+
+	<select id="selectByUsername" resultMap="UserMap"
+		parameterType="com.lee.bean.User">
+		select * from t_user
+		where username = #{username}
+	</select>
+
+	<delete id="deleteByPrimaryKey"
+		parameterType="com.lee.bean.User">
+		delete from t_user
+		where id = #{id}
+	</delete>
+
+	<!-- 批量插入用户信息 -->
+	<insert id="insert" parameterType="com.lee.bean.User"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into
+		t_user(username,password,tel,gender,createTime,birthday,lastLoginTime,lastUpdateTime,email,address,job,photoURL,school,qq,company,country,info)values
+		(#{username},#{password},#{tel},#{gender},#{createTime},#{birthday},#{lastLoginTime},#{lastUpdateTime},#{email},#{address},#{job},#{photoURL},#{school},#{qq},#{company},#{country},#{info});
+	</insert>
+
+	<!-- 插入用户指定信息 -->
+	<insert id="insertSelective" parameterType="com.lee.bean.User">
+		insert into t_user
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="username != null">
+				username,
+			</if>
+			<if test="password != null">
+				password,
+			</if>
+			<if test="tel != null">
+				tel,
+			</if>
+			<if test="gender != null">
+				gender,
+			</if>
+			<if test="createTime != null">
+				createTime,
+			</if>
+			<if test="birthday != null">
+				birthday,
+			</if>
+			<if test="lastLoginTime != null">
+				lastLoginTime,
+			</if>
+			<if test="lastUpdateTime != null">
+				lastUpdateTime,
+			</if>
+			<if test="email != null">
+				email,
+			</if>
+			<if test="address != null">
+				address,
+			</if>
+			<if test="job != null">
+				job,
+			</if>
+			<if test="photoURL != null">
+				photoURL,
+			</if>
+			<if test="school != null">
+				school,
+			</if>
+			<if test="qq != null">
+				qq,
+			</if>
+			<if test="company != null">
+				company,
+			</if>
+			<if test="country != null">
+				country,
+			</if>
+			<if test="info != null">
+				info,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="username != null">
+				#{username},
+			</if>
+			<if test="password != null">
+				#{password},
+			</if>
+			<if test="tel != null">
+				#{tel},
+			</if>
+			<if test="gender != null">
+				#{gender},
+			</if>
+			<if test="createTime != null">
+				#{createTime},
+			</if>
+			<if test="birthday != null">
+				#{birthday},
+			</if>
+			<if test="lastLoginTime != null">
+				#{lastLoginTime},
+			</if>
+			<if test="lastUpdateTime != null">
+				#{lastUpdateTime},
+			</if>
+			<if test="email != null">
+				#{email},
+			</if>
+			<if test="address != null">
+				#{address},
+			</if>
+			<if test="job != null">
+				#{job},
+			</if>
+			<if test="photoURL != null">
+				#{photoURL},
+			</if>
+			<if test="school != null">
+				#{school},
+			</if>
+			<if test="qq != null">
+				#{qq},
+			</if>
+			<if test="company != null">
+				#{company},
+			</if>
+			<if test="country != null">
+				#{country},
+			</if>
+			<if test="info != null">
+				#{info}
+			</if>
+		</trim>
+
+	</insert>
+
+
+	<update id="updateByid" parameterType="com.lee.bean.User">
+		update t_user
+		<set>
+			<if test="username != null">
+				username = #{username},
+			</if>
+			<if test="password != null">
+				password = #{password},
+			</if>
+			<if test="tel != null">
+				tel = #{tel},
+			</if>
+			<if test="gender != null">
+				gender = #{gender},
+			</if>
+			<if test="createTime != null">
+				createTime = #{createTime},
+			</if>
+			<if test="birthday != null">
+				birthday = #{birthday},
+			</if>
+			<if test="lastLoginTime != null">
+				lastLoginTime = #{lastLoginTime},
+			</if>
+			<if test="lastUpdateTime != null">
+				lastUpdateTime = #{lastUpdateTime},
+			</if>
+			<if test="email != null">
+				email = #{email},
+			</if>
+			<if test="address != null">
+				address = #{address},
+			</if>
+			<if test="job != null">
+				job = #{job},
+			</if>
+			<if test="photoURL != null">
+				photoURL = #{photoURL},
+			</if>
+			<if test="school != null">
+				school = #{school},
+			</if>
+			<if test="qq != null">
+				qq = #{qq},
+			</if>
+			<if test="company != null">
+				company = #{company},
+			</if>
+			<if test="country != null">
+				country = #{country},
+			</if>
+			<if test="info != null">
+				info = #{info}
+			</if>
+		</set>
+		where id = #{id}
+	</update>
+
+	<update id="updateByPrimaryKey"
+		parameterType="com.lee.bean.User">
+		update t_user
+		set username =
+		#{username,jdbcType=VARCHAR},
+		password = #{password,jdbcType=VARCHAR}
+		where id = #{id}
+	</update>
+
+	<update id="createTable">
+		CREATE TABLE `t_user` (
+		`id` int(11) NOT NULL
+		AUTO_INCREMENT,
+		`username` varchar(30) CHARACTER SET utf8mb4 COLLATE
+		utf8mb4_0900_ai_ci NOT NULL
+		COMMENT '用户名',
+		`password` varchar(30)
+		CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
+		COMMENT '密码',
+		`tel` varchar(66) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci
+		NULL
+		DEFAULT NULL COMMENT '电话',
+		`gender` int(11) NULL DEFAULT NULL
+		COMMENT '性别(男1，女0)',
+		`createTime` timestamp(0) NULL DEFAULT
+		CURRENT_TIMESTAMP COMMENT '注册时间',
+		`birthday` date NULL DEFAULT NULL
+		COMMENT '生日',
+		`lastLoginTime` datetime(0) NULL DEFAULT NULL COMMENT
+		'上次登录时间',
+		`lastUpdateTime` datetime(0) NULL DEFAULT NULL COMMENT
+		'上次修改时间',
+		`email` varchar(50) CHARACTER SET utf8mb4 COLLATE
+		utf8mb4_0900_ai_ci NULL
+		DEFAULT NULL COMMENT '邮箱',
+		`address`
+		varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL
+		DEFAULT NULL COMMENT '住址',
+		`job` varchar(20) CHARACTER SET utf8mb4
+		COLLATE utf8mb4_0900_ai_ci NULL
+		DEFAULT NULL COMMENT '职业',
+		`photoURL`
+		varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL
+		DEFAULT 'default.jpg' COMMENT '头像',
+		`school` varchar(50) CHARACTER SET
+		utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL
+		DEFAULT NULL COMMENT '学校',
+		`qq`
+		varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL
+		DEFAULT NULL COMMENT 'QQ',
+		`company` varchar(50) CHARACTER SET utf8mb4
+		COLLATE utf8mb4_0900_ai_ci NULL
+		DEFAULT NULL COMMENT '公司',
+		`country`
+		varchar(300) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL
+		DEFAULT NULL COMMENT '国家',
+		`info` varchar(30) CHARACTER SET utf8mb4
+		COLLATE utf8mb4_0900_ai_ci NULL
+		DEFAULT NULL COMMENT '简介',
+		PRIMARY KEY
+		(`id`) USING BTREE
+		) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE =
+		utf8mb4_0900_ai_ci
+		ROW_FORMAT = Dynamic;
+
+	</update>
+
+	<select id="getAll" resultMap="UserMap">
+		SELECT * FROM t_user
+	</select>
+
+</mapper>

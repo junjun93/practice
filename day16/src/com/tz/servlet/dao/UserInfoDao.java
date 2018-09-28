@@ -19,20 +19,20 @@ public interface UserInfoDao {
 	/**
 	 * 查询返回一条数据 
 	 */
-	public <T> T getUserInfo(Class<T> clazz, String sql, Object...params);
+    <T> T getUserInfo(Class<T> clazz, String sql, Object... params);
 	
 	
 	/**
 	 * 查询返回一个集合
 	 */
-	public <T> List<T> getUserInfoList(Class<T> clazz, String sql, Object...params);
+    <T> List<T> getUserInfoList(Class<T> clazz, String sql, Object... params);
 
 	
 	
 	/**
 	 * 可以实现添加,修改,删除三个操作
 	 */
-	public void update(String sql, Object ...params);
+    void update(String sql, Object... params);
 	
 	
 }

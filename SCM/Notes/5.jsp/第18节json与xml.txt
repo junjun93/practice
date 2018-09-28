@@ -1,0 +1,93 @@
+1: XML
+	1): 简介
+		可扩展标记语言(extensible Markup Language)
+
+	2): 作用
+		被设计用来传输和存储数据
+
+	3): 示例
+		<?xml version="1.0" encoding="UTF-8"?>
+		<users>
+			<user id="1">
+				<id></id>
+				<email></email>
+				<password></password>
+			</user>
+		</users>
+
+	4): 命名规则
+			名称可以包含字母,数字以及其他的字符
+			名称不能以数字或者标点符号开始
+			名称不能以字母xml(或者XML, Xml等等)开始
+			名称不能包含空格
+			可以使用任何名称,没有保留的字词
+
+	5): 可以通过dom4j来操作xml
+
+    6): 解析方式
+            解析xml文件=_+实体对象+节点树查找
+            输出xml文件=document+clone+String
+
+        //创建SAXReader对象，用流来解析xml文件
+        SAXReader reader = new SAXReader();
+        InputStream stream = Dom4jTest.class.getClassLoader().getResourceAsStream("user.xml");
+        Document document = reader.read(stream);
+
+        //获取到根节点元素，遍历所有元素
+        Element rootElement = document.getRootElement();
+        Iterator i = rootElement.elementIterator();
+        while(i.hasNext()){
+            Element e1 = (Element)i.next();
+            System.out.println(e1.getName());
+            Iterator i1 = e1.elementIterator();
+        }
+
+
+2: JSON
+	1): 简介
+		JSON指的是JavaScript对象表示法(JavaScript Object Notation);
+		它是轻量级的文本数据交换格式且独立于语言,具有自我描述性,更易理解
+
+	2): 优点
+		JSON比XML更小、更快、更容易解析
+		如一般ajax数据传输则就会使用json
+
+	3): JSON的语法
+		以花括号保存数据(对象),
+		数据以键值对的形式存在,
+		且键需要打上双引号,
+		每一个键值间需要以逗号隔开,
+		注意最后的不需要再加逗号,
+		它的值可以是数字、字符串(需要是双引号)、逻辑值、数组、对象、null
+
+	4): 操作json数据的工具有
+	        Gson,FastJson,Jackson,Json-lib
+
+	5): Gson可以把一个java对象序列化成一个json字符串,也可以将json字符串反序列化成一个java对象
+
+	6): 解析方式
+         Gson gson = new Gson();
+         String json = gson.toJson(list);
+         String json = "{\"id\":1,\"email\":\"小红\",\"password\":\"123\"}";
+         //集合的反射
+         Type type = new TypeToken<ArrayList<User>>() {}.getType();
+         ArrayList<User> list = gson.fromJson(json, type);
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

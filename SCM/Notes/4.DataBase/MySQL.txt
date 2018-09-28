@@ -1,0 +1,134 @@
+一.增删改查
+    insert   into user where id = ?
+    delete   from user where id = ?
+    update   user set  values where id = ?
+
+    SELECT DISTINCT select_list #字段去重
+    FROM table_list
+    WHERE row_constraint
+    GROUP BY grouping_columns
+    ORDER BY sorting_columns
+    HAVING group_constraint
+    LIMIT count;
+        select * from user where id = ?
+    update user set（email = 12@qq.com）where id = 1
+
+二.使用SQL管理数据
+    1.多表连接
+        join/inner join/cross join 两表公共行
+            select t1.a1, t2.a2 from t1 join t2 where t1.a1 = t2.a2;
+        left join 两表公共行+左表多余行
+            select t1.a1, t2.a2 from t1 left join t2 on t1.a1 = t2.a2;
+        right join 两表公共行+右表多余行
+            select t1.a1 from t1 right join t2 on t1.a1 = t2.a2 where t2.a2 is null;
+
+    tips:
+        (1),等价于join，但优先级不同，可能会导致语法错误。避免使用
+        (2)多表连接没有where条件会生成笛卡尔积（cartesian product）
+        (3)on/where 只要连接类同名
+           using()  所有类同名
+           natural left join 匹配所有同名列
+
+    2.子查询
+        标量子查询试用范围最大，只会产生一个值
+
+    3.事务处理
+    事务（transaction）指的是一组SQL语句，它们是一个执行单位，且在必要时还可以取消
+    （1）特性ACID
+        原子性（Atomic）所有语句一个逻辑单元，不能只执行部分
+        一致性（Consistent）
+        独立性（Isolated）并发
+        持久性（Durable）
+    （2）事务的使用
+        START TRANSACTION/SET autocommit = 0
+        COMMIT/ROLLBACK
+    （3）部分回滚
+        SAVEPOINT my_savepoint
+        //部分回滚的sql语句
+        ROLLBACK TO SAVEPOINT my_savepoint
+    （4）事务并发可能遇到的问题
+        脏读（dirty read）衣服没洗干净就晾了
+        不可重复读（nonrepeatable read）A:SELECT B:UPDATE A:SELECT
+        幻影行（phantom row）A:SELECT B:INSERT A:SELECT 
+    （5）事务隔离 
+        隔离级别            脏读      不可重复读       幻影行
+        READ UNCOMMITTED    ✔️          ✔️            ✔️
+        READ COMMITTED      ❌          ✔️            ✔️ 
+        REPEATABLE READ     ❌          ❌            ❌   InnoDB默认
+        SERIALIZABLE        ❌          ❌            ❌   某事务正在读取某些行，其他事务无法修改
+
+        设置隔离级别
+          super权限用户
+            SET GLOBAL TRANSACTION ISOLATION LEVEL level;
+          普通用户
+            SET SESSION TRANSACTION ISOLATION LEVEL level;(当前会话)
+            SET TRANSACTION ISOLATION LEVEL level;（下一个事务）
+    （6）MySQL存储引擎对比
+            事务：InnoDB支持，MyISAM、MEMORY不支持
+            表级锁定：MyISAM、MEMORY，并发性能差
+
+    4.外键、主键
+        外键：维护数据的一致性，插入数据、级联删除、级联更新
+
+三.视图和存储程序
+    1.视图
+        create view vp as
+        select last_name, first_name, city, state from president;
+        select * from vp;
+
+    2.存储过程
+        delimiter $
+            create procedure show_times()
+            begin
+            select CURRENT_TIMESTAMP as 'Local Time';
+            select UTC_TIMESTAMP as 'UTC Time';
+            end$
+        delimiter ;
+
+        CALL show_times();
+
+    3.存储函数
+        delimiter $
+            create function count_year(p_year INT)
+            returns INT
+            reads sql data
+            begin
+                return (select count(*) from president where year(birth) = p_year)
+            end$
+        delimiter ;
+
+        select count_year(1913)
+
+    4.触发器
+        create table t(percent INT, dt DATETIME)
+        delimiter $
+        create trigger bi_t before insert on t
+            for each row begin
+                if new.percent < 0 then
+                    set new.percent = 0;
+                elseif new.percent > 100 then
+                    set new.percent = 100;
+            end if;
+        end$ new.dt = CURRENT_TIMESTAMP;
+        end$
+        delimiter ;
+
+    5.事件
+         与计划相关连，非常适合于执行那些无人值守的系统管理任务
+         create event expire_web_session
+            on schedule every 4 hour
+            do
+            delete from web_session
+            where last_visit < CURRENT_TIMESTAMP - INTERVAL 1 DAY;
+
+    6.安全性 p199
+        DEFINER = account 都能用           定义者
+        SQL SECURITY INVOKER ≠ 触发器事件   对象调用者
+
+    tips: 存储过程、存储函数、事件隶属于某个数据库；
+          触发器隶属于某个表
+
+          无返回值→存储过程
+          多结果集→存储函数
+
+Mysql的explain？

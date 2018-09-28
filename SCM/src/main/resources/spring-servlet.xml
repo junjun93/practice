@@ -54,7 +54,7 @@
             <mvc:mapping path="/contest/**"/>
             <mvc:mapping path="/problem/sub/**"/>
             <mvc:exclude-mapping path="/contest"/>
-            <bean class="com.junjun.controller.a"/>
+            <bean class="com.junjun.controller.com.junjun.demo.BodyServlet"/>
         </mvc:interceptor>
     </mvc:interceptors>
     -->

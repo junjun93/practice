@@ -64,7 +64,7 @@ public class doshowtrain extends HttpServlet {
 	 * 单张车票信息显示控制类
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+			throws ServletException {
 		String train_no=request.getParameter("train_no");
 		TrainInfoService tis=new TrainInfoserviceImpl();
 		TrainInfo trainInfo =tis.shwotrain(train_no);

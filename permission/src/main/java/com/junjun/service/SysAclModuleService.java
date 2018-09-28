@@ -9,6 +9,7 @@ import com.junjun.model.SysAclModule;
 import com.junjun.param.AclModuleParam;
 import com.junjun.util.BeanValidator;
 import com.junjun.util.IpUtil;
+import com.junjun.util.LevelUtil;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -36,7 +37,7 @@ public class SysAclModuleService {
         }
         SysAclModule aclModule = SysAclModule.builder().name(param.getName()).parentId(param.getParentId()).seq(param.getSeq())
                 .status(param.getStatus()).remark(param.getRemark()).build();
-        aclModule.setLevel("");//TODO
+        aclModule.setLevel(LevelUtil.calculateLevel(getLevel(param.getParentId()), param.getParentId()));
         aclModule.setOperator(RequestHolder.getCurrentUser().getUsername());
         aclModule.setOperateIp(IpUtil.getRemoteIp(RequestHolder.getCurrentRequest()));
         aclModule.setOperateTime(new Date());
@@ -52,21 +53,36 @@ public class SysAclModuleService {
         Preconditions.checkNotNull(bofore, "待更新的权限模块不存在");
         SysAclModule after = SysAclModule.builder().name(param.getName()).parentId(param.getParentId()).seq(param.getSeq())
                 .status(param.getStatus()).remark(param.getRemark()).build();
-        after.setLevel("");
+        after.setLevel(LevelUtil.calculateLevel(getLevel(param.getParentId()), param.getParentId()));
         after.setOperator(RequestHolder.getCurrentUser().getUsername());
         after.setOperateIp(IpUtil.getRemoteIp(RequestHolder.getCurrentRequest()));
         after.setOperateTime(new Date());
         updateWithChild(bofore, after);
     }
 
-    public void delete(int id){
-
+    public void delete(int aclModuleId){
+        SysAclModule aclModule = sysAclModuleMapper.selectByPrimaryKey(aclModuleId);
+        Preconditions.checkNotNull(aclModule, "待删除的权限模块不存在，无法删除");
+        if(sysAclModuleMapper.countByParentId(aclModule.getId()) > 0){
+            throw new ParamException("当前模块下面有子模块，无法删除");
+        }
+        if(sysAclMapper.countByAclModuleId(aclModule.getId()) > 0){
+            throw new ParamException("当前模块下面有用户，无法删除");
+        }
+        sysAclModuleMapper.deleteByPrimaryKey(aclModuleId);
     }
 
     private boolean checkExist(Integer parentId, String aclModuleName, Integer deptId){
         return sysAclModuleMapper.countByNameAndParentId(parentId, aclModuleName, deptId) > 0;
     }
 
+    private String getLevel(Integer aclModuleId){
+        SysAclModule aclModule = sysAclModuleMapper.selectByPrimaryKey(aclModuleId);
+        if(aclModule == null){
+            return null;
+        }
+        return aclModule.getLevel();
+    }
     /**
      * 重置层级的数值
      * */

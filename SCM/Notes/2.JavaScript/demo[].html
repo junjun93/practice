@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo[]</title>
+    <style>
+        .box{
+            width:200px;
+            height:100px;
+            background:#e80023;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+<script>
+    /*1.[]与弹窗*/
+    document.querySelector('.box')['style']['cssText'] = 'border:1px solid #999';
+    prompt('你觉得你很幸运吗？', '是的');
+    confirm('你想离开这儿吗？');
+
+    /*2.函数*/
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+一.安装供应链数据库
+1.上传文件夹SCM到远程服务器
+2.在SQLServer里面新建数据库SCM
+3.找到SCM/SysDesign文件夹下的SCM.sql，执行该SQL生成供应链数据库SCM的表结构
+
+二.部署供应链到IIS上
+1.安装IIS
+    Windows2008 R2 安装IIS7.5的设置方法 https://jingyan.baidu.com/album/5d6edee2e034f099eadeec3c.html?picindex=4
+    Windows7中IIS简单安装与配置(详细图解) https://www.cnblogs.com/manmanlu/p/5917169.html
+2.常见报错
+    （1）HTTP 错误 404.3 - Not Found
+        由于扩展配置问题而无法提供您请求的页面。如果该页面是脚本，请添加处理程序。如果应下载文件，请添加 MIME 映射。
+        控制面板-》打开或关闭windows功能-》Internet信息服务-》万维网服务-》应用程序开发功能，勾选上“.net扩展性”和“ASP.NET”，保存后，重启IIS服务器即可
+
+    （2）HTTP 错误 500.19 - Internal Server Error
+        无法访问请求的页面，因为该页的相关配置数据无效。
+        不能在此路径中使用此配置节。如果在父级别上锁定了该节，便会出现这种情况。锁定是默认设置的(overrideModeDefault="Deny")，或者是通过包含 overrideMode="Deny"
+        或旧有的 allowOverride="false" 的位置标记明确设置的。
+    命令行输入 %windir%\system32\inetsrv\appcmd unlock config -section:system.webServer/handlers
+             %windir%\system32\inetsrv\appcmd unlock config -section:system.webServer/modules
+
+    （3）sql server添加sa用户和密码
+            https://jingyan.baidu.com/article/6766299787b69c54d51b84bb.html
+        在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。
+            https://www.cnblogs.com/dzhf/p/7883577.html
+    win7搜索框-设置默认程序-谷歌浏览器

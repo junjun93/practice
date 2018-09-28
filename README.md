@@ -1,15 +1,28 @@
 # practice
+Java项目使用纯json配置文件，一会儿用xml、一会儿用properties，太不优雅了
+周三晚上，debug理解框架
+tree.json->dto继承、复制父类属性
+           遍历一个集合、将一个集合的数值放入另一个集合
+           权限模块转换，不太理解，回看transformAclModuleTree()
+ http://localhost:8080/sys/dept/tree.json
+ http://localhost:8080/sys/aclModule/tree.json
+           
 Navicat Premium快捷键：右移光标、左移光标、上下行移动、添加字段
 权限系统
     部门模块SysDept LevelUtil SysTreeService
     用户模块SysUser User Admin
     权限模块
         校验传入的参数、校验菜单是否重名
-        SysAclService补代码
+        SysAclModuleService 补代码
     权限点模块
+        SysAclService 返回光标的上一位置  roleTree()、SysCoreService回看
     角色模块
+        SysRoleService
     角色权限关系
     角色用户关系
+
+项目难点：
+    tree.json的递归算法
 1    
         ThreadLocal是每线程独有的，互不影响 Map->key一个进程  
         找到高并发这个知识点的位置
@@ -70,8 +83,27 @@ resources下
 2.failed to load resource: the server responded with a status of 404 () 
   GET http://localhost:8080/js/signin.jsp 404 ()
 
-学习建议：多看class文件、手写基础算法、写小项目、看基础类库源码
-找工作项目：慕课网项目+淘宝项目，结合起来写成自己的业务。看能不能整个开源项目，尽早自己实现一个全栈项目
+3.别忘了@ IsMobile@Target({TYPE_USE })（看视频）
+
+Spring AOP看完，开始上班看书+写笔记，下班写项目，周末一天全天写代码
+
+network 分布式集群时用户的Session如何处理：Session同步（性能问题）、分布式Session
+
+2-5 UserService2.5前   12min  redis SampleController
+2-6 Prefix KeyPrefix BasePrefix
+3-5.CodeMsg、GlobalExceptionHandler
+3-6.  11:58 GoodsController、LoginController("/do_login")
+3-7 UserArgumentResolver、WebConfig 
+    分布式session收尾，setResponse可以先不管
+    WebMvcConfigurerAdapter过时，替代的类是什么
+    
+4-1 GoodsService  snowflake自增算法  变量域用value来表示
+4-4 MiaoShaController OrderService 生成不存在的秒杀方法快捷键
+数据bug:miaosha_user没有salt字段，导致登录失败   config的两个类
+
+害怕：阿里云服务器，mysql命令行      
+学习建议：写项目、手写基础算法     
 未来需求：编辑器、收藏夹、百度网盘破解限速插件、Java爬虫、Python爬虫
+业务：银行、保险、证券类业务不做，优先教育、医疗类业务
 
 

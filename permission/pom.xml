@@ -4,9 +4,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.junjun</groupId>
   <artifactId>permission</artifactId>
-  <packaging>war</packaging>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>permission Maven Webapp</name>
+    <modules>
+        <module>demo</module>
+    </modules>
+    <name>permission Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
   <properties>

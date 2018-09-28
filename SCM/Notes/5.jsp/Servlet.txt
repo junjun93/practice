@@ -1,0 +1,202 @@
+本文档是根据《JSP&Servlt学习笔记》整理出来的
+
+
+每章会提问题，在回答问题的过程中讲解知识点；上传(3种)、会话管理(每种会话方式都讲解了应用场景、知其然知其所以然)，
+修改md制表符/Tab键程  Telnet 规范
+第1章 Web应用程序简介
+    1.1基础知识
+        1.关于HTML
+            服务端则是HTTP服务器，浏览器。当浏览器从服务器取得这份HTML文件之后，就可以按照其中的结构等信息进行画面的绘制
+        2.URL、URN与URI
+            URL：Uniform Resource Locator 
+            URN：Uniform Resource Name
+            URI：Uniform Resource Identifier
+            ftp 补全称
+            http
+            mailto
+            file  
+            URN:ISBN
+            URL与URN成为URI的子集
+        3.关于HTTP
+            (1)概述：
+                HTTP是一种通信协议，架构在TCP/IP之上应用层的一种协议。发送信件时会使用SMTP，传输文件时会使用FTP，下载信件时会使用POP3等，
+                而浏览器跟Web服务器之间使用HTTP
+            (2)特性：
+                基于Request/Response模型
+                Stateless通信协议
+                请求方法，如GET、POST、HEAD、PUT、DELETE等
+                HTTP所有的通信数据都是使用"字符"来进行协议交换 Telnet
+            (3)GET/POST区分
+                POST：过长的请求参数、敏感性的请求参数、非等幂操作  
+                GET：请求地址有浏览器书签功能、多次访问同一个地址可以从Cache取数据(可以用时间戳避免缓存)、等幂操作
+                等幂操作idempotent：请求的操作不改变服务器状态
+        4.有关URL编码
+            (1)保留字符
+                在请求参数上的保留字符，必须用%+16进制数值表示如%C0FFEE  
+                URI规范中的百分比编码，又名URI编码/URL编码
+                看源码p1、p22
+                HTTP规范：空白的编码为+
+                URI规范：空格符的编码为%20
+            (2)中文字符
+                URI规范的URL编码，针对的是UTF-8编码 ？？
+                UTF-8中，中文使用三个字节来表示
+        5.动态网页/静态网页
+            处理动态网页的技术有CGI、PHP、ASP以及Servlet/JSP
+            核心：区分客户端程序(JavaScript)、服务器端程序(JSP)
+    1.2 Servlet/JSP简介
+        1.Web容器定义
+            HTTP那些文字性的通信协议，如何变成Servlet/JSP中可用的Java对象，其实就是Web容器为你解析与转换
+            图1.12从请求到Servlet处理的线性关系.png
+            Servlet是执行在Web容器之中，Web容器是由服务器上的JVM启动。当一个请求到来时，Web容器会为每个请求分配一个线程
+            Web容器可能会使用一个Servlet实例来服务多个请求，就相当于多个线程共享存取同一个对象
+                如：EJB、Applet容器
+
+        2.Servlet与JSP的关系
+            JSP会被Web容器转译为Servlet的".java"源文件、编译为".class"文件，然后加载在容器中。最后提供服务的还是Servlet实例(Instance)
+            Servlet内置对象：pageContext p16
+            jsp转译类继承了HttpJspBase，而HttpJspBase继承自HttpServlet
+            解决bug的方式：查看一下JSP转译为Servlet后的源代码
+            MVC/Model2、Model架构 JCP JSR
+            Servlet3.0规范在JSR315，JSP2.2/EL2.2规范在JSR245
+
+        3.总结
+            Servlet/JSP为JavaEE中接收、转发、响应客户端请求的技术
+
+第2章 编写与设置Servlet
+    2.1 第一个Servlet
+        Tomcat会附带简单的HTTP服务器 图p26/p39
+
+    2.2 关于HttpServlet
+        1.关于Servlet
+            要编译Servlet.java，需要使用lib子目录中的servlet-api.jar
+            javac -d (对应的包层级)p31命令行
+            在最初定义Servlet时，并不限定它只能用于HTTP，没有将HTTP流程定义在GenericServlet之中
+            HttpServlet的service()方法，使用了Design Pattern中的Template Method；自定义Servlet看能不能重写service()方法
+
+        2.使用@WebServlet
+            使用标注/注解时，没有设置的属性通常会有默认值
+            程序启动后，没有创建所有的Servlet实例。容器会在首次请求需要某个Servlet服务时，才将对应的Servlet类
+                实例化、进行初始化操作，然后再初始化请求
+            loadOnStartup，有较小数字的Servlet先初始化
+
+        3.使用web.xml
+            部署描述文件-》DD文件
+            注解来做默认值，而web.xml用来做更改值。loadOnStartup相同的数字，按在web.xml中的顺序来初始Servlet
+            IntelliJ IDEA设置环境根目录(Context Root)
+            Servlet3.0开始支持注解，无需在web.xml中配置
+
+        4.文件组织与部署
+            IDE会有项目专属的文件组织，那并不是真正上传至Web容器之后该有的架构
+            在WEB-INF中的文件或目录，对外界来说是封闭的，访问它必须通过Servlet的请求转发(forward)
+            WAR文件是使用zip压缩格式封装的 how to deploy tomcat8
+
+        2.3进阶部署设置
+            p39-p45补全
+
+第3章 请求与响应 p72
+    3.1 从容器到HttpServlet
+        1.Web容器干什么了
+            创建Servlet实例，并完成Servlet名称注册及URL模式的对应 p48、p49回看
+
+        2.doXXX()方法
+            为什么在继承HttpServlet之后，必须实现对应的doXXX()方法来处理请求
+            一个Servlet，没有重新定义doGet()、doPost()会怎么样 Tomcat source code
+
+    3.2 HttpServletRequest
+        1.处理请求参数与标头
+            getParameter()
+            getParameterValues()
+            getHeader()
+            getHeaders()
+            getHeaderNames()
+
+        2.请求参数编码处理 p58
+            String name = URLEncoder.encode("林","UTF-8");
+            String text = URLDecoder.decode("%E6%9E%97","UTF-8");
+
+            补全笔记
+
+            Filter设置编码集，如果在BIG5网页中输入了非BIG5能容纳的字符，那么Servlet要如何处理呢？
+            文件上传三个案例
+            %s
+
+    3.3 HttpServletResponse
+        1.响应标头、缓冲区
+            (1)setHeader()、addHeader() setIntHeader()、addDateHeader()     
+                在确认(Commit)之后设置的标头，会被容器忽略
+1           
+            (2)getBufferSize()
+                 setBufferSize()
+                 isCommitted()
+                 reset()
+                 resetBuffer()
+                 flushBuffer()
+             setBufferSize()必须在调用HttpServletResponse的getWriter()或getOutputStream()方法之前调用；
+             缓冲区未满之前，响应内容不会传至客户端，isCommited()看看是否响应已确认
+1             
+             (3)响应对象被关闭的时机点
+                Servlet的service()方法已结束
+                调用了sendRedirect()方法
+                调用了sendError()方法
+                调用了AsyncContext的complete()方法
+1
+        2.使用getWriter()输出字符
+            HttpServletResponse使用的字符编码默认不是UTF-8，是ISO-8859-1
+            (1)设置Locale
+                resp.setLocale(Locale.TAIWAN)
+                resp.setLocale(new Locale("zh", "TW"))
+
+            (2)setCharacterEncoding或setContentType
+                request.setCharacterEncoding("UTF-8")
+                // 编码设置与内容类型通常都要设置
+                response.setContentType("text/html; charset=UTF-8")
+                web.xml配置后，使用ServletContext的getMimeType()方法
+
+        3.使用getOutputStream()输出二进制字符
+            路径-》相对于Web应用程序环境根目录
+
+        4.使用sendRedirect()、sendError()
+             RequestDispatcher.forward()会将请求转发至指定的URL，这个动作是在Web容器中进行的。浏览器不知道、地址栏不变化
+             转发是在同一个请求周期，setAttribute()对象共享
+             sendRedirect()、sendError()必须在响应未确认输出前执行
+
+第4章 会话管理
+    4.1 会话管理基本原理
+        ①如购物车，用户可能在多个购物车网页之间采购商品-》会话管理
+        Hidden Field、Cookie与URL Rewriting
+        1.使用隐藏域
+            网络问卷，将上一页的结果发送至服务器，由服务器将上一页结果以隐藏域的方式再响应给浏览器
+            在关掉网页后，显然会遗失先前请求的信息；在查看源代码时，就可以看到隐藏域的值，不适合用于隐蔽性较高的数据
+        2.使用Cookie
+            将下一次请求时服务器应知道的信息，先响应给浏览器，由浏览器在之后的请求再一并发送给应用程序
+            浏览器会使用cookie标头自动发送给服务器
+            ②如购物网站会使用Cookie来记录用户的浏览时间，浏览历史记录
+            Cookie是通过设置set-cookie标头，必须在实际响应浏览器之前；默认关闭浏览器之后Cookie就失效
+            ③用户自动登录
+            setHttpOnly() //不会被客户端脚本读取
+            isHttpOnly()
+        3.使用URL重写
+            URL重写是用在一些简单的客户端信息保留
+
+    4.2 HttpSession会话管理
+        用户关掉浏览器接收Cookie的功能HttpSession也可以改用URL重写继续其会话管理功能
+        1.使用HttpSession，线程不安全
+            request.getSession(false) //不自动创建对象
+            存放属性对象：HttpServletRequest、HttpSession、ServletContext
+            默认在关闭浏览器前，取得HttpSession都是相同的实例，invalidate()注销
+            用来识别用户是否登录的属性，Login Token
+        2.原理
+            SessionID默认会使用Cookie存放在浏览器中，取得各浏览器个别的会话数据
+            设定为属性的对象是存储在服务器端，而SessionID存放在浏览器端，默认关闭浏览器SessionID失效；
+            HttpSession这时还没有失效，只是对应的SessionID失效没法获取到。HttpSession注销、超时失效
+
+            setMaxInactiveInterval() //秒
+            web.xml //分钟
+
+        p91源码回看
+        p82/p95没看 p106  p122
+        
+        导入导出Excel(自己写个解析类)、文件上传
+
+修改web.xml，让项目跑通
+        

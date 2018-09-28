@@ -18,40 +18,40 @@
         </button>
 
         <div class="navbar-header pull-left">
-            <a href="/admin/page.do" class="navbar-brand">
+            <com.junjun.demo.a href="/admin/page.do" class="navbar-brand">
                 <small>
                     <i class="fa fa-leaf"></i>
                     管理员控制台
                 </small>
-            </a>
+            </com.junjun.demo.a>
         </div>
         <div class="navbar-buttons navbar-header pull-right" role="navigation">
             <ul class="nav ace-nav">
                 <li class="light-blue dropdown-modal">
-                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                    <com.junjun.demo.a data-toggle="dropdown" href="#" class="dropdown-toggle">
                         <span class="user-info">
                             <small>欢迎,</small>
                             Admin
                         </span>
                         <i class="ace-icon fa fa-caret-down"></i>
-                    </a>
+                    </com.junjun.demo.a>
                     <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
                         <li>
-                            <a href="#"> <i class="ace-icon fa fa-cog"></i>
+                            <com.junjun.demo.a href="#"> <i class="ace-icon fa fa-cog"></i>
                                 设置
-                            </a>
+                            </com.junjun.demo.a>
                         </li>
                         <li>
-                            <a href="profile.html"> <i class="ace-icon fa fa-user"></i>
+                            <com.junjun.demo.a href="profile.html"> <i class="ace-icon fa fa-user"></i>
                                 个人资料
-                            </a>
+                            </com.junjun.demo.a>
                         </li>
 
                         <li class="divider"></li>
                         <li>
-                            <a href="/logout.page"> <i class="ace-icon fa fa-power-off"></i>
+                            <com.junjun.demo.a href="/logout.page"> <i class="ace-icon fa fa-power-off"></i>
                                 注销
-                            </a>
+                            </com.junjun.demo.a>
                         </li>
                     </ul>
                 </li>
@@ -81,68 +81,68 @@
 
         <ul class="nav nav-list">
             <li class="active">
-                <a class="popstyle" href="/sys/user/page.do" target="_blank">
+                <com.junjun.demo.a class="popstyle" href="/sys/user/page.do" target="_blank">
                     <i class="menu-icon fa fa-tachometer"></i>
                     <span class="menu-text"> 首页 </span>
-                </a>
+                </com.junjun.demo.a>
                 <b class="arrow"></b>
             </li>
             <li class="">
-                <a href="#" class="dropdown-toggle">
+                <com.junjun.demo.a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-desktop"></i>
                     <span class="menu-text"> 权限管理 </span>
                     <b class="arrow fa fa-angle-down"></b>
-                </a>
+                </com.junjun.demo.a>
 
                 <b class="arrow"></b>
 
                 <ul class="submenu">
                     <li class="">
-                        <a class="popstyle" href="/sys/dept/dept.page" target="_blank">
+                        <com.junjun.demo.a class="popstyle" href="/sys/dept/dept.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
                             用户管理
-                        </a>
+                        </com.junjun.demo.a>
                         <b class="arrow"></b>
                     </li>
                     <li class="">
-                        <a class="popstyle" href="/sys/role/role.page" target="_blank">
+                        <com.junjun.demo.a class="popstyle" href="/sys/role/role.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
                             角色管理
-                        </a>
+                        </com.junjun.demo.a>
                         <b class="arrow"></b>
                     </li>
                     <li class="">
-                        <a class="popstyle" href="/sys/aclModule/acl.page" target="_blank">
+                        <com.junjun.demo.a class="popstyle" href="/sys/aclModule/acl.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
                             权限管理
-                        </a>
+                        </com.junjun.demo.a>
                         <b class="arrow"></b>
                     </li>
                     <li class="">
-                        <a class="popstyle" href="/sys/log/log.page" target="_blank">
+                        <com.junjun.demo.a class="popstyle" href="/sys/log/log.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
                             权限更新记录
-                        </a>
+                        </com.junjun.demo.a>
                         <b class="arrow"></b>
                     </li>
                 </ul>
             </li>
 
             <li class="">
-                <a href="#" class="dropdown-toggle">
+                <com.junjun.demo.a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-desktop"></i>
                     <span class="menu-text"> 系统管理 </span>
                     <b class="arrow fa fa-angle-down"></b>
-                </a>
+                </com.junjun.demo.a>
 
                 <b class="arrow"></b>
 
                 <ul class="submenu">
                     <li class="">
-                        <a class="popstyle" href="/config/config.page" target="_blank">
+                        <com.junjun.demo.a class="popstyle" href="/config/config.page" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
                             全局配置管理
-                        </a>
+                        </com.junjun.demo.a>
                         <b class="arrow"></b>
                     </li>
                 </ul>
@@ -168,9 +168,9 @@
     </div>
     <!-- /.main-content -->
 
-    <a href="index.html#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse display">
+    <com.junjun.demo.a href="index.html#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse display">
         <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
-    </a>
+    </com.junjun.demo.a>
 
 </div>
 <!-- /.main-container -->
@@ -224,14 +224,14 @@
     $(document).ready(function () {
         $(".popstyle").removeAttr("target");
         $(".popstyle").each(function () {
-            var $this = $(this)
+            var $this = $(this);
             tmp = $this.attr("href");
             $this.attr("data", tmp);
             $this.attr("href", "javascript:void(0)");
-        })
+        });
 
         $(".popstyle").click(function () {
-            var $this = $(this)
+            var $this = $(this);
             $("iframe").attr(
                     'src',
                     $this.attr("data")
@@ -239,7 +239,7 @@
         });
 
         $(".direct").click(function () {
-            var $this = $(this)
+            var $this = $(this);
             $("iframe").attr(
                     'src',
                     $this.attr("data-value")

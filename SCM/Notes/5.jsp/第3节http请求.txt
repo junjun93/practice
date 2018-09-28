@@ -1,0 +1,86 @@
+第3节 HTTP请求
+	1): 请求信息
+		GET /day03/hello HTTP/1.1     (请求行)
+		Host: localhost:8080		  (请求头,可以有多个请求头,以名值对的形式)
+		User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+		Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+		Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+		Accept-Encoding: gzip, deflate
+		Connection: keep-alive
+		Upgrade-Insecure-Requests: 1
+									   (这里会有一个空行)
+		name=123&password=456          (实体内容,这里可以没有)
+
+	2): 请求行  GET /day03/hello HTTP/1.1 (请求方式 请求资源 协议版本)
+		请求的方式
+			请求方式有: GET,POST,HEAD,PUT,DELETE,CONNECT等
+			常用的方式: GET,POST
+			GET请求的特点
+				1): (http://localhost:8080/day03/demo1?name=123&password=456)
+					在地址栏后边会跟上发送参数信息,参数前面跟着一个?并且多个参数间以&来连接
+				2): 如果直接访问,浏览器默认的请求方式也是GET请求
+				3): GET请求进入的是servlet的doGet方法
+				4): GET请求不适合提交敏感的数据
+				5): GET请求提交的数据大小有限制的 (大概1KB左右)
+			POST请求的特点
+				1): POST请求的参数不会跟在url的后边,而是存在请求的实体内容中(name=123&password=456)
+				2): POST请求进入的是servlet的doPost方法
+				3): POST请求相对于GET请求更安全些
+				4): POST请求提交的数据大小没有限制
+		请求资源
+			统一资源标志符(URI)
+				/day03/hello
+				可以标记任何的资源 如本地资源,网络资源资源等
+			统一资源定位符(URL)
+				http://localhost:8080/day03/demo1
+				URL属于URI的一个特例,用来定位网络资源
+				如果URL后边没有跟URI的话,则需要使用/来表示 ,(如:http://localhost:8080/),通常浏览器会默认加上
+		协议版本
+			HTTP/1.1 (意思是HTTP协议的版本是1.1)
+			HTTP协议的版本有1.1和1.0, 两者区别是1.0版本只能发送一次请求然后会断开与服务器的链接
+								  1.1版本可以发送多次请求而不会断开链接
+			ps: 现在基本上都使用1.1版本的HTTP协议
+	3): 请求头
+		Header	           	示例                                                                                                                     解释
+		Accept			    Accept: text/plain, text/html					指定浏览器能够接收的内容类型
+		Accept-Charset	    Accept-Charset: iso-8859-5						浏览器可以接受的字符编码符
+		Accept-Encoding	    Accept-Encoding: compress, gzip					指定浏览器可以支持的压缩类型
+		Accept-Language	    Accept-Language: en,zh							指定浏览器可以接受的语言
+		Connection		    Connection: close								表示是否需要持久连接close或keep-alive
+		Cookie			    Cookie: $Version=1; Skin=new;					浏览器保存的Cookie
+		Date			    Date: Tue, 15 Nov 2010 08:12:31 GMT				请求的服务器的日期
+		Host			    Host: www.zcmhi.com								指定请求的服务器的域名和端口号
+		If-Modified-Since 	If-Modified-Since: Sat, 29 Oct 2010 19:43:31 GMT浏览器最后缓存时间
+		Referer			    Referer: http://www.zcmhi.com/archives/71.html  当前的请求来自哪里
+		User-Agent		    User-Agent: Mozilla/5.0 (Linux; X11)			浏览器类型
+	4): 实体内容
+		GET请求的请求参数信息会跟在URL的后边
+		POST请求的请求参数信息会放在实体内容中
+
+	5): 服务器怎么获取 浏览器发送过来的数据
+		tomcat会先拿到浏览器发送的数据,然后对数据解析封装成一个HttpServletRequest对象
+		在调用doGet或者doPost方法时把HttpServletRequest对象传入进去
+
+	6): HttpServletRequest实现类对象的使用
+		核心相关方法:
+			请求行相关方法
+				getMethod()     返回请求的HTTP方法的名称  如get和post
+				getRequestURI() 获取请求的URI
+				getRequestURL() 获取请求的URL
+				getProtocol()   获取http版本信息
+			请求头相关方法
+				getHeader(String name)  获取指定请求头的信息
+				getHeaderNames()        获取所以请求头的名称
+			实体内容相关方法
+				getParameter(String name) 获取指定参数的值
+				getParameterNames()       获取所有的参数名
+				getParameterValues(String name) 获取指定参数的值，返回一个数组 (可用于checkbox这样的多选项)
+				getParameterMap()         返回一个请求参数的map
+			其它....(边后讲)
+	7): 解决乱码问题(后台获取到前台参数值为乱码)--课后补的笔记
+		com.junjun.demo.a): 后台拿到post请求的参数时,会出现中文乱码 可以通过设置setCharacterEncoding()方法解决post请求参数乱码,需要写在获取之前
+		b): get请求时,可以在server.xml配置文件里设置useBodyEncodingForURI="true"可以解决get请乱码问题 <Connector
+			connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"
+	 		useBodyEncodingForURI="true"/>
+	 	c): 通用的解决方法,先对获取到的参数进行iso-8859-1编码,然后再解码成utf-8
+	 		new String(参数值.getBytes("iso-8859-1"),"utf-8")

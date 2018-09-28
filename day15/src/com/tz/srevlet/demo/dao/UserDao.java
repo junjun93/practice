@@ -7,13 +7,13 @@ import com.tz.srevlet.demo.entity.User;
 public interface UserDao {
 	
 	/*
-	 * ÅĞ¶ÏÊÇ·ñ´æÔÚ¸ÃÓÃ»§
+	 * ï¿½Ğ¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½Ã»ï¿½
 	 */
-	public boolean login(User user);
+    boolean login(User user);
 	
 	/*
-	 * »ñÈ¡ÓÃ»§ĞÅÏ¢
+	 * ï¿½ï¿½È¡ï¿½Ã»ï¿½ï¿½ï¿½Ï¢
 	 */
-	public List<User> getUserList();
+    List<User> getUserList();
 	
 }

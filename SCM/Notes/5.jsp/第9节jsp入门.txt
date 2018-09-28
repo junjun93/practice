@@ -1,0 +1,79 @@
+jsp第9节-jsp初识
+	1: JSP
+		1): JSP简介
+			JSP是一种建立在Servlet规范提供的功能上的动态网页技术,即它可以在页面中(html)中嵌入java代码或者jsp标签
+			JSP页面被第一次访问时,则会翻译成一个java文件(servlet),所以本质上它也是一个servlet
+		2): JSP的运行流程
+			http://localhost:8080/day09/jsp_1/hello.jsp
+			com.junjun.demo.a): 第一次访问hello.jsp时,tomcat会先找到这个jsp文件,并且把它翻译成一个java文件(hello_jsp.java)
+			b): 翻译成的java文件即就是一个servlet,然后把这个java文件编译成字节码文件(如: hello_jsp.class)
+			c): tomcat执行字节码文件创建对象
+			d): 调用相应方法给浏览器响应信息	
+			ps: 以后的第n次访问时,则只会执行第4步;
+				如果有修改jsp文件或者删除jsp的星临时文件时,则会重新翻译与编译
+		3): 通过查看翻译后java文件,发现里边的类(hello_jsp)继承了(org.apache.jasper.runtime.HttpJspBase)
+			而HttpJspBase则是又是继承了HttpServlet类, 从此也可以看出jsp本质还是一个servlet
+
+	2: JSP脚本
+		语法: <%java代码   %>
+		作用: 可以执行java代码,但注意不要在里边定义方法
+		ps: 脚本中java代码,在翻译成java文件后,会把里边写的java代码放到_jspService方法中执行
+	3: JSP表达式
+		语法: <%=表达式或者变量 %>  如: <%=2+9 %>
+		作用: 可以直接向浏览器输出表达式或者变量的结果 
+		ps: JSP表达式在翻译后生成的代码,就是out.print(表达式或者变量);  会放到_jspService方法中执行
+			且要注意表达式后边不需要有分号
+	4: JSP声明
+		语法: <%!java方法或者变量  %>
+		作用: 定义成员变量和成员方法
+		ps: 在翻译后的java文件,所以生成的变量和方法会变成成员变量和成员方法
+	5: JSP注释
+		语法: <%-- 注释的内容 --%>
+		
+	6: HTML注释
+		语法: <!-- 注释的内容 -->
+		ps: 会被翻译，但不会显示在页面上，通过Chrome右键检查可以查看到
+	
+
+jsp第9节整理
+	一.弱项
+		Properties properties = new Properties();
+		InputStream inStream = JdbcUtil.class.getResourceAsStream("/db.properties");
+		try {
+			properties.load(inStream);  // 文件变成流后，用属性（properties）加载
+			driver = properties.getProperty("driver");
+
+	二.JdbcUtil类
+	1.初始化
+		设置4个静态常量
+		解析db.properties配置文件
+		通过类名加载驱动（正常是用控制台输入加载的）
+	2.获取连接
+	3.关闭连接
+
+	三.UserImpl类
+	1.建立返回值对象
+	2.取得数据库连接
+	3.写sql语句
+	4.预编译sql语句
+	5.填充占位符
+	6.执行sql语句，并接收返回的数据
+	7.取出数据（指针）
+	8.返回对象（第1步）
+	9.关闭数据库连接（资源）
+
+	四.test类
+
+	五.Servlet类
+	1.设置字符编码集、页面输入流
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		PrintWriter out = response.getWriter();
+	2.接收前端页面传来的值
+	3.调用方法操作数据库
+	4.页面跳转、处理结果值传到页面
+
+	jsp第10节
+	utf-8 一个中文占三个字节
+	一个浏览器，一个session
+	Pege＞request ＞session＞application

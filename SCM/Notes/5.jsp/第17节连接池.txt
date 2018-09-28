@@ -1,0 +1,101 @@
+1: 连接池(DBCP与C3p0)
+	1):之前的连接操作
+		拿到一个连接--->执行sql进行数据操作--->关闭连接
+		ps: 用完连接就关闭了很浪费,毕竟拿到一个连接是需要时间的，也不能对连接数进行控制。
+		    如果连接数过多的话,可能会有内存泄漏、服务器崩溃
+
+	2):连接池
+		连接池则在创建一个数据库连接的缓冲池,在这个缓冲池创建时则可以在里边初始化一定的连接数
+		如需要获取连接时,则只需要到这个缓冲池中获取就行。且用完后并不会把连接销毁,而是放回到缓冲池中
+		我们也可以设置同时的最大连接数等等,可以很好的避免之前连接操作的缺点
+
+	3):DataSource接口
+		对于数据库连接操作,有给我们提供了一个DataSource接口让我们来实现。
+		而这个接口一般会由一些开源组织或者服务器来实现，常用的有DBCP连接池与C3P0连接池。
+		DataSource一般也叫数据源,也习惯把DataSource叫做连接池
+
+
+
+2: DBCP连接池
+	1):导入架包commons-dbcp.jar、commons-pool.jar
+
+	2):数据源对象
+		数据源对象与数据库连接对象,它是产生(获取)数据库连接对象的工厂
+
+    3):使用
+        ①properties配置文件
+            Properties properties = new Properties();
+            //不写getClassLoader(), 没法连接数据库
+            InputStream is = DbcpTest.class.getClassLoader().getResourceAsStream("Dbcp.properties");
+            properties.load(is);
+            DataSource dataSource = BasicDataSourceFactory.createDataSource(properties);
+            Connection conn = dataSource.getConnection();
+            BasicDataSource bds = (BasicDataSource) dataSource;
+
+        Dbcp.properties
+            driverClassName=com.mysql.jdbc.Driver
+            url=jdbc:mysql://localhost:3306/test?useSSL=true
+            username=root
+            password=123
+
+        ②直接设置连接属性
+            //获取数据源
+            BasicDataSource bds = new BasicDataSource();
+
+            //设置连接基本属性
+            bds.setDriverClassName("com.mysql.jdbc.Driver");
+            bds.setUrl("jdbc:mysql://localhost:3306/test?useSSL=true");
+            bds.setUsername("root");
+            bds.setPassword("123");
+
+            //设置连接池中同时的最大连接数
+            bds.setMaxActive(4);
+            //设置连接池启动时创建的初始化连接数
+            bds.setInitialSize(3);
+            //设置连接池中最长的等待时间 ms
+            bds.setMaxWait(6*1000);
+            //设置连接池中最小的空闲连接
+            bds.setMinIdle(3);
+            Connection conn = bds.getConnection();
+
+3: C3P0连接池
+	1):导入架包c3p0、change-commons
+
+	2):使用
+        ①xml配置文件
+            private static ComboPooledDataSource pool = null;
+            static{
+                pool = new ComboPooledDataSource("intergalactoApp");
+            }
+            Connection conn = pool.getConnection();
+
+       c3p0-config.xml
+           <?xml version="1.0" encoding="UTF-8"?>
+           <c3p0-config>
+               <named-config name="intergalactoApp">
+                   <!--设置连接基本属性-->
+                   <property name="driverClass">com.mysql.jdbc.Driver</property>
+                   <property name="jdbcUrl">jdbc:mysql://localhost:3306/test?useSSL=true</property>
+                   <property name="user">root</property>
+                   <property name="password">123</property>
+
+                   <!--最大连接数-->
+                   <property name="maxPoolSize">10</property>
+                   <!--启动时创建的初始化连接数量-->
+                   <property name="initialPoolSize">3</property>
+                   <!--最长的等待时间 ms-->
+                   <property name="checkoutTimeout">5000</property>
+                   <!--单个连接能够使用的Statement对象个数-->
+                   <property name="maxStatementsPerConnection">5</property>
+               </named-config>
+           </c3p0-config>
+
+       ②直接设置连接属性
+            ComboPooledDataSource pool = new ComboPooledDataSource();
+            pool.setDriverClass("com.mysql.jdbc.Driver");
+            pool.setJdbcUrl("jdbc:mysql://localhost:3306/test?useSSL=true");
+            pool.setUser("root");
+            pool.setPassword("123");
+            Connection conn = pool.getConnection();
+
+	错误汇总：named-config少d、maxStatementsPerConnection少s

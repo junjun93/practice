@@ -1,0 +1,178 @@
+			SCM表结构
+1. 零单价进货单:
+包含”读取零单价进货单”执行程序,执行后先插入表SCMTG,SCMTF存档备份
+维护零单价进货单,也是再这两个表格操作
+主表SCMTG
+TG001       char(20)        主键/现行年月
+TG002       char(20)        供应商编号
+TG003	char(1)         审核码
+TG004	char(60)        供应商名称
+TG005       VARchar(255)    备注
+子表SCMTF
+TF001       char(20)          主键/现行年月
+TF002	char(20)          主键/品号
+TF003	char(60)          品名
+TF004	char(60)		     规格
+TF005	numeric(16, 6)     单价
+TF006	char(1)            审核
+TF007	varchar(255)       备注
+TF008	char(10)           单位
+TF009	char(10)           预留字段
+TF010        INT              单价更新次数
+   TF011	char(20)          供应商
+2. 录入扣款单
+主表SCMPC
+PC001       char(20)          主键/单号
+PC002       char(10)          单据日期
+PC003       char(1)           审核
+PC004       varchar(255)       备  注
+   PC005	char(10)          供应商编号
+   PC006       varchar(60)        供应商名称
+   PC007       char(20)           部门编号
+   PC008       char(20)           部门名称
+   PC009       char(1)            生成发票标识
+   PC010	char(10)           录入这账号
+   PC011       char(20)           易飞发票单号
+   PC012       char(20)           审核流程编号
+   PC013       char(1)            一级审核标识
+   PC014       char(1)            二级审核标识
+   PC015/PC016 char(20)           预留字段
+   PC018       char(10)           一级审核人
+   PC019       char(10)           二级审核人
+   PC020       numeric(16, 6)      单身总金额
+
+
+子表SCMPD
+   PD001	char(20)           主键/单号
+   PD002       char(20)           日期
+   PD003       char(10)           扣款项目代号
+   PD004       char(20)           扣款项目名称
+   PD005       char(20)           科目编号
+   PD006       char(60)           科目名称
+   PD007       numeric(16, 2)      单价
+   PD008       numeric(16, 2)      数量
+   PD009       numeric(16, 2)      金额
+   PD010       varchar(255)        备注
+   PD011        char(1)            审核
+   PD012        int                单身自动标识
+
+3. 锁定周计划
+主表SCMAC以后改成SCMTC
+TC001         char(20)           主键/周计划号
+TC002         char(20)           单据日期
+TC003         varchar(255)        备注
+TC004         char(1)             审核
+
+
+子表SCMAD以后改成SCMTD
+   TD001         char(20)            主键/周计划号
+   TD002         char(20)            主键/工单别
+   TD003         char(20)            主键/工单号
+   TD004         char(20)            单位
+   TD005         char(20)            品号
+   TD006         char(60)            品名
+   TD007         char(60)            规格
+   TD008          decimal(18, 2)      数量
+   TD009          char(10)           原预计开工
+   TD010          char(10)           原预计完工
+   TD011          char(1)            审核
+   TD012          varchar(255)       备注
+   TD013           char(30)          订单号
+   TD014           char(20)          周计划开工
+   TD015           char(20)          周计划完工日
+4. 供应商送货单(取易飞里”录入到货单”主子表字段)
+主表PURCC
+CC001           char(4)           单别
+CC002           char(11)          单号
+    CC003           char(10)	到货日期
+    CC004	char(6)          工厂
+    CC005	char(10)      供应商
+    CC006	char(20)      ERP单号
+    CC009	char(1)       审核码
+    CC010	char(8)       送货日期
+    CC011	varchar(255)   备注
+    CC012	char(72)      供应商名称
+    PURCD 子表
+    CD001	char(4)         单别
+    CD002	char(11)        单号
+    CD003	numeric(10, 0)   序号
+    CD004	char(20)        品号
+    CD005	varchar(60)     品名
+    CD006	varchar(60)     规格
+    CD007	char(4)         单位
+    CD008	numeric(16, 6)   送货数量
+    CD010	char(4)         采购单别
+    CD011	char(11)        采购单号
+    CD012	char(4)         采购序号
+    CD013	numeric(16, 0)   采购数量
+    CD014	numeric(16, 0)   采购赠品
+    CD016	char(10)        仓库
+    CD034	char(1)         审核吗
+    CD035	varchar(2550       备注
+    CD041	numeric(16, 6)      单价
+    CD042	numeric(16, 6)      金额
+    UDF02	varchar(255)       参考单别
+    UDF03	varchar(255)       参考单号
+    UDF51	numeric(16, 6)      已交货
+    UDF52	numeric(16, 6)      已交未入库
+5. 工作联系单
+  单表SCMLA
+    LA001	char(20)            主键/单号
+    LA002	char(10)             发起部门
+    LA003	char(20)             发起部门名称
+    LA004	char(10)             发文日期
+    LA005	char(10)              发起人
+    LA006	char(20)              发起人名
+    LA007	char(10)              接受部门
+    LA008	char(20)              接受部门名称
+    LA009	char(10)              接受人
+    LA010	char(20)               接受人名
+    LA011	char(10)             接受时间
+    LA012	varchar(1000)          发起问题
+    LA013	varchar(1000)           处理意见
+    LA014	char(10)               送达
+    LA015	char(20)               性质
+    LA016	char(10)               完结
+    LA017	char(80)               抄送部门
+    LA018            char(20)              作业标题
+    LA019	varchar(60)             主题
+    LA020	varchar(1000)           备注
+    LA021	char(10)               要求时间
+    LA022	char(10)               预计时间
+    LA023	char(60)               处理
+
+SELECT SUBSTRING(TA009,1,4)+'-'+SUBSTRING(TA009,5,2)+'-'+SUBSTRING(TA009,7,2) AS TA009,
+	SUBSTRING(TD012,1,4)+'-'+SUBSTRING(TD012,5,2)+'-'+SUBSTRING(TD012,7,2) AS TD012,
+	TC004,TC021,
+	TD001+'-'+TD002+'-'+TD003 AS DOCNO,
+	TD004,MB002,MB003,TD009,
+	CAST(TD008 AS INT) AS TD008,
+	CAST(TD015 AS INT) AS TD015,
+	CAST(TD008-TD015-CAST(ISNULL(SUMTH015,'0') AS INT) AS INT) AS SCMQUANTITY,TD013+'-'+TD021 AS CANKAONO,
+	SUBSTRING(PURTD.UDF01,1,4)+'-'+SUBSTRING(PURTD.UDF01,5,2)+'-'+SUBSTRING(PURTD.UDF01,7,2) AS UDF01,
+	MA002,
+	SUBSTRING(TC024,1,4)+'-'+SUBSTRING(TC024,5,2)+'-'+SUBSTRING(TC024,7,2) AS TC024,
+	CAST(ISNULL(SUMTH015,'0') AS INT) AS CASTSUMTH015,
+	PURTD.UDF04 AS UDF04
+FROM DEMO..PURTD AS PURTD INNER JOIN DEMO..INVMB ON MB001=TD004
+	INNER JOIN DEMO..PURTC AS PURTC ON TC001=TD001 AND TC002=TD002
+	LEFT JOIN DEMO..PURMA ON MA001=TC004
+	LEFT JOIN (SELECT TH011,TH012,TH013,SUM(TH007) AS SUMTH015 FROM DEMO..PURTH WHERE TH030='N' GROUP BY TH011,TH012,TH013) AS PURTHDATE
+	ON PURTHDATE.TH011=PURTD.TD001 AND PURTHDATE.TH012=PURTD.TD002 AND PURTHDATE.TH013=PURTD.TD003
+	LEFT JOIN DEMO..MOCTA ON TD013=TA001 AND TD021=TA002
+
+UNION
+
+SELECT SUBSTRING(TA010,1,4)+'-'+SUBSTRING(TA010,5,2)+'-'+SUBSTRING(TA010,7,2) AS TA010,
+	SUBSTRING(TA009,1,4)+'-'+SUBSTRING(TA009,5,2)+'-'+SUBSTRING(TA009,7,2) AS TA009,
+	SUBSTRING(TA003,1,4)+'-'+SUBSTRING(TA003,5,2)+'-'+SUBSTRING(TA003,7,2) AS TA003,
+	TA032,MA002,TA006,MB002,MB003,TA015,TA017,TA007,TA001,TA002
+FROM DEMO..MOCTA AS MOCTA
+	INNER JOIN DEMO..INVMB ON MB001 = TA006
+	LEFT JOIN DEMO..PURMA ON MA001=TA032
+
+德世
+    审批是这样的  2 建立扣款单 -选审批流程（（com.junjun.demo.a、生产扣款 b、品质扣款，c、代垫费用),2、解析流程a、b为采购审核，c为财务直接批准 ，不在审核，3,解析流程，a流程为生产部人员批准，表为品质部人员批准，c转财务批准（不审核）
+    显示按照 流程和部门来对照，你看一下，是否可以改程序过程
+
+

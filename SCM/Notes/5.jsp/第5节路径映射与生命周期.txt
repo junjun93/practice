@@ -1,0 +1,95 @@
+1: Servlet路径映射
+	1): 配置信息
+			<!-- servlet配置 -->
+			<servlet>
+				<!-- servlet名称,这个名称可自定义 -->
+				<servlet-name>HelloServlet</servlet-name>
+				<!-- servlet类的全类名,即包名+类名 -->
+				<servlet-class>com.tz.bean.LifeServlet</servlet-class>
+			</servlet>
+
+			<!-- servlet的映射 -->
+			<servlet-mapping>
+				<!-- servlet名称,但是需要和上面一样 -->
+				<servlet-name>HelloServlet</servlet-name>
+				<!-- servlet的访问名称,浏览器url中的名称 -->
+				<url-pattern>/hello</url-pattern>
+			</servlet-mapping>
+	2): 解析URL (http://localhost:8080/day05/hello)
+		com.junjun.demo.a): http://    协议
+		b): localhost  域名(找到相应的ip)
+		c): 8080       tomcat的端口号(找到tomcat)
+		d): /day05	        在tomcat下webapps目录中找到day05
+		e): /hello     要访问的那个servlet(访问名称)
+					   tomcat先跑到/day05下的web.xml(启动时加载好)里查找是否有与/hello相匹配的<url-pattern>
+					        如果匹配到,则再通过<servlet-name>里的内容去匹配是否有与之同名的servlet匹配
+					        如果有,则就获取到里边配置的那个<servlet-class>的内容(即这个servlet的全类名)
+					        然后tomcat利用反射技术通过全类名创建servlet对象,再通过这个对象调用里边的方法
+	3): 调用HttpServlet中方法的过程
+		com.junjun.demo.a): 首先调用公共的(public) service方法
+		b): 在public service方法中,会先把ServletRequest与ServletResponse对象强转成HttpServletRequest
+			与HttpServletResponse类型,然后再调用受保护的(protected) service方法，并且把强转后两个对象传入进出
+		c): 在protected service方法中,首先执行getMethod()方法，获取请求的类型(如：post) 然后根据获取到请求类型
+			调用相应的do方法(如: doPost())
+	4): Servlet映射路径
+		com.junjun.demo.a): 一个servlet可以对应多个<url-pattern>
+			<servlet-mapping>
+				<servlet-name>Demo1</servlet-name>
+				<url-pattern>/demo1</url-pattern>
+			</servlet-mapping>
+			<servlet-mapping>
+				<servlet-name>Demo1</servlet-name>
+				<url-pattern>/aaaa</url-pattern>
+			</servlet-mapping>
+		b): 匹配模式
+			精确匹配
+				如: localhost:8080/day05/demo1    只能通过/demo1来访问,
+			模糊匹配
+				/*模式
+				如: /*        http://localhost:8080/day05/任意路径
+				   /demo1/*	 http://localhost:8080/day05/demo1/任意路径
+				*.后缀名模式
+					*.do     http://localhost:8080/day05/任意路径.do
+					*.action
+					*.html等等
+			ps: /demo1/*.do  报错(<url-pattern>里边要么/开头,要么*开头)
+				*.do/demo1        报错(这两种模式不能同时使用)
+			ps: 判断优先级规定：
+					当一个url可以匹配到多个servlet时,这个时候以*.后缀名的优先级最低
+					精确匹配优先(长得最像的那个优先)
+	 5): 缺省路径
+	 	1: 当我们访问一个资源时,会先到当前的web应用下的web.xml配置中去匹配相应的url-pattern
+	 	2: 如果没有匹配到,这时则会交给tomcat服务器内置的DefaultServlet处理(在tomcat目录下conf文件中的web.xml中有配置)
+	 	3: 然后DefaultServlet程序则会到当前的web应用下面去找是否有之匹配的静态文件资源
+	 	4: 如果有,则读取文件返回给浏览器,如果无,则返回404页面
+
+2: servlet的生命周期
+	1): servlet技术对比分析
+		在学习servlet过程中,与以前创建对象不同,servlet对象并不是由程序员来创建的,而是由tomcat来创建
+		所以我们有必要知道tomcat创建servlet的生命周期
+	2): Servlet接口
+		一般我们写servlet时都会继承HttpServlet
+		而HttpServlet则是继承了GenericServlet
+		GenericServlet则是实现了Servlet接口 (所有servlet都实现的接口)
+	3): 相关方法
+		构造方法:  在第一次访问时创建对象且调用构造方法         (执行一次,第一次访问servlet时)
+		init:    在创建完对象后调用			     (执行一次,第一次访问servlet时)
+		service: 每次请求时都会调用			     (执行n次)
+		destroy: 销毁servlet对象时调用(如关闭服务器时)(执行一次)
+	4): 生命周期(以一个例子来说明)
+		http://localhost:8080/day05/lifeDemo
+		1: 通过localhost:8080找到相应的服务器(tomcat)
+		2: 通过/day05找到webapps目录下的day05应用目录
+		3: /lifeDemo到web.xml下去匹配相应的<url-pattern>
+		4: 如果匹配到,则通过与<url-pattern>同级的那<servlet-name>内容去匹配是否有与之相关的servlet配置
+		5: 如果有,则拿到这个servlet配置下的<servlet-class>(内容是一个servlet的全类型)
+		6: 然后再利用反射技术通过这个全类名创建这个servlet对象(这里构造方法会被调用)
+		7: 再创建一个ServletConfig对象
+		8: 然后调用init方法,把这个创建好的ServletConfig对象传入(这里调用init方法)
+		9: 创建ServletRequest与ServletResponse对象这两个对象
+		10: 调用service方法,并且把ServletRequest,ServletResponse对象传入	(这里调用service方法)
+		11: service执行完后,tomcat拿到response对象格式化成响应信息发送浏览器,浏览器对响应数据进行解析显示
+		ps: 如果关闭服务器或者重新部署web应用时执行destroy方法销毁servlet对象	(调用destroy方法)
+	5): 因为构造方法只调用了一次,可以看出一个servlet对应着一个servlet对象
+		servlet是单实例的
+

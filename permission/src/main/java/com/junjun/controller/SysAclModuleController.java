@@ -50,8 +50,7 @@ public class SysAclModuleController {
     @RequestMapping("/tree.json")
     @ResponseBody
     public JsonData tree(){
-        //return JsonData.success(sysTreeService.aclModuleTree());
-        return null;
+        return JsonData.success(sysTreeService.aclModuleTree());
     }
 
     @RequestMapping("/delete.json")

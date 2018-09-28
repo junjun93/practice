@@ -10,6 +10,10 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
+/**
+ * @author junjun
+ * @date 2018/8/5 21:29:14
+ **/
 @Getter
 @Setter
 @ToString
@@ -18,7 +22,7 @@ public class RoleParam {
     private Integer id;
 
     @NotBlank(message = "角色名称不可以为空")
-    @Length(min = 2, max = 20, message = "角色名称长度需要在2-20个字之间")
+    @Length(min = 2, max = 20, message = "角色名称长度需要在2-20个字符之间")
     private String name;
 
     @Min(value = 1, message = "角色类型不合法")

@@ -51,15 +51,15 @@
                         <div class="space"></div>
 
                         <div class="center">
-                            <a href="javascript:history.back()" class="btn btn-grey">
+                            <com.junjun.demo.a href="javascript:history.back()" class="btn btn-grey">
                                 <i class="ace-icon fa fa-arrow-left"></i>
                                 上一页
-                            </a>
+                            </com.junjun.demo.a>
 
-                            <a href="#" class="btn btn-primary">
+                            <com.junjun.demo.a href="#" class="btn btn-primary">
                                 <i class="ace-icon fa fa-tachometer"></i>
                                 Dashboard
-                            </a>
+                            </com.junjun.demo.a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,115 @@
+一.Collection集合
+1.集合（Collection）：
+    集合提供了一套性能优良，使用方便的接口和类，位于java.util
+ 	集合可以看做是一个可变容器
+		增：add(E e) ，addAll(Collection<? extends E> c)
+  		删：clear() ，remove(Object o)，removeAll(Collection<?> c) ，retainAll(Collection<?> c)
+  		改：toArray()
+  		查：iterator() ，size()
+  		判断：contains(Object o) ，containsAll(Collection<?> c) ，isEmpty()
+            [haha, 弋痕, 12, 12.4, 剑心] c1     [剑心, 22] c2
+            c1.removeAll(c2)   [haha, 弋痕, 12, 12.4]
+            c1.retainAll(c2)   [剑心]   双环
+  		注意：
+  			集合中所有数据都是Object
+
+2.List接口：  有序，不唯一。   --》索引
+    增：add(E e)，add(int index, E e) ，addAll(Collection<? extends E> c)
+    删：remove(int index)
+    改：set(int index, E element)
+    查：indexOf(Object o) -1不存在 ，get(int index)
+    截取：subList(int fromIndex, int toIndex) [1,3)返回新串
+
+    ArrayList：
+        在增删改查上没有自己特有的方法
+
+    两个实现类：
+        ArrayList：
+                长度可变的数组，在内存中分配连续的空间
+                优点：遍历、随机访问效率高
+                缺点：添加、删除效率低
+        LinkedList：
+                采用了双向链表的存储方式
+                优点：插入、删除元素比较高
+                缺点：遍历、随机访问比较低
+
+3.LinkedList:
+    增：	addFirst(E e) ，addLast(E e)     --->1.2
+        offerFirst(E e) ,offerLast(E e)    --->1.6
+        offer(E e) 						   --->1.5
+
+    删：	removeFirst() ，removeLast()  --->1.2
+        pollFirst() ,pollLast()     --->1.6
+        poll() 					    --->1.5
+    改：
+
+    查：	getFirst() ，getLast()      -->1.2
+        peekFirst() ,peekLast() 	-->1.6
+        peek() 						-->1.5
+
+4.泛型：<>
+    集合中数据在存储的时候，元素的类型为object
+    泛型是指在声明时就确定数据类型，不正确的数据不允许存入集合
+    好处：
+        解决了数据类型不统一的问题
+
+    泛型的表现形式：
+        1、泛型类：		    -->定义在类上
+        2、泛型方法：			-->定义在方法上
+        3、泛型接口：			-->定义在接口上
+
+
+
+二.Set集合
+    1.Set:
+     			无序的，不重复
+      		特点：
+      			set中多有的方法都是collection接口中的
+
+    2.HashSet:
+        			底层：
+        				hashSet的存储原理：
+        						计算HashCode值，通过HashCode值得到存储位置   （y=x%7）  y:存储位置，x代表hash码值
+        						如果HashCode值相同，在比较内容是否相等，如果内容相同，不再存储，如果内容不同在统一位置上下连
+       			优点：
+       					添加，查询，删除速度快
+       			缺点：
+       					无序
+
+       		注意事项：
+       				使用HashSet集合存储自定义数据类型时，需要重写hashCode，equals
+       				先比较两个对象的hashCode是否相等，再使用equals方法比较内容是否相等
+       				如果说hashCode值不同，equals不执行。
+
+    3.LinkedHashSet;
+        是HashSet的子类。底层采用哈希表+链表  ；哈希表可以去重，链表维护次序  有序（添加顺序）
+
+    4.TreeSet:   唯一
+        		采用二叉树（红黑树）来存储数据
+        		特点：要求有序 (升序)  自然顺序
+       		TreeSet是通过比较器去重复元素（定义的比较规则）
+
+        比较器：
+        			内部比较器Comparable：
+        						用当前对象this和传入的对象O进行比较，只能定义一次；
+        			外部比较器Comparator：
+        						与当前对象无关，只完成比较的功能，可以定义对个比较规则
+        			匿名比较器：
+        						在匿名内部类中定义
+
+
+
+三.Map集合
+1.Collection：单个元素
+   * 	Map：		   两个元素  （键值对）
+   * 		key （无序，唯一）				Set类型
+   * 		value（有序，不唯一）			List类型   collection
+   *
+   * 		增：put(K key, V value)，putAll(Map<? extends K,? extends V> m)
+   * 		删：clear() ，remove(Object key)
+   * 		改：
+   * 		查：keySet() ，get(Object key) ，entrySet()
+   * 		判断：containsValue(Object value),containsKey(Object key)
+
+2.   HashMap:	    -->1.2		不安全   -->允许null键和null值   但是null只能有一个
+     Hashtable:		-->1.0    	安全    	-->不允许null键和null值

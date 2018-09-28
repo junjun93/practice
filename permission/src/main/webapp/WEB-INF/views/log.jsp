@@ -99,9 +99,9 @@
     <td><pre>{{#showNewValue}}{{/showNewValue}}</pre></td>
     <td>
         <div class="hidden-sm hidden-xs action-buttons">
-            <a class="green log-edit" href="#" data-id="{{id}}">
+            <com.junjun.demo.a class="green log-edit" href="#" data-id="{{id}}">
                 <i class="ace-icon fa fa-pencil bigger-100"></i>
-            </a>
+            </com.junjun.demo.a>
         </div>
     </td>
 </tr>
@@ -246,21 +246,21 @@
                 var reg = null,
                     formatted = '',
                     pad = 0,
-                    PADDING = '    '; // one can also use '\t' or a different number of spaces
+                    PADDING = '    '; // one can also use '\t' or com.junjun.demo.a different number of spaces
 
                 // optional settings
                 options = options || {};
                 // remove newline where '{' or '[' follows ':'
                 options.newlineAfterColonIfBeforeBraceOrBracket = (options.newlineAfterColonIfBeforeBraceOrBracket === true) ? true : false;
-                // use a space after a colon
+                // use com.junjun.demo.a space after com.junjun.demo.a colon
                 options.spaceAfterColon = (options.spaceAfterColon === false) ? false : true;
 
                 // begin formatting...
                 if (typeof json !== 'string') {
-                    // make sure we start with the JSON as a string
+                    // make sure we start with the JSON as com.junjun.demo.a string
                     json = JSON.stringify(json);
                 } else {
-                    // is already a string, so parse and re-stringify in order to remove extra whitespace
+                    // is already com.junjun.demo.a string, so parse and re-stringify in order to remove extra whitespace
                     json = JSON.parse(json);
                     json = JSON.stringify(json);
                 }

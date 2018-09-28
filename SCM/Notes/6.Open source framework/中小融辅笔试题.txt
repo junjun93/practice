@@ -1,0 +1,123 @@
+1)When do you have to implement the java.io.Serializable interface?
+何时需要实现java.io.Serializable接口
+
+2)What might be the problem if you execute the following statement?
+执行下面的语句可能会出现什么情况?
+    
+    int i= 1000;
+    byte b= (byte)i;
+
+3)What's the difference between Writer/Reader and InputStream/OutputStream classes in java.io.package?
+java.io包中的Writer/Reader and InputStream/OutputStream有何区别?
+
+4)if Class A is the superclass of Class B and C? Can you do the following? Please explain.
+如果A是B和C的父类，下面的语句是否正确? 为什么?
+
+    B b = new B();
+    C c = (C)b;
+    
+5)What error message it would give with the following syntax?
+下面的语句会抛出什么错误信息?
+
+    public class A {
+        public String str = "Hello";
+        public static void main(String args[]) {
+            System.out.println(str);
+        }
+    }
+    
+6)How can 1test ClassA is com.junjun.demo.a superclass of ClassB?
+怎样测试类A是类B的父类?
+
+7)What about this,can this code be compiled?
+这段代码能编译成功吗?
+
+    public interface B{
+        public String methodA(String com.junjun.demo.a);
+        public String methodB(String com.junjun.demo.a);
+    }
+
+8)What about this,can this code be compiled?
+这段代码能编译成功吗?
+
+    public interface B{
+        public String methodA();
+        public String methodA(String com.junjun.demo.a);
+    }
+    
+9)In the collection framework,what the difference between java.util.Vector and java.util.ArrayList?
+在Collection框架下，java.util.Vector和java.util.ArrayLis的区别是什么?
+（1）同步性:Vector是线程安全的，也就是说是同步的。而ArrayList是线程不安全的，不是同步的 
+（2）数据增长:当需要增长时,Vector默认增长为原来一培，而ArrayList却是原来的一半
+	
+10)Please write down the result of printing out.
+请写出下面程序的运行结果
+
+    Set<Integer> com.junjun.demo.a = new HashSet<Integer>();
+    com.junjun.demo.a.add(1);
+    com.junjun.demo.a.add(3);
+    com.junjun.demo.a.add(1);
+    System.out.println(com.junjun.demo.a.size());
+    
+11)Does Java support multiple inheritance? If so, to what extend?
+Java支持多重继承吗? 如果是这样，怎样扩展?
+
+12)What's the difference between RuntimeException and Exception?
+Runtime Exception和Exception有什么区别？
+    （1）Runtime Exception：在定义方法时不需要声明会抛出runtime exception； 在调用这个方法时不需要捕获这个runtime exception
+    （2）Exception：在定义方法时必须声明所有可能会抛出的exception； 在调用这个方法时，必须捕获它的checked exception，不然就得把它的exception传递下去
+	
+13)Which class do you extend when you are creating servlet?
+在创建一个servlet时，HttpServlet需要继承扩展哪个类?
+
+14)servlet同时处理多个请求，一个请求只执行一次。servlet生命周期中哪些方法只调用一次
+
+15)jsp中<%= %>的作用
+	
+16)What is SQL injection and how to avoid it?
+什么是SQL注入，如何避免
+	SQL注入，就是攻击者把SQL命令插入到Web表单的输入域或页面请求的查询字符串，欺骗服务器执行恶意的SQL命令。
+    （1）对用户的输入进行校验，确信输入的内容只包含合法的数据
+    （2）永远不要使用管理员权限的数据库连接，为每个应用使用单独的权限、有限的数据库连接
+    （3）将用户登录名称、密码等数据加密保存
+    （4）检查数据的查询所返回的记录数量。如果程序只要求返回一个记录，但实际返回的记录却超过一行，那就当作出错处理
+
+17)List some useful information which you can get from java.sql.ResultSetMetaData?
+请列出java.sql.ResultSetMetaData中的常用信息
+	getColumnCount();
+    getColumnName(int index);
+    getColumnType(int index); 
+
+18)When to use transaction and why to use it?
+什么时候使用事务，为什么使用?
+
+19)Which transaction level should I use to fulfill following requirements:Non-repeatable read
+occur and dirty reads are allowed?
+不可重复读可能发生，允许脏读取，应该使用哪个隔离级别?
+
+20)What is the meaning of primary and foreign key in SQL? Please give example.
+主键和外键是什么含义? 举例说明
+
+21)What's wrong with the following sql? Please try to correct it.
+下面的sql有什么错? 请修正
+    
+    SELECT NAME,COUNT(*) FROM PEOPLE WHERE COUNT(*) > 1;
+    
+22)I have com.junjun.demo.a XML file with following contents,Please write com.junjun.demo.a XPath to fetch the name
+which id= 20
+下面是一个xml文件，请写出一个XPath得到customer id=20的name字段的值
+    
+    <data>
+        <customer id="10">
+            <name>Jacob's</name>
+            <address>1234adbc</address>
+        </customer>
+        <customer id ="20">
+            <name>Jacob's 2</name >
+            <address>1234adbc</address>
+        </customer>
+        <customer id="30">
+            <name>Jacob's 3</name>
+            <address>1234adbc</address>
+        </customer>
+    </data>

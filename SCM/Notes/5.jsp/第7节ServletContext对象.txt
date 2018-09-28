@@ -1,0 +1,64 @@
+1: ServletContext对象
+	1): 概念
+		ServletContext对象也叫做servlet的上下文对象,它表示是当前的web应用环境,
+		一个web应用中只有一个ServletContext对象
+	2): 什么时候被创建
+		在加载web应用时候就开始创建ServletContext对象
+	3): 怎么获取ServletContext对象
+		com.junjun.demo.a): 可以从ServletConfig对象的getServletContext方法中得到
+		b): 直接使用this.getServletContext() 也可以得到
+		c): 通过 request.getServletContext() 可以得到
+	4): 核心方法
+		String getContextPath()                			返回web应用程序的上下文路径。
+		String getInitParameter(String name)        	获取指定全局初始化参数值
+		Enumeration getInitParameterNames() 			获取所有全局初始化参数名
+		RequestDispatcher getRequestDispatcher(String path)
+		        返回一个RequestDispatcher对象，它作为位于给定路径上的资源的包装器。
+	5): 配置全局初始化参数
+		<context-param>
+			<param-name>user</param-name>
+			<param-value>root</param-value>
+		</context-param>
+		<context-param>
+			<param-name>password</param-name>
+			<param-value>123</param-value>
+		</context-param>
+
+2: servlet中的资源跳转
+	1): 在servlet中可以使用重定向或者转发技术来实现跳转
+	2): 重定向
+		使用方法: response.sendRedirect(location);
+		注意事项:（地址、请求次数、对象个数、端）
+			com.junjun.demo.a): 重定向URL会发生变化,最终URL是第二次请求的路径
+			b): 重定向有两次请求
+			c): 重定向会发两个请求,也会相应对应着两个request对象
+			d): 两次请求则都是由浏览器发起的
+	3): 转
+		使用方法: ServletContext对象.getRequestDispatcher(路径).forward(request, response);
+			     request.getRequestDispatcher("/index.html").forward(request, response);
+		注意事项:
+			com.junjun.demo.a): 转发技术URL不会发生改变
+			b): 转发只有一次请求
+			c): 转发的过程中,只有一个request对象
+			d): 转发则是在服务端发起的
+
+3: 资源跳转路径问题
+	1): 先判断当前跳转操作是在哪里来执行的(浏览器或者服务器)
+	2): 如果是服务器,则在要跳转的资源路径前面加上 /就行                  (如: 转发时  "/index.html")
+	3): 如果是浏览器,则在要跳转的资源路径前面加上 /应用名称即可    (如: 重定向  "/day07/index.html")
+
+4): 域对象
+	1): 四大域对象
+		HttpServletRequest, ServletContext, HttpSession, PageContext
+	2): 特点
+		只要在域对象的范围之中,我们即可以获取域对象里边的数据,所以可以用于做数据的传递
+	3): 域对象相关方法
+		void removeAttribute(String name) 				删除域对象中指定的属性
+		void setAttribute(String name, Object object) 	设置域对象属性
+		Object getAttribute(String name) 				获取域对象指定属性
+
+5): ServletContext对象和ServletConfig对象的对比
+		ServletContext对象对应的是当前web应用环境, 在整个web应用中只有一个
+		ServletConfig对象对应的是servlet对象, 一个web应用可以有多个ServletConfig对象
+
+

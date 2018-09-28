@@ -1,0 +1,71 @@
+面向对象
+    Math类 LocalDate NumberFormat使用静态工厂方法来构造对象
+    Date可变 p110 String、final不可变
+    静态域/静态变量、实例域/实例变量/全局变量/局部变量、实例方法 参数变量、变量
+    编译器、解释器、执行器
+    更改器方法、访问器方法/域访问器
+    隐式参数与显式参数
+
+    4.3、4.4结合JVM
+
+    final实例域 不可变与快递
+        基本类型域(primitive)、不可变类型域(immutable)
+        final不可变的是对象引用，对象值爱变就变
+    finalize finally异同
+    this super异同 demo
+
+    Java核心技术 p136、p166要补上
+
+
+
+Spring
+    IoC container
+        bean作用域、生命周期
+        bean的parent属性赋予继承关系，与Java类的继承无关
+        bean中property属性注入集合，和Java集合一样吗？
+        lazy init、autowire、annotation区别
+
+    AOP
+        Java反射机制中的动态代理
+        写个示例
+        各种通知
+        Advisor和AspectJ区别？
+        Advisor是Spring中AOP定义切面，通常由一个切点和一个通知组成；
+        AspectJ是AOP联盟规范中切面，允许由多个切点和多个通知组成
+
+        aop实现日志监控呀  拦截器实现权限校验
+
+    Transactions
+
+    MVC
+        data binding
+            public String test4(User user)
+            //POJO对象绑定请求参数值
+        为何同时需要前台校验、后台检验
+
+
+面试题：
+    SpringIOC容器是一个IOC Service Provider。提供了两种容器类型：BeanFactory(初级)和ApplicationContext(高级)
+
+    10.理解Spring么，它的AOP实现是基于什么原理，bean的初始化过程是哪些?在beanFactory
+       初始化前、运行中、初始化后想做些事情。该怎么做?
+
+各种数据类型的反射
+    Type type = new TypeToken<ArrayList<User>>() {}.getType();
+    ArrayList<User> list = gson.fromJson(json, type);
+企业级别开发演变史：.net->php->java EJB
+
+
+
+在哪写博客：掘金、issue
+找工作凭运气，框架+数据库+servlet+面向对象/基础类库真的很重要
+
+熟悉JAVA面向对象基础编程，集合、IO流、线程等基础框架；
+熟悉SSM、SpringBoot等框架开发；
+熟悉mysql、sqlserver数据库，会用函数、存储过程、视图、触发器、索引；
+熟悉Linux命令，用于上线个人网站junjun.fun；
+熟悉Redis缓存、Lombok注解、git、maven的使用；
+熟悉html5、css3、jQuery，使用过Node.js开发项目；
+阅读英文技术文档和书籍无障碍；
+了解支付宝沙箱环境的使用以及接入；
+了解微信公众号后台开发。

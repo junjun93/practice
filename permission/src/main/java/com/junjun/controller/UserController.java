@@ -20,7 +20,7 @@ public class UserController {
     private SysUserService sysUserService;
 
     @RequestMapping("/logout.page")
-    public void logout(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public void logout(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.getSession().invalidate();
         String path = "signin.jsp";
         response.sendRedirect(path);

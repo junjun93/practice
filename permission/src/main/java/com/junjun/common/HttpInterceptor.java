@@ -19,8 +19,8 @@ public class HttpInterceptor extends HandlerInterceptorAdapter {
     private static final String START_TIME = "requestStartTime";
 
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String url = request.getRequestURI().toString();
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
+        String url = request.getRequestURI();
         Map parameterMap = request.getParameterMap();
         log.info("request start. url:{}, params:{}", url, JsonMapper.obj2String(parameterMap));
         long start = System.currentTimeMillis();
@@ -29,7 +29,7 @@ public class HttpInterceptor extends HandlerInterceptorAdapter {
     }
 
     @Override
-    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) {
 //        String url = request.getRequestURI().toString();
 //        long start = (Long) request.getAttribute(START_TIME);
 //        long end = System.currentTimeMillis();
@@ -38,8 +38,8 @@ public class HttpInterceptor extends HandlerInterceptorAdapter {
     }
 
     @Override
-    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-        String url = request.getRequestURI().toString();
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
+        String url = request.getRequestURI();
         long start = (Long) request.getAttribute(START_TIME);
         long end = System.currentTimeMillis();
         log.info("request completed. url:{}, cost:{}", url, end - start);

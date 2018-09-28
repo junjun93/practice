@@ -11,20 +11,20 @@
     <div class="dataTables_paginate paging_simple_numbers" id="dynamic-table_paginate">
         <ul class="pagination">
             <li class="paginate_button previous {{^firstUrl}}disabled{{/firstUrl}}" aria-controls="dynamic-table" tabindex="0">
-                <a href="#" data-target="1" data-url="{{firstUrl}}" class="page-action">首页</a>
+                <com.junjun.demo.a href="#" data-target="1" data-url="{{firstUrl}}" class="page-action">首页</com.junjun.demo.a>
             </li>
             <li class="paginate_button {{^beforeUrl}}disabled{{/beforeUrl}}" aria-controls="dynamic-table" tabindex="0">
-                <a href="#" data-target="{{beforePageNo}}" data-url="{{beforeUrl}}" class="page-action">前一页</a>
+                <com.junjun.demo.a href="#" data-target="{{beforePageNo}}" data-url="{{beforeUrl}}" class="page-action">前一页</com.junjun.demo.a>
             </li>
             <li class="paginate_button active" aria-controls="dynamic-table" tabindex="0">
-                <a href="#" data-id="{{pageNo}}" >第{{pageNo}}页</a>
+                <com.junjun.demo.a href="#" data-id="{{pageNo}}" >第{{pageNo}}页</com.junjun.demo.a>
                 <input type="hidden" class="pageNo" value="{{pageNo}}" />
             </li>
             <li class="paginate_button {{^nextUrl}}disabled{{/nextUrl}}" aria-controls="dynamic-table" tabindex="0">
-                <a href="#" data-target="{{nextPageNo}}" data-url="{{nextUrl}}" class="page-action">后一页</a>
+                <com.junjun.demo.a href="#" data-target="{{nextPageNo}}" data-url="{{nextUrl}}" class="page-action">后一页</com.junjun.demo.a>
             </li>
             <li class="paginate_button next {{^lastUrl}}disabled{{/lastUrl}}" aria-controls="dynamic-table" tabindex="0">
-                <a href="#" data-target="{{maxPageNo}}" data-url="{{lastUrl}}" class="page-action">尾页</a>
+                <com.junjun.demo.a href="#" data-target="{{maxPageNo}}" data-url="{{lastUrl}}" class="page-action">尾页</com.junjun.demo.a>
             </li>
         </ul>
     </div>

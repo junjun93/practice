@@ -1,0 +1,82 @@
+1: 无参数init方法
+	有参数的init方法
+		这个方法是我们servlet生命周期的方法, 它需要被tomcat来调用
+	无参数的init方法
+		这个方法是为程序员准备的,我们可以来重写这个无参数的init方法,在里边定义我们想要执行的初始化代码
+		而不需要去重写那个有参数的init方法了(因为tomcat在调用有参数的init方法里边会调用这个参数的init方法)
+
+2: Servlet自动加载
+	1): 因为第一次访问需要执行构造方法与init方法,如果init方法中有比较多的初始化代码需要执行时
+		这时用户第一次访问时的响应则会比较慢
+		这里我们可以考虑把构造方法与init方法的执行时间放到用户访问前(可以使用servlet的自动加载)
+	2): 使用自动加载
+		servlet自动加载则就是在服务器启动加载web应用时就创建servlet对象与调用init方法
+		可以在servlet配置中添加一个<load-on-startup>
+		如: <servlet>
+				<servlet-name>LoadonStartupDemo1</servlet-name>
+				<servlet-class>com.tz.bean.demo09.LoadonStartupDemo1</servlet-class>
+				<load-on-startup>9</load-on-startup>
+			</servlet>
+	3): servlet自动加载的优先级
+		<load-on-startup>9</load-on-startup>
+		如果里边的数字越大,则它的优先级越小
+	4): 在@WebServlet注解中配置自动加载
+		如: @WebServlet(
+				urlPatterns = "/loadonStartupDemo1",
+				loadOnStartup = 9
+			)
+
+3: Servlet线程安全问题
+	1): servlet具有单实例多线程的特点,当多个线程访问了一个共享数据时(如: servlet的成员变量)则会出现线程安全问题
+	2): 通过synchronized关键字可以解决
+		synchronized(){}把要使用到共享数据的代码放到synchronized代码块中就行
+	ps: 如果servlet中使用了成员变量,就一定要先考虑下线程安全问题(尽可能的不要在servlet中定义成员变量)
+
+4: ServletConfig对象
+	1): 创建时期
+		ServletConfig对象在创建完Servlet对象之后,在调用init方法之前被创建
+		并且在init方法时会把这个config对象传入进去
+	2): 怎么获取 ServletConfig对象(可以在init方法中来获取)
+		由GenericServlet类已经给我们实现了init方法,并且给我们提供一个getServletConfig方法来获取ServletConfig对象
+		所以我们可以直接在servlet中通过getServletConfig方法来获取这个对象(如: this.getServletConfig)
+	3): ServletConfig对象
+		可以用于获取加载servlet的初始化参数
+	4): Servlet的初始化参数配置在(在web.xml文件中)
+		<servlet>
+			<servlet-name>ConfigDemo1</servlet-name>
+			<servlet-class>com.tz.bean.config.ConfigDemo1</servlet-class>
+			<!-- 配置servlet的初始化参数 -->
+			<init-param>
+				<param-name>user</param-name>
+				<param-value>root</param-value>
+			</init-param>
+			<init-param>
+				<param-name>password</param-name>
+				<param-value>123</param-value>
+			</init-param>
+		</servlet>
+	5): Servlet的初始化参数配置(在WebServlet注解中配置)
+		@WebServlet(
+			urlPatterns = {"/configDemo1","/abc"},
+			initParams = {
+				@WebInitParam(name="user",value="root"),
+				@WebInitParam(name="password",value="123")
+			}
+		)
+	6): 核心方法
+		getInitParameter(String name);      根据指定参数名获取参数值
+		getInitParameterNames();	        获取所有参数名
+		getServletContext();		        获取一个ServletContext对象(servlet的上下文对象)
+		getServletName();			        获取servlet的名称
+
+
+
+
+
+
+
+
+
+
+
+

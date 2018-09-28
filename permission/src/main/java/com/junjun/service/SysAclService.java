@@ -13,7 +13,9 @@ import com.junjun.util.IpUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author junjun
@@ -32,7 +34,7 @@ public class SysAclService {
         }
         SysAcl acl = SysAcl.builder().name(param.getName()).aclModuleId(param.getAclModuleId()).url(param.getUrl())
                 .type(param.getType()).status(param.getStatus()).seq(param.getSeq()).remark(param.getRemark()).build();
-        acl.setCode("");//TODO
+        acl.setCode(generateCode());
         acl.setOperator(RequestHolder.getCurrentUser().getUsername());
         acl.setOperateTime(new Date());
         acl.setOperateIp(IpUtil.getRemoteIp(RequestHolder.getCurrentRequest()));
@@ -54,11 +56,26 @@ public class SysAclService {
         sysAclMapper.updateByPrimaryKeySelective(after);
     }
 
-    public PageResult<SysAcl> getPageByAclModuleId(Integer aclModuleId, PageQuery pageQuery){
-        return null;
+    public PageResult<SysAcl> getPageByAclModuleId(Integer aclModuleId, PageQuery page){
+        BeanValidator.check(page);
+        int count = sysAclMapper.countByAclModuleId(aclModuleId);
+        if(count > 0){
+            List<SysAcl> aclList = sysAclMapper.getPageByAclModuleId(aclModuleId, page);
+            return PageResult.<SysAcl>builder().data(aclList).total(count).build();
+        }
+        return PageResult.<SysAcl>builder().build();
     }
+
+
+
+
 
     public boolean checkExist(int aclModuleId, String name, Integer id){
         return sysAclMapper.countByNameAndAclModuleId(aclModuleId, name, id) > 0;
+    }
+
+    public String generateCode(){
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+        return dateFormat.format(new Date()) + "_" + (int)(Math.random() * 100);
     }
 }

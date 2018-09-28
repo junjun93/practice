@@ -22,7 +22,7 @@ public abstract class SuperFilter implements Filter{
 		return filterConfig;
 	}
 	@Override
-	public void init(FilterConfig filterConfig) throws ServletException {
+	public void init(FilterConfig filterConfig) {
 		this.filterConfig = filterConfig;
 		this.init();
 	}

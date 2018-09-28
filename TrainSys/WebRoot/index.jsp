@@ -46,7 +46,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		<c:forEach var="l" items="${list }">
 	    		<tr>
 	    			<td><input class="check" name="check" type="checkbox" value="${l.train_no }"></td>
-	    			<td class="train_no"><a href="doshowtrain?train_no=${l.train_no }">${l.train_no }</a></td>
+	    			<td class="train_no"><com.junjun.demo.a href="doshowtrain?train_no=${l.train_no }">${l.train_no }</com.junjun.demo.a></td>
 	    			<td>${l.start_station }——${l.arrival_station }</td>
 	    			<td>${l.start_time }——${l.arrival_time }</td>
 	    			<td>${l.type }</td>

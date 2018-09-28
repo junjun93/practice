@@ -1,0 +1,43 @@
+一.JdbcUtil
+    1.初始化
+       (1)解析properties文件
+            Properties properties = new Properties();
+            InputStream inStream = JdbcUtil.class.getResourceAsStream("/db.properties");
+            properties.load(inStream);
+            driver = properties.getProperty("driver");
+        (2)通过反射加载驱动
+            Class.forName(driver);
+
+    2.获取Connection对象
+       conn = DriverManager.getConnection(url, user, password);
+
+    3.关闭连接
+        conn.close();
+
+二.implments
+    //1.取得数据库连接
+    conn = JdbcUtil.getConnection();
+
+    //2.写sql语句
+    String sql = "select * from user where email=? and password=?";
+
+    //3.预编译sql语句
+    pre = conn.prepareStatement(sql);
+
+    //4.填充占位符
+    pre.setString(1, user.getEmail());
+    pre.setString(2, user.getPassword());
+
+    //5.返回查询结果并遍历
+    rs = pre.executeQuery();
+    while(rs.next()){}
+
+    //6.关闭资源
+  注意：345多看
+
+三.sql
+    select * from user where id=?
+    select * from user
+    insert into user values(?,?,?)
+    update user set name=?,age=? where id=?
+    delete from user where id=?

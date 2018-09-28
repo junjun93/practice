@@ -8,18 +8,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="permission" />
-        <module name="permission2" />
-        <module name="SCM" />
-        <module name="SSM-Demo" />
+        <module name="LeeProject" />
+        <module name="miaosha" />
+        <module name="ServletDemo" />
+        <module name="spike" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="micro-weather-basic_test" target="1.8" />
-      <module name="permission" target="1.8" />
-      <module name="permission2" target="1.8" />
+      <module name="LeeProject" target="1.8" />
+      <module name="miaosha" target="1.5" />
+      <module name="permission" target="1.5" />
+      <module name="permission2" target="1.5" />
       <module name="SCM" target="1.8" />
-      <module name="SSM-Demo" target="1.8" />
+      <module name="ServletDemo" target="1.8" />
+      <module name="spike" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

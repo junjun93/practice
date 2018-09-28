@@ -63,7 +63,7 @@ public class dodeleteServlet extends HttpServlet {
 	 * 车票信息删除方法
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+			throws ServletException {
 		String [] num=request.getParameterValues("check");
 		TrainInfoService tis=new TrainInfoserviceImpl();
 		for(String s:num){

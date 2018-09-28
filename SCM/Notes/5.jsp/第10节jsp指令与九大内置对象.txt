@@ -1,0 +1,50 @@
+1: jsp三个指令
+	1): <include>指令
+		语法: <%@include file="要引入的路径" %>
+			例: <%@include file="/jsp_1/com.junjun.demo.a.jsp" %>
+		作用: 在当前的页面里引入其它的页面
+		ps: 翻译的时候会把被包含的页面(如a.jsp)里的内容合并到当前页面中(如: include.jsp)形成一个java文件,
+		    那么我们称这个包含为静态包含,此时被包含的页面就不需要写html、head、body这些标签了,直接写内容就行
+		ps: 如果jsp模板有定义path、basepath,引入时注意这两个变量的重复定义
+	2): <page>指令	
+<%@ page
+    language="java" 							 指定jsp用什么语言来编译,目前只支持Java语言
+    contentType="text/html; charset=UTF-8" 		 表示响应数据的类型与编码,默认pageEncoding的编码设置
+    pageEncoding="UTF-8"						 表示把jsp文件翻译java文件使用的编码(IDE文件编码)
+    import="java.util.*,java.io.FileInputStream" 表示要引入的jar包,多个包逗号隔开
+    errorPage="error.jsp"						 表示如果此页面发生异常,则网页会重新指向一个url
+    isErrorPage="false"							 表示当前页面是否为错误处理页面
+                         默认值为false,如果值为true则可以使用exception隐式对象
+    buffer="8kb"								 表示out对象使用缓冲区的大小,默认大小是8kb
+    isELIgnored="false"							 表示是否在页面使用EL表达式,默认值为false(支持)
+    session="true"								 表示在页面是否使用session对象,默认值为true(支持)
+%>
+	3): <taglib>指令
+
+2: jsp的九个内置对象
+	内置对象			对应的类型
+	request			HttpServletRequest   (请求对象)
+	response		HttpServletResponse	 (响应对象)
+	config			ServletConfig 		 (config对象)
+	application		ServletContext  	 (ServletContext对象)
+	exception		Throwable			 (异常对象)
+	page			Object(this)		 (当前servlet对象)
+	session			HttpSession			 (session对象)
+	out				JspWriter 			 (输出对象)
+	pageContext		PageContext 		 (pageContext对象提供了其它对象的获取方法)
+	
+	com.junjun.demo.a): jsp中out对象与PrintWriter对象(response.getWriter())的区别
+		out对象在输出时会把数据存到一个缓冲区中,然后再一次输出
+			当缓冲区被存满时,手动刷新时,jsp页面执行完毕时,数据则就会输出
+		PrintWriter对象则没有缓冲区而是直接的输出 
+
+3): pageContext对象
+	1): 作用: pageContext对象提供了其它八个内置对象的获取方法,它同时也一个域对象
+	        如: pageContext.getServletContext();
+	2): 域对象相关方法
+		getAttribute(String name)
+		setAttribute(String name, Object value)
+		removeAttribute(String name)
+	3): findAttribute(String name)方法
+            依次从pageContext、request、session、application找指定的属性,如果有就返回
+	

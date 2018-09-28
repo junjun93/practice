@@ -21,7 +21,7 @@ pageContext.setAttribute("path",path);
 	</head>
 	<body>
 	    
-	    <form action="${path }/jsp/a.jsp" method="get">
+	    <form action="${path }/jsp/com.junjun.demo.a.jsp" method="get">
 	    	<input type="text" name="userName"/>
 			<input type="submit"/>
 	    </form>

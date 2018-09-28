@@ -1,0 +1,199 @@
+ 一.面向对象
+        1.创建对象的5种方式
+        2.this与super区别、final与final static区别
+            通过类加载过程，理解面向对象各关键词区别
+            静态常量、静态变量(类变量)、实例变量有什么异同，请从内存角度来说明
+
+        3.关键词static的用法
+        4.向上转型、向下转型
+        5.接口、抽象类区别
+        6.静态代码块、构造代码块、同步代码块
+        7.静态内部类、匿名内部类
+        8.面向对象的理解
+	    9.equals方法、hashcode方法源码分析
+
+        10.JVM内存模型
+            String.intern()方法
+2.3
+    public final static int value = 123;
+    public static int value = 123;
+    public int value = 123;
+    静态常量在类加载过程的准备阶段将value赋值为123；
+    静态变量在类加载过程的准备阶段将value设置为int类型默认值0，初始化阶段赋值为123，在方法区分配内存；
+    而实例变量在该类对象被初始化时才能赋值为123；
+    静态常量、静态变量不需要赋初值，实例变量必须赋初值。
+2.4
+    static方法只能调用static变量/方法；
+    static方法在类的加载时产生，存在内存的共享区中；
+    此时还没有对象的产生，不可以调用非static修饰的属性（成员属性）；
+    非static方法都能调用，因为后产生的可以调用先产生的。
+
+    static 修饰属性/方法等，在类加载的时候就被一同加载到内存中来的
+        使用方法：
+            类名.属性名/方法名()
+            对象名.属性名/方法名()
+
+11.
+    （1）OPP与OOP区别：
+        示例代码走起，c与Java
+         OPP：首先要确定如何操作数据，然后再决定如何组织数据，以便于数据操作。
+         OOP：调换了这个次序，将数据放在第一位，然后再考虑操作数据的算法。
+    （2）面向对象的特性：
+        继承、封装、多态、抽象
+    （3）设计模式
+
+jsp：Servlet运行过程、源码分析
+    1.Servlet请求过程
+        在第一次访问时创建Servlet对象且调用构造方法
+        在创建完对象后，Servlet调用init(ServletConfig config)进行初始化
+        Servlet调用service(ServletRequest request, ServletResponse response)来处理请求
+        Servlet调用destroy()终止
+        最后，Servlet是由JVM的垃圾回收器进行垃圾回收的
+
+    2.Servlet的生命周期
+        http://localhost:8080/day05/lifeDemo
+        (1) 通过localhost:8080找到相应的服务器(tomcat)
+        (2) 通过/day05找到webapps目录下的day05应用目录
+        (3) /lifeDemo到web.xml下去匹配相应的<url-pattern>
+        (4) 如果匹配到,则通过与<url-pattern>同级的那<servlet-name>内容去匹配是否有与之相关的servlet配置
+        (5) 如果有,则拿到这个servlet配置下的<servlet-class>(内容是一个servlet的全类型)
+        (6) 然后再利用反射技术通过这个全类名创建这个servlet对象(这里构造方法会被调用)
+        (7) 再创建一个ServletConfig对象
+        (8) 然后调用init方法,把这个创建好的ServletConfig对象传入(这里调用init方法)
+        (9) 创建ServletRequest与ServletResponse对象这两个对象
+        (10) 调用service方法,并且把ServletRequest,ServletResponse对象传入	(这里调用service方法)
+        (11) service执行完后,tomcat拿到response对象格式化成响应信息发送浏览器,浏览器对响应数据进行解析显示
+        ps: 如果关闭服务器或者重新部署web应用时执行destroy方法销毁servlet对象	(调用destroy方法)
+        Servlet单例模式，存在线程安全问题
+
+    3.jsp四大作用域与九大内置对象
+        内置对象			对应的类型
+        （1）输入输出对象
+        request			HttpServletRequest   (请求对象)
+        response		HttpServletResponse	 (响应对象)
+        out				JspWriter 			 (输出对象)
+        （2）通信控制对象
+        pageContext		PageContext 		 (pageContext对象)
+        session			HttpSession			 (session对象)
+        application		ServletContext  	 (ServletContext对象)
+        （3）Servlet对象
+        page			Object(this)		 (当前servlet对象)
+        config			ServletConfig 		 (config对象)
+         (4) 异常对象
+        exception		Throwable			 (异常对象)
+         PageContext, HttpServletRequest, HttpSession, ServletContext
+
+    4.Servlet9大内置对象的获取
+        request.getSession().getServletContext().getRealPath("upload");
+        pageContext对象提供了其它八个内置对象的获取方法
+        这些对象都是接口
+
+    5.如何证明jsp的本质是Servlet
+    6.Session的钝化、活化如何实现
+    7.多线程session共享问题
+
+    <com.junjun.demo.a href="https://www.uml-diagrams.org/examples/java-servlet-30-api-package-diagram-example.html">Servlet 4.0 UML Diagram</com.junjun.demo.a>
+
+    3.HTTP请求、响应文件解析，HTTP各版本对比;Servlet并发
+
+    4.Servlet与Socket区别（端口、底层是Socket吗），容器技术
+
+    5.Nginx Tomcat Jetty服务器是如何与Servlet交互的，应用服务器、web服务器
+
+    源码分析：
+        HttpServletResponse所有状态码
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SSM：常用功能的实现原理、搭建详细过程、配置文件逐行分析
+
+mysql：优化、多表连接、子查询、事务、视图、存储程序
+    1.优化
+        自己看阿里Java规约手册，选几个能看的懂的😂😂
+
+CentOS7：熟悉文件操作命令、软件安装的命令行
+
+js/JQuery：补充
+
+
+
+单例模式的7种写法
+    1.懒汉模式
+    2.饿汉模式
+    3.同步锁懒汉模式 ✔️
+    4.双重同步锁懒汉模式
+    5.volatile+双重同步锁懒汉模式 ✔️
+    6.静态代码块单例模式 ✔️
+    7.枚举单例模式 ✔️
+
+数据库性能优化、存储过程
+ （三）SQL语句    分页2 count sum ISNULL() 外键级联 存储过程 数据订正 in操作
+    1.利用延迟关联或者子查询优化超多分页场景。
+    如：先快速定位需要获取的 id 段，然后再关联：
+       SELECT com.junjun.demo.a. FROM 表 1 com.junjun.demo.a, (select id from 表 1 where 条件 LIMIT 100000,20 ) b where com.junjun.demo.a.id=b.id
+
+    2.不要使用 count(列名)或 count(常量)来替代 count()，count()是 SQL92 定义的
+      标准统计行数的语法，跟数据库无关，跟 NULL 和非 NULL 无关。
+      说明：count()会统计值为 NULL 的行，而 count(列名)不会统计此列为 NULL 值的行。
+
+    3.当某一列的值全是 NULL 时，count(col)的返回结果为 0，但 sum(col)的返回结果为
+      NULL，因此使用 sum()时需注意 NPE 问题。
+      正例：可以使用如下方式来避免 sum 的 NPE 问题：SELECT IF(ISNULL(SUM(g)),0,SUM(g))
+      FROM table;
+
+    4.使用 ISNULL()来判断是否为 NULL 值。
+        说明：NULL 与任何值的直接比较都为 NULL。
+        1） NULL<>NULL 的返回结果是 NULL，而不是 false。
+        2） NULL=NULL 的返回结果是 NULL，而不是 true。
+        3） NULL<>1 的返回结果是 NULL，而不是 true。
+
+    5.在代码中写分页查询逻辑时，若count为0应直接返回，避免执行后面的分页语句。
+
+    6.不得使用外键与级联，一切外键概念必须在应用层解决。
+        说明：以学生和成绩的关系为例，学生表中的 student_id是主键，那么成绩表中的 student_id
+        则为外键。如果更新学生表中的 student_id，同时触发成绩表中的 student_id 更新，即为
+        级联更新。外键与级联更新适用于单机低并发，不适合分布式、高并发集群；级联更新是强阻
+        塞，存在数据库更新风暴的风险；外键影响数据库的插入速度。
+
+    7.禁止使用存储过程，存储过程难以调试和扩展，更没有移植性。
+
+    8.数据订正时，删除和修改记录时，要先 select，避免出现误删除，确认无误才能执
+    行更新语句。
+
+    9.in操作能避免则避免，若实在避免不了，需要仔细评估in后边的集合元素数量，控
+    制在1000个之内。
+
+ （四）ORM映射
+    1.在表查询中，一律不要使用作为查询的字段列表，需要哪些字段必须明确写明。
+    4.sql.xml配置参数使用：#{}、#param#不要使用${}，此种方式容易出现SQL注入。

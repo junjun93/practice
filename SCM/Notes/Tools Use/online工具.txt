@@ -1,0 +1,318 @@
+
+《Thinking In Java》 VS 《Effective Java》 VS 《深入理解Java虚拟机》
+   解压文件 tar -zxvf com.junjun.demo.a.gz
+    移动文件 mv com.junjun.demo.a.gz /setup
+    cp -v com.junjun.demo.a.txt  /developer/setup
+    rm -v -i com.junjun.demo.a.txt
+    /只有根目录要加
+    
+六.支付
+        
+OSGI：一种java开发技术，实现项目模块逻辑-->物理意义上的解耦
+    内嵌了一个Web服务器的，就是jetty；
+    项目启动后，不停止运行，然后停掉其中的一个模块，需要可以再重新加上。
+    该模块消失并不是javascript的技术，而是一种服务器技术，我们是通过服务器内部把它动态卸载掉的；
+
+1.初识OSGI：
+    http://blog.csdn.net/acmman/article/details/50848595
+2.idea中建立一个OSGI项目
+    http://blog.csdn.net/love_taylor/article/details/75194394
+3.基于idea+maven的OSGI示例
+    http://www.itboth.com/d/NNZRzeEVvQna/demo-osgi
+4.quick start
+    http://enroute.osgi.org/qs/050-start.html
+ 
+ 
+    
+    门户：用户登录、产品、购物车、收货地址、订单、支付
+    后台：用户管理、品类管理、产品管理、订单管理、统计管理
+    
+功能性bug
+    防止横向越权、纵向越权。调用接口字段顺序问题
+    category品类名字相同，仍然可以添加；parentId不存在，仍然可以添加；产品save.do可以重复添加同一条信息；
+    产品list.do、detail.do有图片服务器问题；产品管理图片、富文本上传功能未测；
+    shipping的收件人名字重复报500，前端可以避免名字相同；update.do接口测试字段不全问题
+    
+    vsftpd 08:30-次日晚上8:00左右，头天搞到00:30定位问题
+    jdk安装3个半小时
+    
+    d m登录名产生主目录
+    /root :noh 取消高亮 :wq! 强制保存
+    exit
+    mv 文件名     重命名
+    
+    ssh root@47.97.215.177
+    ssh junjun@47.97.215.177
+    useradd -d /usr/junjun -m junjun
+    cd /usr/junjun
+    passwd junjun
+    vim /etc/sudoers
+    exit
+    
+    首次要设置root用户密码
+    passwd root	
+    切换到root用户
+    su root 	
+    
+    1.rpm -qa|grep jdk
+    rpm -e  --nodeps  jdk版本
+    
+    cd /
+    mkdir developer
+    cd developer/
+    mkdir setup
+    cd setup/
+    wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.tar.gz"
+    tar -zxvf jdk-8u161-linux-x64.tar.gz
+    
+    getconf LONG_BIT
+    
+    vim /etc/profile
+    
+    2.tomcat的conf/server.xml   URIEncoding="UTF-8" 
+    bin文件夹下                启动tomcat ./startup.sh
+     /developer/apache-tomcat-7.0.73
+    3.mvn -version
+    
+    4.vsftpd
+    安装、配置vsftpd
+     
+        1.安装软件 
+            yum -y install vsftpd(自动确定)
+        2.创建虚拟用户
+             （1）选择在根或者用户目录下创建ftp文件夹  mkdir ftpfile
+             （2）添加匿名用户  useradd ftpuser -d /ftpfile -s /sbin/nologin
+                             userdel -r ftpuser
+             （3）修改ftpfile权限 chown -R ftpuser.ftpuser ./ftpfile/(写法问题)
+             （4）重设ftpuser密码 passwd ftpuser
+             （5）将用户名写到文件中，后续要引用
+                 cd /etc/vsftpd 
+                 vim chroot_list
+        3.配置    
+            （1）修改SELINUX=disabled   vim /etc/selinux/config
+            （2）保存退出 :wq
+            注：如果一会验证的时候碰到550拒绝访问请执行
+              setsebool -P ftp_home_dir 1(等价于5)
+            然后重启linux服务器，执行reboot命令
+            （3）编辑配置文件 vim /etc/vsftpd/vsftpd.conf
+                这20个配置之外的其他配置全部删除
+            注：是否使用sudo权限执行请根据具体环境来决定
+        4.防火墙配置
+        坑：今天自己遇到的CentOS7安装vsftpd重启iptables防火墙失败问题已定位：
+           在CentOS7中，有很多CentOS6中的常用服务发生了变化。其中iptables是其中比较大的一个，防火墙iptables被
+           firewalld取代。因此必须关闭并禁止启动filewalld，才能让iptables防火墙重启
+            systemctl stop firewalld
+            systemctl disable firewalld
+           
+            
+            (1) yum install iptables-services
+                vim /etc/sysconfig/iptables
+            (2)
+                -A INPUT  -p TCP --dport 61001:62000 -j ACCEPT
+                -A OUTPUT -p TCP --sport 61001:62000 -j ACCEPT
+                -A INPUT  -p TCP --dport 20 -j ACCEPT
+                -A OUTPUT -p TCP --sport 20 -j ACCEPT
+                -A INPUT  -p TCP --dport 21 -j ACCEPT
+                -A OUTPUT -p TCP --sport 21 -j ACCEPT
+                
+                -A INPUT -j REJECT --reject-with icmp-host-prohibited
+                -A FORWARD -j REJECT --reject-with icmp-host-prohibited
+            将以上配置添加到防火墙配置中
+           （3）保存退出 :wq
+           （4）重启防火墙 systemctl restart iptables
+                        systemctl enable  iptables
+           
+        5.vsftpd重用命令
+            systemctl enable vsftpd
+            systemctl restart vsftpd
+            systemctl start vsftpd
+            systemctl status vsftpd
+            
+    1.500 OOPS: cannot change directory:/product/ftpfile
+    
+    2.vsftpd：500 OOPS: vsftpd: refusing to run with writable root inside chroot ()
+    从2.3.5之后，vsftpd增强了安全检查，如果用户被限定在了其主目录下，则该用户的主目录不能再具有写权限了！如果检查发现还有写权限，就会报该错误。
+     要修复这个错误，可以用命令chmod com.junjun.demo.a-w /home/user去除用户主目录的写权限，注意把目录替换成你自己的。或者你可以在vsftpd的配置文件中增加下列两项中的一项：
+    allow_writeable_chroot=YES
+     web服务器、应用服务器;form enctype
+    
+    5.nginx依赖安装
+        （1）wget 下载地址
+            yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel 
+            ./configure
+        
+        （2）处理一些c的文件 
+             make
+             make install
+                     
+        （3）添加配置文件
+            whereis nginx 
+            cd conf
+            vim nginx.conf  添加include vhost/*.conf;
+            vhost目录下，下载4个配置文件
+
+        （4）启动
+            cd /usr/local/nginx/sbin/
+            ./nginx
+            端口占用 fuser -k 80/tcp
+
+    6.mysql
+        wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm  
+        rpm -ivh mysql-community-release-el7-5.noarch.rpm  
+        ls -1 /etc/yum.repos.d/mysql-community*
+        yum -y  install mysql-server
+        
+        vim /etc/my.cnf
+        加上 character-set-server=utf8
+            default-character-set=utf-8
+        
+
+        自启动     systemctl enable mysqld
+        
+        新安装的mysql服务后，一般需要执行数据库初始化操作 ，从而生成与权限相关的表，执行命令如下：
+         /usr/bin/mysql_install_db --user=mysql
+         
+         http://blog.csdn.net/a2011480169/article/details/51912771
+         
+        重启      systemctl restart mysqld
+        登录     mysql -u root
+        查看用户  select user,host,password from mysql.user;
+        设置密码  set password for root@localhost = password('shajia');
+        退出      exit
+        insert into mysql.user(user,host,password) values("mmall","localhost",password("passshajia"));
+        insert into mysql.user(host,user,password) values("localhost","mmall",password("passshajia"));
+        
+        ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var
+        Plugin 'FEDERATED' is disabled. /usr/sbin/mysqld: Table 'mysql.plugin' doesn
+        ERROR 1364 (HY000): Field 'ssl_cipher' doesn't have com.junjun.demo.a default value
+        sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+        sql_mode=NO_ENGINE_SUBSTITUTION
+        
+        错语原因：
+        mysql用户表的中某些字段不能为空，没有默认值，其实是操作错误，mysql添加用户是不能这样直接insert user表的
+        grant usage on *.* to 'mmall'@'localhost' identified by 'passshajia' with grant option;
+        
+                        
+        flush privileges;
+        create database `mmall` default character set utf8 COLLATE utf8_general_ci;
+        grant all privileges on mmall.* to mmall@localhost identified by 'passshajia';
+        
+        source /developer/mmall.sql;
+        select * from mmall_user\G;
+        select * from mmall_product\G;
+    
+    7.git
+       1.rpm -qa|grep git
+        rpm -e  --nodeps  git版本
+        wget http://learning.happymmall.com/git/git-v2.8.0.tar.gz
+        
+        git clone https://github.com/zTree/zTree_v3.git
+        
+        安装依赖
+        yum -y install zlib-devel openssl-devel cpio expat-devel gettext-devel curl-devel perl-ExtUtils-CBuilder perl-ExtUtils- MakeMaker 
+        tar -zxvf git-v2.8.0.tar.gz
+        cd git 2.8.0
+        make prefix=/usr/local/git all
+        make prefix=/usr/local/git install
+        vim /etc/profile
+        source /etc/profile
+        配置文件少个/
+        git config --global user.name "junjun"
+        git config --global user.email "ycfangjun@126.com"
+    不管linux、windows换行符转换    
+        git config --global core.autocrlf false
+    避免中文乱码  
+        git config --global core.quotepath off
+        
+        ssh-keygen -t rsa -C "ycfangjun@126.com"
+        eval `ssh-agent`
+        ssh-add ~/.ssh/id_rsa
+        cat ~/.ssh/id_rsa.pub
+        
+    
+    二.上线
+    ctrl+c：截断正在运行的脚本
+    vsftpd没权限，添加remotePath无用
+    设置执行权限 chmod u+x *.sh
+    dhcp static
+    
+    三.CentOS设置静态ip
+        nmcli dev status
+        vim /etc/sysconfig/network-scripts/ifcfg-ens33
+        
+        BOOTPROTO="dhcp" 变 BOOTPROTO="static"
+        加上三行
+        IPADDR=192.168.1.108
+        NATMASK=255.255.255.0
+        MM_CONTROLLED=no
+
+        systemctl restart network
+ 
+    
+    阿里云ssh总是自动断开
+    vim /etc/ssh/sshd_config
+
+    找到下面两行
+    #ClientAliveInterval 0
+    #ClientAliveCountMax 3
+    去掉注释，改成
+    ClientAliveInterval 30
+    ClientAliveCountMax 3600
+    
+    这两行的意思分别是
+    1、客户端每隔多少秒向服务发送一个心跳数据
+    2、客户端多少秒没有相应，服务器自动断掉连接
+    
+    systemctl restart sshd
+    systemctl status -l mysqld
+
+    终端窗口不关闭
+    Terminal Docked Mode
+    
+    linux查看所有运行的软件
+    ps -A
+    ps -e
+    ps -U root 
+    top
+    
+    安装OpenJDK
+    brew tap AdoptOpenJDK/openjdk
+    brew install adoptopenjdk-openjdk8
+ 
+各种bug总结：
+    1.IEDA解决源码1.5已过时
+       (1)修改Maven的Settings.xml文件添加如下内容
+       (2)在项目的pom.xml文件中添加：build-plugin 1.8
+       (3)打开项目配置，设置Modules的Language Level为”8” (file ~~Project Structure ~~Modules ~~Sources )：
+       (4)Java Compiler
+
+    2.web.xml——version4.0——JDK8.0——Tomcat9.0
+        Servlet项目，web.xml是零配置的
+
+    3.@WebServlet不能直接被前端访问，@Controller却可以
+
+    4.容器先关闭再启动，缓存没了；直接重启，缓存还在里面
+
+    5.upload.html没有文件直接提交会报错500
+
+    6.@WebServlet("mail.do")  少/，直接启动报错
+
+    理解upload1.do，并在上传的文件名中加入时间戳 p79  p11目录 p433邮件
+   
+清除本地缓存刷新页面：command+shift+delete
+IntelljIdea设置显示形参名提示
+
+各种绘图软件：
+    xmind、visio、flowchart、EdrawMax
+    
+待了解：
+    WebSocket通信协议、HTTP通信协议 RPC框架
+
+    Clouder Lab大数据专场（E2-5）
+    阿里云大学凌云训练营专场（B3-5）
+    银杏谷资本专场 10:20-10:45 雪浪云：打造工业互联“office三件套”
+
+    
+
+    
+    

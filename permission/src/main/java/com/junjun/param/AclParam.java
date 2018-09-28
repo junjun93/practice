@@ -31,14 +31,15 @@ public class AclParam {
     @Length(min = 6, max = 100, message = "权限点URL长度需要在6-100个字符之间")
     private String url;
 
+    //wrong
     @NotNull(message = "必须指定权限点的类型")
-    @Min(value = 1, message = "权限点类型不合法")
+    @Min(value = 0, message = "权限点类型不合法")
     @Max(value = 3, message = "权限点类型不合法")
     private Integer type;
 
     @NotNull(message = "必须指定权限点的状态")
     @Min(value = 0, message = "权限点状态不合法")
-    @Max(value = 0, message = "权限点状态不合法")
+    @Max(value = 1, message = "权限点状态合法")
     private Integer status;
 
     @NotNull(message = "必须制定权限点的展示顺序")

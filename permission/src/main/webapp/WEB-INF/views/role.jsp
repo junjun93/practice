@@ -31,9 +31,9 @@
     <div class="col-sm-3">
         <div class="table-header">
             角色列表&nbsp;&nbsp;
-            <a class="green" href="#">
+            <com.junjun.demo.a class="green" href="#">
                 <i class="ace-icon fa fa-plus-circle orange bigger-130 role-add"></i>
-            </a>
+            </com.junjun.demo.a>
         </div>
         <div id="roleList"></div>
     </div>
@@ -41,14 +41,14 @@
         <div class="tabbable" id="roleTab">
             <ul class="nav nav-tabs">
                 <li class="active">
-                    <a data-toggle="tab" href="#roleAclTab">
+                    <com.junjun.demo.a data-toggle="tab" href="#roleAclTab">
                         角色与权限
-                    </a>
+                    </com.junjun.demo.a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#roleUserTab">
+                    <com.junjun.demo.a data-toggle="tab" href="#roleUserTab">
                         角色与用户
-                    </a>
+                    </com.junjun.demo.a>
                 </li>
             </ul>
             <div class="tab-content">
@@ -109,13 +109,13 @@
             <div class="dd2-content" style="cursor:pointer;">
             {{name}}
             <span style="float:right;">
-                <a class="green role-edit" href="#" data-id="{{id}}" >
+                <com.junjun.demo.a class="green role-edit" href="#" data-id="{{id}}" >
                     <i class="ace-icon fa fa-pencil bigger-100"></i>
-                </a>
+                </com.junjun.demo.a>
                 &nbsp;
-                <a class="red role-delete" href="#" data-id="{{id}}" data-name="{{name}}">
+                <com.junjun.demo.a class="red role-delete" href="#" data-id="{{id}}" data-name="{{name}}">
                     <i class="ace-icon fa fa-trash-o bigger-100"></i>
-                </a>
+                </com.junjun.demo.a>
             </span>
             </div>
         </li>
@@ -251,7 +251,7 @@
             currentRole.addClass("no-hover");
             lastRoleId = roleId;
 
-            $('#roleTab a:first').trigger('click');
+            $('#roleTab com.junjun.demo.a:first').trigger('click');
             if (selectFirstTab) {
                 loadRoleAcl(roleId);
             }
@@ -410,7 +410,7 @@
                 }
             })
         }
-        $("#roleTab a[data-toggle='tab']").on("shown.bs.tab", function(e) {
+        $("#roleTab com.junjun.demo.a[data-toggle='tab']").on("shown.bs.tab", function(e) {
             if(lastRoleId == -1) {
                 showMessage("加载角色关系","请先在左侧选择操作的角色", false);
                 return;

@@ -21,9 +21,9 @@
     <div class="col-sm-3">
         <div class="table-header">
             部门列表&nbsp;&nbsp;
-            <a class="green" href="#">
+            <com.junjun.demo.a class="green" href="#">
                 <i class="ace-icon fa fa-plus-circle orange bigger-130 dept-add"></i>
-            </a>
+            </com.junjun.demo.a>
         </div>
         <div id="deptList">
         </div>
@@ -32,9 +32,9 @@
         <div class="col-xs-12">
             <div class="table-header">
                 用户列表&nbsp;&nbsp;
-                <a class="green" href="#">
+                <com.junjun.demo.a class="green" href="#">
                     <i class="ace-icon fa fa-plus-circle orange bigger-130 user-add"></i>
-                </a>
+                </com.junjun.demo.a>
             </div>
             <div>
                 <div id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
@@ -154,13 +154,13 @@
             <div class="dd2-content" style="cursor:pointer;">
             {{name}}
             <span style="float:right;">
-                <a class="green dept-edit" href="#" data-id="{{id}}" >
+                <com.junjun.demo.a class="green dept-edit" href="#" data-id="{{id}}" >
                     <i class="ace-icon fa fa-pencil bigger-100"></i>
-                </a>
+                </com.junjun.demo.a>
                 &nbsp;
-                <a class="red dept-delete" href="#" data-id="{{id}}" data-name="{{name}}">
+                <com.junjun.demo.a class="red dept-delete" href="#" data-id="{{id}}" data-name="{{name}}">
                     <i class="ace-icon fa fa-trash-o bigger-100"></i>
-                </a>
+                </com.junjun.demo.a>
             </span>
             </div>
         </li>
@@ -170,19 +170,19 @@
 <script id="userListTemplate" type="x-tmpl-mustache">
 {{#userList}}
 <tr role="row" class="user-name odd" data-id="{{id}}"><!--even -->
-    <td><a href="#" class="user-edit" data-id="{{id}}">{{username}}</a></td>
+    <td><com.junjun.demo.a href="#" class="user-edit" data-id="{{id}}">{{username}}</com.junjun.demo.a></td>
     <td>{{showDeptName}}</td>
     <td>{{mail}}</td>
     <td>{{telephone}}</td>
     <td>{{#bold}}{{showStatus}}{{/bold}}</td> <!-- 此处套用函数对status做特殊处理 -->
     <td>
         <div class="hidden-sm hidden-xs action-buttons">
-            <a class="green user-edit" href="#" data-id="{{id}}">
+            <com.junjun.demo.a class="green user-edit" href="#" data-id="{{id}}">
                 <i class="ace-icon fa fa-pencil bigger-100"></i>
-            </a>
-            <a class="red user-acl" href="#" data-id="{{id}}">
+            </com.junjun.demo.a>
+            <com.junjun.demo.a class="red user-acl" href="#" data-id="{{id}}">
                 <i class="ace-icon fa fa-flag bigger-100"></i>
-            </a>
+            </com.junjun.demo.a>
         </div>
     </td>
 </tr>

@@ -21,7 +21,7 @@ pageContext.setAttribute("path",path);
 	</head>
 	<body>
 	    
-		<h1> a.jsp页面 </h1>
+		<h1> com.junjun.demo.a.jsp页面 </h1>
 		
 		${param.userName }
 	    

@@ -1,0 +1,67 @@
+1: EL表达式
+	1):作用
+		向页面输出显示内容,可以用来替代我们的jsp表达式
+	2):jsp页面注意
+		在jsp页面中写Java代码会显得代码很乱,建议尽量使用jsp标签和EL表达式
+	3):语法: ${内容 }
+	4):EL中的隐藏对象
+		名称					作用
+		pageScope			获取PageContext域范围里的属性
+		requestScope		获取request域范围里的属性
+		sessionScope		获取session域范围里的属性
+		applicationScope	获取ServletContext域范围里的属性
+		param				相当于ServletRequest.getParameter(String name)
+		paramValues			相当于ServletRequest.getParameterValues(String name)
+		header				相当于ServletRequest.getHeader(String name)
+		headerValues		相当于ServletRequest.getHeaders(String name)
+		cookie				相当于ServletRequest.getCookies()
+		initParam			相当于ServletContext.getInitParameter(String name)
+		PageContext			表示jsp的PageContext
+    5):常用方式
+        ①获取域对象、查找、对象里的数据，获取数组、List、Map里的数据
+        ②获取请求参数、复合参数、cookie,特殊字符处理
+        ③算术、关系、逻辑运算符，条件、Empty表达式(空TX)
+            ${1 eq 2}
+
+2: jsp标签
+	1): 作用
+		替代jsp中的Java代码
+	2): jsp标签可以分为 三大类
+		com.junjun.demo.a): 内置标签	(直接使用,不需要另外导入)
+		b): jstl标签	(需要在jsp页面导入jstl标签库)
+		c): 自定义标签(由程序员自定义,需要在页面导入自定义标签)
+
+3: 内置标签
+	1): 转发标签
+		作用: 可以使用做页面的转发
+		如: <jsp:forward page="/index.jsp"></jsp:forward>
+	2): 页面包含标签
+		作用: 包含其它的页面
+		如: <jsp:include page="/com.junjun.demo.a.jsp">
+				<%-- 设置传递参数,要解决请求乱码 --%>
+				<jsp:param value="狗娃" name="userName"/>
+				<jsp:param value="123" name="password"/>
+			</jsp:include>
+		与<%@include %>指令的对比:
+			com.junjun.demo.a): <%@include %>指令叫做静态包含, <jsp:include>内置标签叫做动态包含
+			b): 动态包含可以设置参数传递到被包含页面, 而静态包含不能
+			c): 动态包含先把被包含的jsp页面翻译再合并,所以会生成多个java文件
+				静态包含会先合并,再翻译只会生成一个java文件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

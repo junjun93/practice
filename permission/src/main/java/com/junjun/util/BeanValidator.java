@@ -47,7 +47,7 @@ public class BeanValidator {
                 return Collections.emptyMap();
             }
             Object object = iterator.next();
-            errors = validate(object, new Class[0]);
+            errors = validate(object);
         } while (errors.isEmpty());
 
         return errors;
@@ -57,7 +57,7 @@ public class BeanValidator {
         if (objects != null && objects.length > 0) {
             return validateList(Lists.asList(first, objects));
         } else {
-            return validate(first, new Class[0]);
+            return validate(first);
         }
     }
 

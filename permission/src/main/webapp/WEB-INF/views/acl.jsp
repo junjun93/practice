@@ -21,9 +21,9 @@
     <div class="col-sm-3">
         <div class="table-header">
             权限模块列表&nbsp;&nbsp;
-            <a class="green" href="#">
+            <com.junjun.demo.a class="green" href="#">
                 <i class="ace-icon fa fa-plus-circle orange bigger-130 aclModule-add"></i>
-            </a>
+            </com.junjun.demo.a>
         </div>
         <div id="aclModuleList">
         </div>
@@ -32,9 +32,9 @@
         <div class="col-xs-12">
             <div class="table-header">
                 权限点列表&nbsp;&nbsp;
-                <a class="green" href="#">
+                <com.junjun.demo.a class="green" href="#">
                     <i class="ace-icon fa fa-plus-circle orange bigger-130 acl-add"></i>
-                </a>
+                </com.junjun.demo.a>
             </div>
             <div>
                 <div id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
@@ -176,17 +176,17 @@
             <div class="dd2-content" style="cursor:pointer;">
             {{name}}
             &nbsp;
-            <a class="green {{#showDownAngle}}{{/showDownAngle}}" href="#" data-id="{{id}}" >
+            <com.junjun.demo.a class="green {{#showDownAngle}}{{/showDownAngle}}" href="#" data-id="{{id}}" >
                 <i class="ace-icon fa fa-angle-double-down bigger-120 sub-aclModule"></i>
-            </a>
+            </com.junjun.demo.a>
             <span style="float:right;">
-                <a class="green aclModule-edit" href="#" data-id="{{id}}" >
+                <com.junjun.demo.a class="green aclModule-edit" href="#" data-id="{{id}}" >
                     <i class="ace-icon fa fa-pencil bigger-100"></i>
-                </a>
+                </com.junjun.demo.a>
                 &nbsp;
-                <a class="red aclModule-delete" href="#" data-id="{{id}}" data-name="{{name}}">
+                <com.junjun.demo.a class="red aclModule-delete" href="#" data-id="{{id}}" data-name="{{name}}">
                     <i class="ace-icon fa fa-trash-o bigger-100"></i>
-                </a>
+                </com.junjun.demo.a>
             </span>
             </div>
         </li>
@@ -197,7 +197,7 @@
 <script id="aclListTemplate" type="x-tmpl-mustache">
 {{#aclList}}
 <tr role="row" class="acl-name odd" data-id="{{id}}"><!--even -->
-    <td><a href="#" class="acl-edit" data-id="{{id}}">{{name}}</a></td>
+    <td><com.junjun.demo.a href="#" class="acl-edit" data-id="{{id}}">{{name}}</com.junjun.demo.a></td>
     <td>{{showAclModuleName}}</td>
     <td>{{showType}}</td>
     <td>{{url}}</td>
@@ -205,12 +205,12 @@
     <td>{{seq}}</td>
     <td>
         <div class="hidden-sm hidden-xs action-buttons">
-            <a class="green acl-edit" href="#" data-id="{{id}}">
+            <com.junjun.demo.a class="green acl-edit" href="#" data-id="{{id}}">
                 <i class="ace-icon fa fa-pencil bigger-100"></i>
-            </a>
-            <a class="red acl-role" href="#" data-id="{{id}}">
+            </com.junjun.demo.a>
+            <com.junjun.demo.a class="red acl-role" href="#" data-id="{{id}}">
                 <i class="ace-icon fa fa-flag bigger-100"></i>
-            </a>
+            </com.junjun.demo.a>
         </div>
     </td>
 </tr>

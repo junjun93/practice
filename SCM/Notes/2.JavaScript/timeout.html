@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <!--声明当前页面的编码集：charset=gbk,gb2312（中文编码），utf-8（国际编码）-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--声明当前页面的三要素-->
+    <link type="img/x-ico" rel="icon" href="http://moonbuy.cn/mall/static/images/favicon.ico">
+    <title></title>
+    <meta name="keywords" content="关键词,关键词">
+    <meta name="description" content="">
+
+    <!--js/css-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clear:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        com.junjun.demo.a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+
+    /* 1.arguments */
+    function sum(){
+        var n = 0;
+        for(var i=0; i<arguments.length; i++){
+            n += arguments[i];
+        }
+        console.log(n);
+    }
+    sum(1,2,3,4,5,6,7,8,9);
+
+    function fn(com.junjun.demo.a){
+        console.log(arguments.length);
+        // 回调函数参数恒为1
+        console.log(arguments.callee.length);
+        console.log(fn.length);
+        if(arguments.length === arguments.callee.length){
+            console.log(com.junjun.demo.a);
+        }else{
+            console.log('参数不对应，请传递参数');
+        }
+    }
+    fn(2,3,4);
+    /* 2.timeOut */
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+1: JSTL标签
+	1): 使用
+		首先需要导入两个jar(jstl-1.2.jar, standard-1.1.2.jar)
+		然后在我们的jsp页面导入JSTL的核心标签库
+		如: <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	2): 分类
+		com.junjun.demo.a): 核心标签库    (c标签)--重点
+		b): 国际化标签库	(fmt标签)
+		c): EL函数库		(fn标签)
+		d): xml标签库		(x标签)
+		e): sql标签库		(sql标签)
+
+2: JSTL核心标签库
+	1): 表达式相关
+	2): 循环判断相关
+	3): url相关

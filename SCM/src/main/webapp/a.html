@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link type="img/x-ico" rel="icon" href="images/logo.ico">
+    <title>杭州鼎基管理咨询有限公司</title>
+    <link href="ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        body,html {
+            height: 100%;
+            padding:0;background:#EAEEF5;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .l-link {
+            display: block;
+            height: 26px;
+            line-height: 26px;
+            padding-left: 10px;
+            text-decoration: underline;
+            color: #333;
+        }
+
+        .l-link2 {
+            text-decoration: underline;
+            color: white;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+
+        .l-layout-top {
+            background: #102A49;
+            color: White;
+        }
+
+        .l-layout-bottom {
+            background: #E5EDEF;
+            text-align: center;
+        }
+
+        #pageloading {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            /*background: white url('loading.gif') no-repeat center;*/
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+        }
+
+        .l-link {
+            display: block;
+            line-height: 22px;
+            height: 22px;
+            padding-left: 16px;
+            border: 1px solid white;
+            margin: 4px;
+        }
+
+        .l-link-over {
+            background: #FFEEAC;
+            border: 1px solid #DB9F00;
+        }
+
+        .l-winbar {
+            background: #2B5A76;
+            height: 30px;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            z-index: 99999;
+        }
+
+        .space {
+            color: #E7E7E7;
+        }
+        /* 顶部 */
+        .l-topmenu {
+            margin: 0;
+            padding: 0;
+            height: 62px;
+            line-height: 62px;
+            background-color: rgb(31, 70, 145);
+            position: relative;
+            border-top: 1px solid #1D438B;
+        }
+
+        .l-topmenu-logo {
+            color: #E7E7E7;
+            padding-left: 341px;
+            line-height: 2px;
+            /*background: url('images/topleft.jpg') no-repeat 0px 0px;*/
+        }
+
+        .l-topmenu-welcome {
+            position: absolute;
+            height: 24px;
+            line-height: 24px;
+            right: 30px;
+            top: 17px;
+            color: #070A0C;
+        }
+
+        .l-topmenu-welcome com.junjun.demo.a {
+            color: #E7E7E7;
+            text-decoration: none;
+        }
+
+        .body-gray2014 #framecenter {
+            margin-top: 3px;
+        }
+
+        .viewsourcelink {
+            background: #B3D9F7;
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 3px;
+            padding: 6px 4px;
+            color: #333;
+            text-decoration: underline;
+        }
+
+        .viewsourcelink-over {
+            background: #81C0F2;
+        }
+
+        .l-topmenu-welcome label {
+            color: white;
+        }
+
+        #skinSelect {
+            margin-right: 6px;
+        }
+
+        /*left*/
+        /*#layout1{margin: 4px;}*/
+        #accordion1{
+            width:100px;
+            height:0;
+            overflow: auto;
+        }                                   /*10px*/
+        .menu{float:left; margin:0; width:200px; height:300px;background:#fff; border:1px solid #ccc; overflow:auto;}
+    </style>
+
+</head>
+<body>
+<div id="pageloading"></div>
+<div id="topmenu" class="l-topmenu">
+    <div class="l-topmenu-logo">&nbsp;</div>
+    <div class="l-topmenu-welcome" style="color: white">
+        欢迎您：<span id="UserName"></span> | <com.junjun.demo.a href="#">重新登录</com.junjun.demo.a> |
+        <com.junjun.demo.a href="#" onclick="OnPassword()">密码修改</com.junjun.demo.a> |
+        <com.junjun.demo.a href="" target="_blank">使用帮助</com.junjun.demo.a> |
+        <label style="display: none"> 皮肤切换：</label>
+        <select id="skinSelect" style="display: none">
+            <option value="aqua">默认</option>
+            <option value="silvery">Silvery</option>
+            <option value="gray">Gray</option>
+            <option value="gray2014">Gray2014</option>
+        </select>
+    </div>
+</div>
+<div id="layout1">
+    <div position="left" title="功能列表" id="accordion1">
+
+    </div>
+    <div position="center" id="framecenter">
+        <div tabid="home" title="主页" style="">
+
+        </div>
+    </div>
+</div>
+<!--菜单-->
+<div class="menu">
+    <!--id/class-->
+    <ul id="tree1">
+        <li>
+            <span>供应链系统</span>
+            <ul>
+                <li>
+                    <span>采购计划</span>
+                    <ul>
+                        <li><span>供应商图纸</span></li>
+                        <li><span>品号图纸</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>采购送货</span>
+                    <ul>
+                        <li><span>录入送货单</span></li>
+                        <li><span>打印送货单</span></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="ligerUI/js/core/base.js"></script>
+<script src="ligerUI/js/plugins/ligerTree.js"></script>
+<script>
+    $.ligerui.controls.Tree.prototype.alert = function ()
+    {
+        var data = this.getChecked();
+        for (var i = 0; i < data.length; i++)
+        {
+            alert(data[i]['data']['text']);
+        }
+    };
+    function f_click()
+    {
+        t.alert();
+    }
+    var t;
+    $(function ()
+    {
+        t = $("#tree1").ligerTree({ checkbox: true });
+    });
+</script>
+
+</body>
+</html>

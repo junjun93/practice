@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c33a496a-2ffe-4096-b028-15803e172b5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ServletDemo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/SCM_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/SCM_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/SSM_Demo_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/SSM_Demo_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/Train_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/permission2_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/permission2_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/permission_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/permission_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_mchange_c3p0_0_9_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_mchange_mchange_commons_java_0_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__com_zaxxer_HikariCP_java6_2_3_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_lettuce_lettuce_core_5_0_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_buffer_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_codec_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_common_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_handler_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_resolver_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_netty_netty_transport_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__io_projectreactor_reactor_core_3_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_assertj_assertj_core_3_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_attoparser_attoparser_2_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_mockito_mockito_core_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_projectlombok_lombok_1_16_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_quartz_scheduler_quartz_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_quartz_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_data_spring_data_commons_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_data_spring_data_keyvalue_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_data_spring_data_redis_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_aop_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_beans_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_context_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_context_support_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_core_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_expression_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_oxm_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_test_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_tx_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_web_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_unbescape_unbescape_1_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Gradle__org_yaml_snakeyaml_1_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/SCM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SCM/SCM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SCM/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SCM/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/src/main/resources/datasource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SCM/src/main/resources/datasource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/src/main/resources/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SCM/src/main/resources/spring-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SCM/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/src/main/webapp/WEB-INF/项目需求.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../SCM/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/SCM/WEB-INF/classes/datasource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SCM/target/SCM/WEB-INF/classes/datasource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/SCM/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SCM/target/SCM/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/datasource.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/ehcache.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/admmaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/admmfMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/admmgMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/admmjMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/admmkMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/admmlMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/admmmMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/admmnMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/systaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/systbMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/systcMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/systdMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/systeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/systfMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mappers/systhMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/mybatisConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/target/classes/spring-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SCM/需求文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../SCM/需求文档.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/SSM-Demo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/doc/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/java/cn/mrdear/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/java/cn/mrdear/controller/ErrorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/java/cn/mrdear/entity/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/java/cn/mrdear/exception/GlobalException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/java/cn/mrdear/mapper/BookMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/java/cn/mrdear/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/java/cn/mrdear/service/impl/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/resources/ModelGenerator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/resources/db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/resources/ehcache.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/resources/mybatis/mapper/BookMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/resources/mybatis/sqlmapconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/resources/spring/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/resources/spring/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/webapp/WEB-INF/view/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/target/classes/ModelGenerator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/target/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/target/classes/db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/target/classes/ehcache.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/target/classes/mybatis/mapper/BookMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/target/classes/mybatis/sqlmapconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/target/classes/spring/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SSM-Demo/target/classes/spring/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Train/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Train/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Train/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Train/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainSys/WebRoot/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainSys/WebRoot/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainSys/WebRoot/js/jquery-1.8.3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainSys/WebRoot/js/jquery-1.8.3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainSys/src/com/traininfo/controller/dodeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainSys/src/com/traininfo/controller/dodeleteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainSys/src/com/traininfo/controller/doindexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainSys/src/com/traininfo/controller/doindexServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrainSys/src/com/traininfo/controller/doshowtrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TrainSys/src/com/traininfo/controller/doshowtrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15/WebContent/bootstrap-3.3.7/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/WebContent/bootstrap-3.3.7/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15/WebContent/bootstrap-3.3.7/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/WebContent/bootstrap-3.3.7/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15/WebContent/jsp/a.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/WebContent/jsp/a.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15/WebContent/jsp/b.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/WebContent/jsp/b.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15/src/com/tz/srevlet/demo/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/src/com/tz/srevlet/demo/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15/src/com/tz/srevlet/demo/filter/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/src/com/tz/srevlet/demo/filter/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15/src/com/tz/srevlet/demo/filter/MyEncodingRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/src/com/tz/srevlet/demo/filter/MyEncodingRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15/src/com/tz/srevlet/demo/filter/SuperFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/src/com/tz/srevlet/demo/filter/SuperFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15/src/com/tz/srevlet/demo/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day15/src/com/tz/srevlet/demo/servlet/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day16/src/com/tz/servlet/dao/UserInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day16/src/com/tz/servlet/dao/UserInfoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/junjun/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/junjun/demo/MyPasswordEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/junjun/demo/MyUserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/junjun/demo/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/junjun/demo/SpringSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/junjun/demo/a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/test/java/com/junjun/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/permission.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/permission.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/common/HttpInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/common/HttpInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/controller/SysAclController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/controller/SysAclController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/controller/SysAclModuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/controller/SysAclModuleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/dao/SysAclMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/dao/SysAclMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/param/AclParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/param/AclParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/param/RoleParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/service/SysAclModuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/service/SysAclModuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/service/SysAclService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/service/SysAclService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/service/SysTreeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/service/SysTreeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/util/BeanValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/java/com/junjun/util/BeanValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/acl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/acl.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/dept.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/dept.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/exception.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/exception.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/log.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/log.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/noAuth.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/noAuth.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/role.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/WEB-INF/views/role.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/assets/js/fuelux/data/fuelux.tree-sample-demo-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/assets/js/fuelux/data/fuelux.tree-sample-demo-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/bootstrap3.3.5/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/bootstrap3.3.5/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/bootstrap3.3.5/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/bootstrap3.3.5/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/common/page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/common/page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/js/ie-emulation-modes-warning.js" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/js/ie-emulation-modes-warning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/src/main/webapp/js/ie10-viewport-bug-workaround.js" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/src/main/webapp/js/ie10-viewport-bug-workaround.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/beans/Mail$MailBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/beans/Mail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/beans/PageQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/beans/PageResult$PageResultBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/beans/PageResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/common/ApplicationContextHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/common/HttpInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/common/JsonData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/common/RequestHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/common/SpringExceptionResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/controller/SysAclController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/controller/SysAclModuleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/controller/SysDeptController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/controller/SysUserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dao/SysAclMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dao/SysAclModuleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dao/SysDeptMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dao/SysLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dao/SysRoleAclMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dao/SysRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dao/SysRoleUserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dao/SysUserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dao/TestDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dto/AclDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dto/AclModuleLevelDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dto/DeptLevelDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/dto/SearchLogDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/exception/ParamException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/exception/PermissionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/filter/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysAcl$SysAclBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysAcl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysAclModule$SysAclModuleBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysAclModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysDept$SysDeptBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysDept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysLog$SysLogBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysLogWithBLOBs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysRole$SysRoleBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysRoleAcl$SysRoleAclBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysRoleAcl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysRoleUser$SysRoleUserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysRoleUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysUser$SysUserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/model/SysUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/param/AclModuleParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/param/AclParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/param/DeptParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/param/RoleParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/param/SearchLogParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/param/TestVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/param/UserParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/service/SysAclModuleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/service/SysAclService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/service/SysDeptService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/service/SysTreeService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/service/SysTreeService$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/service/SysTreeService$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/service/SysTreeService$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/service/SysTreeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/service/SysUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/util/BeanValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/util/IpUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/util/JsonMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/util/LevelUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/util/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/util/MailUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/com/junjun/util/PasswordUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/mapper/SysAclMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/mapper/SysAclModuleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/mapper/SysDeptMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/mapper/SysLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/mapper/SysRoleAclMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/mapper/SysRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/mapper/SysRoleUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/mapper/SysUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/mapper/TestMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/redis.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/redis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/classes/settings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/common/HttpInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/common/HttpInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/controller/SysAclController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/controller/SysAclController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/controller/SysAclModuleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/controller/SysAclModuleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/filter/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/param/AclParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/param/AclParam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/param/RoleParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/param/RoleParam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysAclModuleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysAclModuleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysAclService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysAclService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysTreeService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysTreeService$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysTreeService$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysTreeService$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysTreeService$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysTreeService$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysTreeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/classes/com/junjun/service/SysTreeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/views/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/WEB-INF/views/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/assets/js/fuelux/data/fuelux.tree-sample-demo-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/assets/js/fuelux/data/fuelux.tree-sample-demo-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/bootstrap3.3.5/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/bootstrap3.3.5/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/bootstrap3.3.5/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/bootstrap3.3.5/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/js/ie-emulation-modes-warning.js" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/js/ie-emulation-modes-warning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/target/permission/js/ie10-viewport-bug-workaround.js" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/target/permission/js/ie10-viewport-bug-workaround.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../permission/接口文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/../permission/接口文档.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue-manage-system" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-manage-system" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../正式期.md" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1285511102">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../weather" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../weather/hello-world" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../weather/helloworld" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../weather/micro-weather-basic" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/local/Cellar/maven/3.5.2/libexec" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat v9.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.2" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Default_(Template)_Project" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50583" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c33a496a-2ffe-4096-b028-15803e172b5c" name="Default Changelist" comment="" />
+      <created>1537881764790</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537881764790</updated>
+      <workItem from="1537881766556" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.49315068" visible="true" weight="0.1898223" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24959612" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Web" order="5" side_tool="true" weight="0.34087238" />
+      <window_info id="Favorites" order="6" sideWeight="0.5068493" side_tool="true" weight="0.20078126" />
+      <window_info id="Designer" order="7" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32933334" />
+      <window_info anchor="bottom" x="735" y="52" width="545" height="186" id="Run" order="2" weight="0.32933334" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.31866667" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32737276" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32933334" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3287483" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32933334" />
+      <window_info anchor="bottom" x="719" y="29" width="561" height="247" id="Application Servers" order="13" type="FLOATING" weight="0.32933334" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2584814" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jquery-1.12.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

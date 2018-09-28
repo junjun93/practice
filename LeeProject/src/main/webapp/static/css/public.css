@@ -1,0 +1,58 @@
+* {
+/* 	font-size: 20px; */
+	bgcolor: "00FF66";
+}
+
+#Quietflow {
+	 left: 0;
+}
+#header a:hover,#footer a:hover {
+	font-size: larger;
+}
+
+a, span {
+	font-size: 15px;
+	text-decoration: none;
+}
+.easyui-linkbutton {
+	text-shadow: none;
+	width: 100px;
+}
+
+.panel-body {
+	font-size: 14px;
+}
+
+input {
+	border-radius: 15px;
+}
+
+/* 好看的div按钮 */
+.divBtn {
+	width: 50px;
+	display: inline-block;
+	padding: .3em .5em;
+	/*     background-image: linear-gradient(#ddd, #bbb); *//* 样式1 */
+	background-image: linear-gradient(#f5c153, #ea920d);样式2
+/* 	background-image: linear-gradient(#8eb349, #5f7c22);样式3 */
+/* 	background-image: linear-gradient(#fbb2d0, #e779aa);样式4 */
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: .3em;
+	box-shadow: 0 1px white inset;
+	text-align: center;
+	text-shadow: 0 1px 1px black;
+	color: white;
+	font-weight: bold;
+}
+
+.divBtn:active {
+	box-shadow: .05em .1em .2em rgba(0, 0, 0, .6) inset;
+	border-color: rgba(0, 0, 0, .3);
+	background: #bbb;
+}
+
+.divBtn:hover {
+	box-shadow: .05em .1em .2em rgba(0, 0, 0, .6) inset;
+}
+
+

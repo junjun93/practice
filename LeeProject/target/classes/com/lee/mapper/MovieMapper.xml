@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lee.dao.MovieMapper">
+  <resultMap id="BaseResultMap" type="com.lee.bean.Movie">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="movie_name" jdbcType="VARCHAR" property="movieName" />
+    <result column="movie_name2" jdbcType="VARCHAR" property="movieName2" />
+    <result column="movie_name3" jdbcType="VARCHAR" property="movieName3" />
+    <result column="movie_director" jdbcType="VARCHAR" property="movieDirector" />
+    <result column="movie_type" jdbcType="VARCHAR" property="movieType" />
+    <result column="movie_scriptwriter" jdbcType="VARCHAR" property="movieScriptwriter" />
+    <result column="movie_productionDirector" jdbcType="VARCHAR" property="movieProductiondirector" />
+    <result column="movie_producer" jdbcType="VARCHAR" property="movieProducer" />
+    <result column="movie_length" jdbcType="INTEGER" property="movieLength" />
+    <result column="movie_year" jdbcType="INTEGER" property="movieYear" />
+    <result column="movie_date" jdbcType="DATE" property="movieDate" />
+    <result column="movie_actors" jdbcType="VARCHAR" property="movieActors" />
+    <result column="movie_info" jdbcType="VARCHAR" property="movieInfo" />
+    <result column="movie_area" jdbcType="VARCHAR" property="movieArea" />
+    <result column="movie_poster" jdbcType="VARCHAR" property="moviePoster" />
+    <result column="movie_downloadLink1" jdbcType="VARCHAR" property="movieDownloadlink1" />
+    <result column="movie_downloadLink1Info" jdbcType="VARCHAR" property="movieDownloadlink1info" />
+    <result column="movie_downloadLink2" jdbcType="VARCHAR" property="movieDownloadlink2" />
+    <result column="movie_downloadLink2Info" jdbcType="VARCHAR" property="movieDownloadlink2info" />
+    <result column="movie_downloadLink3" jdbcType="VARCHAR" property="movieDownloadlink3" />
+    <result column="movie_downloadLink3Info" jdbcType="VARCHAR" property="movieDownloadlink3info" />
+    <result column="movie_downloadLink4" jdbcType="VARCHAR" property="movieDownloadlink4" />
+    <result column="movie_downloadLink4Info" jdbcType="VARCHAR" property="movieDownloadlink4info" />
+    <result column="movie_downloadLink5" jdbcType="VARCHAR" property="movieDownloadlink5" />
+    <result column="movie_downloadLink5Info" jdbcType="VARCHAR" property="movieDownloadlink5info" />
+    <result column="movie_screenshot1" jdbcType="VARCHAR" property="movieScreenshot1" />
+    <result column="movie_screenshot2" jdbcType="VARCHAR" property="movieScreenshot2" />
+    <result column="movie_screenshot3" jdbcType="VARCHAR" property="movieScreenshot3" />
+    <result column="movie_screenshot4" jdbcType="VARCHAR" property="movieScreenshot4" />
+    <result column="movie_screenshot5" jdbcType="VARCHAR" property="movieScreenshot5" />
+    <result column="movie_screenshot6" jdbcType="VARCHAR" property="movieScreenshot6" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, movie_name, movie_name2, movie_name3, movie_director, movie_type, movie_scriptwriter, 
+    movie_productionDirector, movie_producer, movie_length, movie_year, movie_date, movie_actors, 
+    movie_info, movie_area, movie_poster, movie_downloadLink1, movie_downloadLink1Info, 
+    movie_downloadLink2, movie_downloadLink2Info, movie_downloadLink3, movie_downloadLink3Info, 
+    movie_downloadLink4, movie_downloadLink4Info, movie_downloadLink5, movie_downloadLink5Info, 
+    movie_screenshot1, movie_screenshot2, movie_screenshot3, movie_screenshot4, movie_screenshot5, 
+    movie_screenshot6
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_movie
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+   
+  <select id="getAll" resultMap="BaseResultMap">
+		SELECT * FROM t_movie order by movie_uploadTime desc
+	</select>
+	
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_movie
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.lee.bean.Movie">
+    insert into t_movie (id, movie_name, movie_name2, 
+      movie_name3, movie_director, movie_type, 
+      movie_scriptwriter, movie_productionDirector, 
+      movie_producer, movie_length, movie_year, 
+      movie_date, movie_actors, movie_info, 
+      movie_area, movie_poster, movie_downloadLink1, 
+      movie_downloadLink1Info, movie_downloadLink2, 
+      movie_downloadLink2Info, movie_downloadLink3, 
+      movie_downloadLink3Info, movie_downloadLink4, 
+      movie_downloadLink4Info, movie_downloadLink5, 
+      movie_downloadLink5Info, movie_screenshot1, 
+      movie_screenshot2, movie_screenshot3, movie_screenshot4, 
+      movie_screenshot5, movie_screenshot6)
+    values (#{id,jdbcType=INTEGER}, #{movieName,jdbcType=VARCHAR}, #{movieName2,jdbcType=VARCHAR}, 
+      #{movieName3,jdbcType=VARCHAR}, #{movieDirector,jdbcType=VARCHAR}, #{movieType,jdbcType=VARCHAR}, 
+      #{movieScriptwriter,jdbcType=VARCHAR}, #{movieProductiondirector,jdbcType=VARCHAR}, 
+      #{movieProducer,jdbcType=VARCHAR}, #{movieLength,jdbcType=INTEGER}, #{movieYear,jdbcType=INTEGER}, 
+      #{movieDate,jdbcType=DATE}, #{movieActors,jdbcType=VARCHAR}, #{movieInfo,jdbcType=VARCHAR}, 
+      #{movieArea,jdbcType=VARCHAR}, #{moviePoster,jdbcType=VARCHAR}, #{movieDownloadlink1,jdbcType=VARCHAR}, 
+      #{movieDownloadlink1info,jdbcType=VARCHAR}, #{movieDownloadlink2,jdbcType=VARCHAR}, 
+      #{movieDownloadlink2info,jdbcType=VARCHAR}, #{movieDownloadlink3,jdbcType=VARCHAR}, 
+      #{movieDownloadlink3info,jdbcType=VARCHAR}, #{movieDownloadlink4,jdbcType=VARCHAR}, 
+      #{movieDownloadlink4info,jdbcType=VARCHAR}, #{movieDownloadlink5,jdbcType=VARCHAR}, 
+      #{movieDownloadlink5info,jdbcType=VARCHAR}, #{movieScreenshot1,jdbcType=VARCHAR}, 
+      #{movieScreenshot2,jdbcType=VARCHAR}, #{movieScreenshot3,jdbcType=VARCHAR}, #{movieScreenshot4,jdbcType=VARCHAR}, 
+      #{movieScreenshot5,jdbcType=VARCHAR}, #{movieScreenshot6,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lee.bean.Movie">
+    insert into t_movie
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="movieName != null">
+        movie_name,
+      </if>
+      <if test="movieName2 != null">
+        movie_name2,
+      </if>
+      <if test="movieName3 != null">
+        movie_name3,
+      </if>
+      <if test="movieDirector != null">
+        movie_director,
+      </if>
+      <if test="movieType != null">
+        movie_type,
+      </if>
+      <if test="movieScriptwriter != null">
+        movie_scriptwriter,
+      </if>
+      <if test="movieProductiondirector != null">
+        movie_productionDirector,
+      </if>
+      <if test="movieProducer != null">
+        movie_producer,
+      </if>
+      <if test="movieLength != null">
+        movie_length,
+      </if>
+      <if test="movieYear != null">
+        movie_year,
+      </if>
+      <if test="movieDate != null">
+        movie_date,
+      </if>
+      <if test="movieActors != null">
+        movie_actors,
+      </if>
+      <if test="movieInfo != null">
+        movie_info,
+      </if>
+      <if test="movieArea != null">
+        movie_area,
+      </if>
+      <if test="moviePoster != null">
+        movie_poster,
+      </if>
+      <if test="movieDownloadlink1 != null">
+        movie_downloadLink1,
+      </if>
+      <if test="movieDownloadlink1info != null">
+        movie_downloadLink1Info,
+      </if>
+      <if test="movieDownloadlink2 != null">
+        movie_downloadLink2,
+      </if>
+      <if test="movieDownloadlink2info != null">
+        movie_downloadLink2Info,
+      </if>
+      <if test="movieDownloadlink3 != null">
+        movie_downloadLink3,
+      </if>
+      <if test="movieDownloadlink3info != null">
+        movie_downloadLink3Info,
+      </if>
+      <if test="movieDownloadlink4 != null">
+        movie_downloadLink4,
+      </if>
+      <if test="movieDownloadlink4info != null">
+        movie_downloadLink4Info,
+      </if>
+      <if test="movieDownloadlink5 != null">
+        movie_downloadLink5,
+      </if>
+      <if test="movieDownloadlink5info != null">
+        movie_downloadLink5Info,
+      </if>
+      <if test="movieScreenshot1 != null">
+        movie_screenshot1,
+      </if>
+      <if test="movieScreenshot2 != null">
+        movie_screenshot2,
+      </if>
+      <if test="movieScreenshot3 != null">
+        movie_screenshot3,
+      </if>
+      <if test="movieScreenshot4 != null">
+        movie_screenshot4,
+      </if>
+      <if test="movieScreenshot5 != null">
+        movie_screenshot5,
+      </if>
+      <if test="movieScreenshot6 != null">
+        movie_screenshot6,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="movieName != null">
+        #{movieName,jdbcType=VARCHAR},
+      </if>
+      <if test="movieName2 != null">
+        #{movieName2,jdbcType=VARCHAR},
+      </if>
+      <if test="movieName3 != null">
+        #{movieName3,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDirector != null">
+        #{movieDirector,jdbcType=VARCHAR},
+      </if>
+      <if test="movieType != null">
+        #{movieType,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScriptwriter != null">
+        #{movieScriptwriter,jdbcType=VARCHAR},
+      </if>
+      <if test="movieProductiondirector != null">
+        #{movieProductiondirector,jdbcType=VARCHAR},
+      </if>
+      <if test="movieProducer != null">
+        #{movieProducer,jdbcType=VARCHAR},
+      </if>
+      <if test="movieLength != null">
+        #{movieLength,jdbcType=INTEGER},
+      </if>
+      <if test="movieYear != null">
+        #{movieYear,jdbcType=INTEGER},
+      </if>
+      <if test="movieDate != null">
+        #{movieDate,jdbcType=DATE},
+      </if>
+      <if test="movieActors != null">
+        #{movieActors,jdbcType=VARCHAR},
+      </if>
+      <if test="movieInfo != null">
+        #{movieInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="movieArea != null">
+        #{movieArea,jdbcType=VARCHAR},
+      </if>
+      <if test="moviePoster != null">
+        #{moviePoster,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink1 != null">
+        #{movieDownloadlink1,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink1info != null">
+        #{movieDownloadlink1info,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink2 != null">
+        #{movieDownloadlink2,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink2info != null">
+        #{movieDownloadlink2info,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink3 != null">
+        #{movieDownloadlink3,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink3info != null">
+        #{movieDownloadlink3info,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink4 != null">
+        #{movieDownloadlink4,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink4info != null">
+        #{movieDownloadlink4info,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink5 != null">
+        #{movieDownloadlink5,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink5info != null">
+        #{movieDownloadlink5info,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot1 != null">
+        #{movieScreenshot1,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot2 != null">
+        #{movieScreenshot2,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot3 != null">
+        #{movieScreenshot3,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot4 != null">
+        #{movieScreenshot4,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot5 != null">
+        #{movieScreenshot5,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot6 != null">
+        #{movieScreenshot6,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lee.bean.Movie">
+    update t_movie
+    <set>
+      <if test="movieName != null">
+        movie_name = #{movieName,jdbcType=VARCHAR},
+      </if>
+      <if test="movieName2 != null">
+        movie_name2 = #{movieName2,jdbcType=VARCHAR},
+      </if>
+      <if test="movieName3 != null">
+        movie_name3 = #{movieName3,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDirector != null">
+        movie_director = #{movieDirector,jdbcType=VARCHAR},
+      </if>
+      <if test="movieType != null">
+        movie_type = #{movieType,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScriptwriter != null">
+        movie_scriptwriter = #{movieScriptwriter,jdbcType=VARCHAR},
+      </if>
+      <if test="movieProductiondirector != null">
+        movie_productionDirector = #{movieProductiondirector,jdbcType=VARCHAR},
+      </if>
+      <if test="movieProducer != null">
+        movie_producer = #{movieProducer,jdbcType=VARCHAR},
+      </if>
+      <if test="movieLength != null">
+        movie_length = #{movieLength,jdbcType=INTEGER},
+      </if>
+      <if test="movieYear != null">
+        movie_year = #{movieYear,jdbcType=INTEGER},
+      </if>
+      <if test="movieDate != null">
+        movie_date = #{movieDate,jdbcType=DATE},
+      </if>
+      <if test="movieActors != null">
+        movie_actors = #{movieActors,jdbcType=VARCHAR},
+      </if>
+      <if test="movieInfo != null">
+        movie_info = #{movieInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="movieArea != null">
+        movie_area = #{movieArea,jdbcType=VARCHAR},
+      </if>
+      <if test="moviePoster != null">
+        movie_poster = #{moviePoster,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink1 != null">
+        movie_downloadLink1 = #{movieDownloadlink1,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink1info != null">
+        movie_downloadLink1Info = #{movieDownloadlink1info,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink2 != null">
+        movie_downloadLink2 = #{movieDownloadlink2,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink2info != null">
+        movie_downloadLink2Info = #{movieDownloadlink2info,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink3 != null">
+        movie_downloadLink3 = #{movieDownloadlink3,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink3info != null">
+        movie_downloadLink3Info = #{movieDownloadlink3info,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink4 != null">
+        movie_downloadLink4 = #{movieDownloadlink4,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink4info != null">
+        movie_downloadLink4Info = #{movieDownloadlink4info,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink5 != null">
+        movie_downloadLink5 = #{movieDownloadlink5,jdbcType=VARCHAR},
+      </if>
+      <if test="movieDownloadlink5info != null">
+        movie_downloadLink5Info = #{movieDownloadlink5info,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot1 != null">
+        movie_screenshot1 = #{movieScreenshot1,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot2 != null">
+        movie_screenshot2 = #{movieScreenshot2,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot3 != null">
+        movie_screenshot3 = #{movieScreenshot3,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot4 != null">
+        movie_screenshot4 = #{movieScreenshot4,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot5 != null">
+        movie_screenshot5 = #{movieScreenshot5,jdbcType=VARCHAR},
+      </if>
+      <if test="movieScreenshot6 != null">
+        movie_screenshot6 = #{movieScreenshot6,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lee.bean.Movie">
+    update t_movie
+    set movie_name = #{movieName,jdbcType=VARCHAR},
+      movie_name2 = #{movieName2,jdbcType=VARCHAR},
+      movie_name3 = #{movieName3,jdbcType=VARCHAR},
+      movie_director = #{movieDirector,jdbcType=VARCHAR},
+      movie_type = #{movieType,jdbcType=VARCHAR},
+      movie_scriptwriter = #{movieScriptwriter,jdbcType=VARCHAR},
+      movie_productionDirector = #{movieProductiondirector,jdbcType=VARCHAR},
+      movie_producer = #{movieProducer,jdbcType=VARCHAR},
+      movie_length = #{movieLength,jdbcType=INTEGER},
+      movie_year = #{movieYear,jdbcType=INTEGER},
+      movie_date = #{movieDate,jdbcType=DATE},
+      movie_actors = #{movieActors,jdbcType=VARCHAR},
+      movie_info = #{movieInfo,jdbcType=VARCHAR},
+      movie_area = #{movieArea,jdbcType=VARCHAR},
+      movie_poster = #{moviePoster,jdbcType=VARCHAR},
+      movie_downloadLink1 = #{movieDownloadlink1,jdbcType=VARCHAR},
+      movie_downloadLink1Info = #{movieDownloadlink1info,jdbcType=VARCHAR},
+      movie_downloadLink2 = #{movieDownloadlink2,jdbcType=VARCHAR},
+      movie_downloadLink2Info = #{movieDownloadlink2info,jdbcType=VARCHAR},
+      movie_downloadLink3 = #{movieDownloadlink3,jdbcType=VARCHAR},
+      movie_downloadLink3Info = #{movieDownloadlink3info,jdbcType=VARCHAR},
+      movie_downloadLink4 = #{movieDownloadlink4,jdbcType=VARCHAR},
+      movie_downloadLink4Info = #{movieDownloadlink4info,jdbcType=VARCHAR},
+      movie_downloadLink5 = #{movieDownloadlink5,jdbcType=VARCHAR},
+      movie_downloadLink5Info = #{movieDownloadlink5info,jdbcType=VARCHAR},
+      movie_screenshot1 = #{movieScreenshot1,jdbcType=VARCHAR},
+      movie_screenshot2 = #{movieScreenshot2,jdbcType=VARCHAR},
+      movie_screenshot3 = #{movieScreenshot3,jdbcType=VARCHAR},
+      movie_screenshot4 = #{movieScreenshot4,jdbcType=VARCHAR},
+      movie_screenshot5 = #{movieScreenshot5,jdbcType=VARCHAR},
+      movie_screenshot6 = #{movieScreenshot6,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -65,7 +65,7 @@ public class doindexServlet extends HttpServlet {
 	 * 车票信息显示方法
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+			throws ServletException {
 		TrainInfoService tis=new TrainInfoserviceImpl();
 		List<TrainInfo> list= tis.getTrainInfo();
 		

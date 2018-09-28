@@ -1,0 +1,321 @@
+Spring
+    一.初识
+        1.Spring框架中包括javaEE三层每一层的解决方案（一站式）
+            Web层：spring mvc
+            业务层：spring Bean管理、AOP、事务管理
+            持久层：Spring JDBCTemplate、ORM模块
+
+            Web Servlet：spring mvc
+            Core：bean对象、IoC、AOP
+            Data Access：Transactions、Spring JDBCTemplate、ORM
+
+        2.SpringBean的配置
+            基于注解的配置
+            基于XML的配置
+            基于Java的配置
+        3.SpringBean的定义
+            bean是一个被实例化、组装，并通过SpringIoC容器所管理的对象
+        4.SpringBean的作用域
+            singleton默认
+            prototype
+            request
+            session
+            如：<bean id="scope" class="com.tz.bean.ScopeBean" scope="prototype"/>
+            
+        5.SpringBean的生命周期
+            <!--实例化bean时，调用init-method指定的方法；移除bean时，调用destroy-method指定的方法-->
+                <bean id="user" class="com.tz.bean.User"/>
+                <!--等价于-->
+                User user = new User();
+                
+                <bean id="init" class="com.tz.bean.InitBean" init-method="init"/>
+                <bean id="destroy" class="com.tz.bean.DestroyBean" destroy-method="destroy"/>
+        5.SpringBean定义继承
+           <!--测试继承，两个entity本身没有关系，通过bean的parent属性赋予继承关系，与Java类的继承无关-->
+               <bean id="world" class="com.tz.bean.World">
+                   <property name="name" value="World"/>
+               </bean>
+               <bean id="china" class="com.tz.bean.China" parent="world">
+                   <!--<property name="name" value="China"/>-->
+                   <property name="age" value="10000"/>
+               </bean>     
+                 
+    二.IoC 依赖注入
+    1.dependency injection的多种方式
+        Dependency Injection在Spring框架负责创建Bean对象时，动态的将依赖对象/属性注入到Bean组件
+        <!--Setter-based dependency injection-->
+        <bean id="car1" class="com.tz.injection.CarImpl1">
+            <property name="company" value="福特汽车"/>
+            <property name="brand" value="Ford"/>
+            <property name="maxSpeed" value="180"/>
+        </bean>
+        <!--等价于，Inverse of Control创建CarImpl1对象的控制权被反转到了Spring框架-->
+        CarDao car1 = new CarImpl1();
+        car1.setCompany("福特汽车");
+        car1.setBrand("Ford");
+        car1.setMaxSpeed("180");
+        <!--Constructor-based dependency injection-->
+        <bean id="car2" class="com.tz.injection.CarImpl2">
+            <constructor-arg value="比亚迪汽车"/>
+            <constructor-arg value="BYD"/>
+            <constructor-arg value="98000"/>
+        </bean>
+        
+        <!--最常用写法-->
+        <!--配置用户开汽车，entity含有以其他entity为泛型的集合-->
+        <bean id="driver1" class="com.tz.injection.Driver">
+            <property name="name" value="满村同学"/>
+            <property name="cars">
+                <list>
+                    <ref bean="car1"/>
+                    <ref bean="car2"/>
+                </list>
+            </property>
+        </bean>
+    
+        <bean id="driver2" class="com.tz.injection.Driver">
+            <property name="name" value="君君同学"/>
+            <property name="cars" ref="cars1"/>
+        </bean>
+        <util:list id="cars1">
+            <ref bean="car1"/>
+            <ref bean="car2"/>
+        </util:list>
+
+        <!--最常用写法-->
+        <bean id="driver3" class="com.tz.injection.Driver"
+            p:name="玉帝哥哥" p:cars-ref="cars1"/>
+    2.注入集合
+        <bean id="gather" class="com.tz.spring.bean.Gather">
+            <property name="strVal" value="I am String"/>
+            <property name="intVal" value="100"/>
+            <property name="listVal">
+                <list>
+                    <value>list1</value>
+                    <value>list2</value>
+                    <value>list3</value>
+                    <value>list4</value>
+                    <value>list5</value>
+                </list>
+            </property>
+            
+            <property name="setVal">
+                <set>
+                    <value>set1</value>
+                    <value>set5</value>
+                    <value>set8</value>
+                </set>
+            </property>
+            
+            <property name="mapVal">
+                <map>
+                    <entry key="k1" value="map1"/>
+                    <entry key="k2" value="map2"/>
+                    <entry key="k3" value="map3"/>
+                    <entry key="k4" value="map4"/>
+                    <entry key="k5" value="map5"/>
+                </map>
+            </property>
+        </bean>
+    3.lazy init，用于访问服务器加载时间长的情况下
+        <!--true:表示这个bean已经懒加载 -->
+        <bean id="gatherOther" class="com.tz.spring.bean.GatherOther" lazy-init="false"/>
+        
+    4.autowire
+        <bean id="person" class="com.tz.Person" p:name="满村同学" autowire="byName"/>
+        <bean id="person" class="com.tz.Person" p:name="满村同学" autowire="byType"/>
+        <!--不推荐 存在多个构造器时, 此种自动装配方式将会很复杂-->
+        <bean id="person" class="com.tz.Person" p:name="满村同学" autowire="constructor"/>
+    5.annotation
+        @Component      普通的bean,等价于<bean id="" class="">
+
+        @Repository     声明Dao的bean
+        @Service        声明Service的bean
+        @Controller     声明Controller的bean
+        
+        @Resource       默认byName，找不到就用byType
+        @Autowired      byType自动装配bean，用于装配Dao、Service的bean
+        @Autowired @Qualifier  指定用byName的方式进行匹配
+        
+    总结：Spring的Inverse of Control容器是通过dependency injection来实现的
+        SpringIOC容器是一个IOC Service Provider。提供了两种容器类型：BeanFactory和ApplicationContext
+应用: SpringJdbcTemplate实现（回看）
+
+    三.AOP 嫁接
+    1.定义
+        Aspect-Oriented Programming是一种新的方法论, 是对传统Object-Oriented Programming的补充，
+        是代理模式的应用
+    2.实现    InvocationHandler调用处理器
+        AOP的底层实现的原理都是Java反射机制中的动态代理
+        每一个动态代理类都必须要实现InvocationHandler这个接口，并e且每个代理类的实例都关联到了一个handler，
+        当我们通过代理对象调用一个方法的时候，这个方法的调用就会被转发为由InvocationHandler这个接口的invoke 
+        方法来进行调用。我们来看看InvocationHandler这个接口的唯一一个方法invoke方法
+        
+        讲解案例：JDKProxyTest
+        注意:动态代理有两种方式:jdk动态代理/cglib动态代理
+            jdk的动态代理机制只能代理实现了接口的类
+            cglib的动态代理既可以代理实现了接口的类,也可以代理没有实现接口的类
+    3.通知类型
+        前置通知org.springframework.aop.MethodBeforeAdvice
+        	* 在目标方法执行前实施
+        后置通知 org.springframework.aop.AfterReturningAdvice
+        	* 在目标方法执行后实施
+        环绕通知 org.aopalliance.intercept.MethodInterceptor
+        	* 在目标方法执行前后实施
+        异常抛出通知 org.springframework.aop.ThrowsAdvice
+        	* 在方法抛出异常后实施
+        引介通知 org.springframework.aop.IntroductionInterceptor
+    
+    4.Tips
+        AOP联盟定义AOP规范，这个牛逼
+        导入AOP联盟的规范      com.springsource.org.aopalliance-1.0.jar
+        导入SpringAOP实现     spring-aop-4.2.9.RELEASE.jar
+    5.Advisor 顾问
+        
+        总结
+           以上各种技术的运用 ,无非就是为了一个目标：将我们编写的切面的实现（通知/顾问）织入到某些类的某些方法当中
+
+    四.AspectJ
+        1.定义
+            AspectJ是一个面向切面的框架，它扩展了Java语言。Spring将AspectJ到自己的框架中
+        将通知进行了包装,根据通知的不同类型,在不同的时间点,将切面织入到指定的目标对象的某些连接点
+            Advisor和AspectJ区别？
+            Advisor是Spring中AOP定义切面，通常由一个切点和一个通知组成；
+            AspectJ是AOP联盟规范中切面，允许由多个切点和多个通知组成
+        2.通知类型
+          @Before 前置通知，相当于BeforeAdvice
+          @AfterReturning 后置通知，相当于AfterReturningAdvice
+          @Around 环绕通知，相当于MethodInterceptor
+          @AfterThrowing抛出通知，相当于ThrowAdvice
+          @After 最终final通知，该通知始终执行 
+    
+    五.Transactions spring配置事务传播机制 分布式事务了
+        @Transactions只对public方法有用
+
+SpringMVC  处理器、适配器
+    一.注解
+    1.@Controller
+      @RequestMapping(value="/test/*/abc", params = {"username", "age!=21"},
+        headers={"Accept-Language=zh-CN,zh;q=0.8"}, method=RequestMethod.POST)
+        consumes属性
+        指定处理请求的提交内容类型（Content-Type），例如application/json, text/html。
+        produces属性
+        指定返回的内容类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回。
+        方法仅处理request请求中Accept头中包含了"application/json"的请求，同时暗示了返回的内容类型为application/json。
+
+    配置浏览器访问路径，修饰类、方法
+    value是Ant风格，REST风格，Restful风格
+    2.public String test0(@PathVariable("id") String id)
+    //支持REST风格需要这个
+    
+    3.Data binding
+      public String test1(@RequestParam(value="age", required=false, defaultValue="0") int age)
+      //绑定单个请求参数值
+      public String test2(@RequestHeader(value="Accept-Language") String al)
+      //绑定请求报头的属性值
+      public String test3(@CookieValue(value="JSESSIONID" ) String sessionId)
+      //绑定请求中的cookie值
+      public String test4(User user)
+      //POJO对象绑定请求参数值
+      
+    4.public void test5(HttpServletRequest request, HttpServletResponse response, Writer out)
+      //Servlet原生API
+      
+    二.Process model data 处理模型数据
+      1. ModelAndView
+      处理方法返回值类型为ModelAndView时，方法体即可通过该对象添加模型数据
+      2. Map及Model
+      处理方法返回时，Map中的数据会自动添加到模型中
+      3. @SessionAttributes
+      将模型中的某个属性暂存到HttpSession中，以便多个请求之间可以共享这个属性
+      4. @ModelAttribute
+      方法入参标注该注解后，入参的对象就会放到数据模型中 
+      
+    三.ViewResolver 视图解析器
+        return "redirect:/q.jsp"
+    
+    四.表单校验  为何同时需要前台校验、后台检验
+        1.SpringMVC数据转换
+应用：自定义一个类型转换器（回看）
+        2.SpringMVC数据格式化
+        3.SpringMVC数据校验
+        4.提示消息的国际化
+        
+    五.json与国际化
+        @ResponseBody ✔️
+        项目多语言切换
+应用：自定义多语言（回看）
+
+    六.文件上传与拦截器
+    1.文件上传bean的class类名：CommonsMultipartResovler
+    2.拦截器：用于登录验证
+
+myBatis
+    一.初识
+    Java Database Connectivity
+    Object-Relational Mapping，一种编程思想，其本质是把数据库中的数据用对象来表示出来。
+    1.进化史
+        JDBC->DBUtils->MyBatis->Hibernate
+        JPA（java persistence api），它是JavaEE关于ORM思想的标准接口，仅仅只是一套规范和接口，它不是实现。
+    2.功能架构
+        API接口层
+        数据处理层
+        基础支撑层   
+    
+    二.mybatis代理开发
+    1.有两种开发方式：原始的接口和实现类的方式
+    2.基于mapper代理开发规则:
+        UserMapper.xml中namespace等于mapper接口地址
+        UserMapper.java接口中的方法和UserMapper.xml中的statement的Id一致,
+                               方法输入参数和parameterType指定的类型一致
+                               方法的返回值类型和resultType指定的类型一致
+    3.myBatis的日志-log4j/slf4j.properties
+    4.mybatis-config.xml主配置文件详解
+      UserMapper.xml
+      UserMapper.java
+      jdbc.properties
+    三.myBatis动态SQL与多表查询
+        
+    四.延迟加载与缓存
+        1.myBatis查询方式
+            直接查询, 直接返回实体对象
+            ResultMap里Association查询
+            ResultMap里Collection查询
+        2.延迟加载
+            为满足业务需求必须进行多表查询时，先可以进行单表查询。在业务信息中用到了关联表信息的时候，再进行关联表的单表查询
+            回看实现
+        3.Cache缓存--->Redis数据库
+            (1)一级缓存
+            sqlSession的缓存。
+            当在同一个sqlSession里面发出同样的sql查询请求，Mybatis会直接从缓存中查找。如果没有，则从数据库查找。
+            注意:
+            一, myBatis默认支持一级缓存，不需要另外配置，但是在跟spring整合的时候，用mapper代理开发的方式时，mybatis的一级缓存是不存在的。
+                因为代理模板每次调用完之后都会关闭sqlSession。
+            二, 如果sqlSession里面出现commit操作，sqlSession中的缓存会被全部清空，从而避免出现脏读。
+            三, 一级缓存的存在形式(map)的数据结构。
+            key: statementId+rowBounds+sql+sql参数
+            value: 数据
+            
+            (2)二级缓存
+            mybatis的二级缓存是mapper级别的，就是说二级缓存是以Mapper配置文件的namespace为单位创建的。
+            mybatis的二级缓存需要在setting里面加入配置(默认是开启的)
+                <!--开启二级缓存  -->
+                <setting name="cacheEnabled" value="true"/>
+            需要在mapper映射文件加入<cache/>标签才可以触发此映射文件开启二级缓存。
+            在映射文件用到的查询对象必须序列化。
+            如果需要禁用某个statement的缓存，可以在这个statement里面单独设置 <useCache = "false">
+
+web项目所有可能的中文乱码问题汇总
+    为了理解AOP，必须搞懂Geely的代理模式；
+    接口编译、执行过程
+        
+    
+
+
+
+        
+
+
+
+
+     

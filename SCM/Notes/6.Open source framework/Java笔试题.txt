@@ -1,0 +1,53 @@
+JAVA服务端面试考试题
+(如答题空白处不够，请写在背面，标注题编号)
+●JAVA基础题:
+1.什么是线程? 请阐述!
+2 Thread类中的start()和run()方法有什么区别? 请阐述!
+3.Java中的volatile变量是什么? 请阐述!
+4 Java中Synchronized和ReentrantLock有什么不同? 请阐述!
+5.Java中的fork join框架是什么? 请阐述!
+●Mybatis基础题:
+6.xml映射文件中，除了常见的select|insert|update|delete标签之外，还有哪些标签? 请阐述！
+7.最佳实践中，通常一个xml映射文件，都会写一个Dao接口与之对应，请问，这个Dao接口的工作原理是什么? Dao接口里的方法，参数不同时，方法能重载吗? 请阐述!
+8.简述Mybatis的xml映射文件和Mybatis内部数据结构之间的映射关系? 请阐述！
+●Redis基础题:
+9.什么是Redis? 请阐述!
+10 Redis支持的数据类型。请阐述!
+11.为什么redis需要把所有数据放到内存中? 请阐述!
+12 Redis的回收策略。请阐述!
+●ActiveMQ基础题:
+13.ActiveMQ支持消息过滤设置规则和用法。请阐述!
+14 采用failover方式连接导致卡死，如何解决? 请阐述!
+15 ActiveMQ的发送模式有几种? 具体模式? 请阐述!
+16 ActiveMQ的Topic的设置，请阐述 !
+●Dubbo基础题:
+17.出现RpcException: No provider available for remote service异常，如何解决? 请 阐 述!
+18 出现hessian序列化失败com.caucho.hessian.ciensiR 如可解
+决? 请阐述!
+19.如果服务注册不上如何解决? 请阐述!
+●Tomcat基础题:
+20.Tomcat如何优化? 请阐述!
+21.请解释Tomcat中使用的连接器是什么?
+22.说明Tomcat配置了多少个Valve?具体请阐述!
+23.Tomcat有哪几种Connector运行模式? 请阐述!
+24.Tomcat在Linux的几种部署方式? 请阐述!
+●Mysql基础题:
+25.数据库事务的四个特性及含义。请阐述!
+26.drop,delete与truncate的区别。请阐述!
+27.数据库优化的思路。请阐述!
+●综合运用题:
+28.请运用你所学所用所历的知识，搭建一个前后端分离的分布式框架图出来。同时请解释所搭框架的优势及劣势。请阐述!
+
+
+自己总结的：
+1.如果有一段很长的文字，大概2M多。怎么传递给服务器，不能用文件上传的方法
+一.Servlet
+    1.Servlet的生命周期（每次访问同一个Servlet相关方法的调用情况）
+    2.get方式和post方式有何区别
+    3.tomcat容器是如何创建Servlet类实例？用到了什么原理？
+    4.Servlet安全性问题
+
+    有思辨、有类比。知其然知其所以然
+
+以后做面试官，最后一问：
+    你是如何学习基础的？
