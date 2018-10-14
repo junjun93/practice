@@ -25,8 +25,8 @@
 	3.git push -u origin master
 	推送变更到远程仓库(wrong)
 	git pull
-	git push -u -f origin master
-	4.git branch -r
+	git push -u -f origin master   git push origin v1.0
+	4.git branch -r / git branch -f
 	创建分支(分支开发，主干发布)
 	5.git checkout -b v1.0 origin/master
 	给分支命名
