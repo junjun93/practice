@@ -10,10 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -35,15 +32,53 @@ public class GoodsController {
 
     //补充 user封装好，就不需要写一坨了
     @RequestMapping("/to_list")
-    public String list(HttpServletRequest request, HttpServletResponse response, Model model, MiaoshaUser user){
+    public String list(Model model, MiaoshaUser user
+                       //,HttpServletResponse response,
+                       //@CookieValue(value = MiaoshaUserService.COOKI_NAME_TOKEN, required = false) String cookieToken,
+                       //@RequestParam(value = MiaoshaUserService.COOKI_NAME_TOKEN, required = false) String paramToken
+                       ){
 
+        /*if(StringUtils.isEmpty(cookieToken) && StringUtils.isEmpty(paramToken)){
+            return "login";
+        }
+        String token = StringUtils.isEmpty(paramToken) ? cookieToken : paramToken;
+        MiaoshaUser user = userService.getByToken(response, token);*/
         model.addAttribute("user", user);
         List<GoodsVo> goodsVoList = goodsService.listGoodsVo();
-        model.addAttribute("goodsVosList", goodsVoList);
+        model.addAttribute("goodsVoList", goodsVoList);
         return "goods_list";
     }
 
     @RequestMapping("/to_detail/{goodsId}")
+    public String detail(Model model, MiaoshaUser user, @PathVariable("goodsId") long goodsId){
+
+        model.addAttribute("user", user);
+        GoodsVo goodsVo = goodsService.getGoodsVoByGoodsId(goodsId);
+
+        long startAt = goodsVo.getStartDate().getTime();
+        long endAt = goodsVo.getEndDate().getTime();
+        long now = System.currentTimeMillis();
+        int miaoshaStatus = 0;
+        int remainSeconds = 0;
+
+        if(now < startAt){
+            miaoshaStatus = 0;
+            remainSeconds = (int)((startAt - now)/1000);
+        } else if(now > endAt){
+            miaoshaStatus = 2;
+            remainSeconds = -1;
+        } else{
+            miaoshaStatus = 1;
+            remainSeconds = 0;
+        }
+
+        model.addAttribute("miaoshaStatus", miaoshaStatus);
+        model.addAttribute("remainSeconds", remainSeconds);
+        model.addAttribute("goods", goodsVo);
+        return "goods_detail";
+    }
+
+    /*@RequestMapping("/detail/{goodsId}")
     @ResponseBody
     public String detail(Model model, MiaoshaUser user, @PathVariable("goodsId") long goodsId){
 
@@ -70,5 +105,5 @@ public class GoodsController {
         model.addAttribute("miaoshaStatus", miaoshaStatus);
         model.addAttribute("goods", goodsVo);
         return "goods_detail";
-    }
+    }*/
 }

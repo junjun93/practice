@@ -278,25 +278,9 @@ OSGI：一种java开发技术，实现项目模块逻辑-->物理意义上的解
     安装OpenJDK
     brew tap AdoptOpenJDK/openjdk
     brew install adoptopenjdk-openjdk8
- 
-各种bug总结：
-    1.IEDA解决源码1.5已过时
-       (1)修改Maven的Settings.xml文件添加如下内容
-       (2)在项目的pom.xml文件中添加：build-plugin 1.8
-       (3)打开项目配置，设置Modules的Language Level为”8” (file ~~Project Structure ~~Modules ~~Sources )：
-       (4)Java Compiler
 
-    2.web.xml——version4.0——JDK8.0——Tomcat9.0
-        Servlet项目，web.xml是零配置的
-
-    3.@WebServlet不能直接被前端访问，@Controller却可以
-
-    4.容器先关闭再启动，缓存没了；直接重启，缓存还在里面
-
-    5.upload.html没有文件直接提交会报错500
-
-    6.@WebServlet("mail.do")  少/，直接启动报错
-
+    Servlet项目，web.xml是零配置的
+    web.xml——version4.0——JDK8.0——Tomcat9.0
     理解upload1.do，并在上传的文件名中加入时间戳 p79  p11目录 p433邮件
    
 清除本地缓存刷新页面：command+shift+delete

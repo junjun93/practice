@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
  * @date 2018/9/27 17:08:01
  **/
 @AllArgsConstructor
-public class BasePrefix {
+public class BasePrefix implements KeyPrefix {
 
     private int expireSeconds;
     private String prefix;
@@ -16,11 +16,13 @@ public class BasePrefix {
         this(0, prefix);
     }
 
+    @Override
     public int expireSeconds(){
         return expireSeconds;
     }
 
-    private String getPrefix(){
+    @Override
+    public String getPrefix(){
         String className = getClass().getSimpleName();
         return className + ":" + prefix;
     }

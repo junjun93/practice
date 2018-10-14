@@ -5,6 +5,7 @@ import com.junjun.spike.domain.MiaoshaUser;
 import com.junjun.spike.domain.OrderInfo;
 import com.junjun.spike.redis.RedisService;
 import com.junjun.spike.result.CodeMsg;
+import com.junjun.spike.result.Result;
 import com.junjun.spike.service.GoodsService;
 import com.junjun.spike.service.MiaoshaService;
 import com.junjun.spike.service.MiaoshaUserService;
@@ -41,7 +42,6 @@ public class MiaoshaController {
     private MiaoshaService miaoshaService;
 
     @RequestMapping("/do_miaosha")
-    @ResponseBody
     public String list(Model model, MiaoshaUser user, @RequestParam("goodsId") long goodsId){
 
         model.addAttribute("user", user);
@@ -59,15 +59,28 @@ public class MiaoshaController {
 
         //判断是否秒杀到了
         MiaoshaOrder order = orderService.getMiaoshaOrderByUserIdGoodsId(user.getId(), goodsId);
-        if(order == null){
+        if(order != null){
             model.addAttribute("errmsg", CodeMsg.REPEATE_MIAOSHA.getMsg());
             return "miaosha_fail";
         }
 
         //减库存 下订单 写入秒杀订单
         OrderInfo orderInfo = miaoshaService.miaosha(user, goodsVo);
+        model.addAttribute("goods", goodsVo);
         model.addAttribute("orderInfo", orderInfo);
-        model.addAttribute("goodsVo", goodsVo);
         return "order_detail";
+    }
+
+    //补充代码
+    @RequestMapping("/result")
+    @ResponseBody
+    public long miaoshaResult(Model model, MiaoshaUser user, @RequestParam("goodsId") long goodsId){
+
+        model.addAttribute("user", user);
+        if(user == null){
+            Result.error(CodeMsg.SESSION_ERROR);
+        }
+        long result = miaoshaService.getMiaoshaResult(user.getId(), goodsId);
+        return result;
     }
 }

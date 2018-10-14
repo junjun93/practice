@@ -35,7 +35,26 @@ public class RedisService {
 
     public <T> boolean set(KeyPrefix prefix, String key, T value){
 
-        return false;
+        Jedis jedis = null;
+        try{
+            jedis = jedisPool.getResource();
+            String str = beanToString(value);
+            if(str == null || str.length() <= 0){
+                return false;
+            }
+
+            //生成真正的key
+            String realKey = prefix.getPrefix() + key;
+            int seconds = prefix.expireSeconds();
+            if(seconds <= 0){
+                jedis.set(realKey, str);
+            } else {
+                jedis.setex(realKey, seconds, str);
+            }
+            return true;
+        } finally {
+            returnToPool(jedis);
+        }
     }
 
     public static <T> T stringToBean(String str, Class<T> clazz){
@@ -57,6 +76,22 @@ public class RedisService {
     private void returnToPool(Jedis jedis){
         if(jedis != null){
             jedis.close();
+        }
+    }
+
+    public static <T> String beanToString(T value) {
+        if(value == null) {
+            return null;
+        }
+        Class<?> clazz = value.getClass();
+        if(clazz == int.class || clazz == Integer.class) {
+            return ""+value;
+        }else if(clazz == String.class) {
+            return (String)value;
+        }else if(clazz == long.class || clazz == Long.class) {
+            return ""+value;
+        }else {
+            return JSON.toJSONString(value);
         }
     }
 }

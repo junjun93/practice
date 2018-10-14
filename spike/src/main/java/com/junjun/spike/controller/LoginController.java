@@ -25,6 +25,9 @@ public class LoginController {
     @Autowired
     private MiaoshaUserService userService;
 
+    /**
+     * 补充，接口没有使用过
+     * */
     @RequestMapping("/to_login")
     public String toLogin(){
         return "login";

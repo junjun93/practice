@@ -9,15 +9,16 @@ public class MiaoshaUserKey extends BasePrefix {
     public static final int TOKEN_EXPIRE = 3600 * 24 * 2;
     private String prefix;
 
-    @Override
-    public int expireSeconds() {
-        return 0;
+    private  MiaoshaUserKey(int expireSeconds, String prefix){
+        super(expireSeconds, prefix);
+        this.prefix = prefix;
     }
 
-    @Override
-    public String getPrefix() {
-        return null;
-    }
+    public static MiaoshaUserKey token = new MiaoshaUserKey(TOKEN_EXPIRE, "tk");
 
-    /*private  MiaoshaUserKey(int )*/
+    public static MiaoshaUserKey getById = new MiaoshaUserKey(0, "id");
+
+    public MiaoshaUserKey withExpire(int seconds){
+        return new MiaoshaUserKey(seconds, prefix);
+    }
 }

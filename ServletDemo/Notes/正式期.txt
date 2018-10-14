@@ -1,16 +1,31 @@
-1.Supply Chain Management供应链管理 #d5e6d3 264.38 0571-56856727   海微公司  18395940404 、0579-85161036 航班 KL882
+SELECT * FROM ADMMF WHERE MF001 = ''
+SELECT * FROM DATTB WHERE TB005 = 'MySCM_PRINTMX'
+SELECT * FROM SYSTA WHERE TA002 LIKE ''
+SELECT * FROM SYSTA WHERE TA002 LIKE '%集团化%'
+UPDATE SYSTA SET TA008 = 'Group_BUYERFEED' WHERE TA001 = '1304'
+EXEC JALCRM_JALWWGD '','','','',''
+
+1.Supply Chain Management供应链管理 #d5e6d3 264.38
+    0571-56856727   海微公司  18395940404、0579-85161036 航班 KL882
 16:16 杭州东-17:56 南京南           #cce8cf
 18:34 南京南-20:28 安庆  
-10:00-11:00 14:00-15:00 16:00-17:00
 
-周四9:00-12:00德世3个问题，没效率时就看jsp；
+springboot项目配置多数据源（一个项目有多个数据库，根据登录时的下单选择要进入的数据库）
+
+
+发票随包携带
+王校长家淘书（带个行李箱），微信找王校长书房图片；问白肖要淘什么书
+远程A客户解决B客户的问题，这个方法论有问题(问题集)
+
+海王：打印标贴，远程德世
+精深：进货图纸，沈工讨论（刻不容缓，10点有结果）
+德世：二级域名分库，改下配置文件的数据库名、原有库的存储过程要复制到新库中
+金和美：取不同服务器上的数据库表里的数据；分布式项目，需要使用框架来解决问题。Java开发使用Dubbo或springCloud框架
 
 多用户模拟登录
 金和美：新库熟悉易飞流程，不懂的问刘工。召集项目组开会，对易飞足够熟练才能办到
 海王：状态码问题回看、iverifystate=ERP到货单审核状态
-德世：供应商催料表、周计划（采购+委外）、月计划、扣款单（4个or扣款明细表）
-     采购送货单，一个供应商、多数据库付款单回写问题、多数据源 核价部
-     需求该甩锅就甩锅   7. SCM10    8. CX115
+德世：
 精深：模具送检单/送检返还单
 金奥兰：委外送货单早交控制期、交付比例
 
@@ -32,54 +47,55 @@ l-dialog-title  View_dvAttatch width:75%;
 	 0006刘雪飞-》采购科-》审核品质扣款、生产扣款
 	 0001陆永-》生产部-》批准生产扣款
 	 0002胡滨、0171章新根-》品保部-》批准品质扣款
-	 
-SELECT * FROM ADMMF WHERE MF001 = ''
-x
-SELECT * FROM SYSTA WHERE TA002 LIKE ''
-SELECT * FROM SYSTA WHERE TA002 LIKE '%集团化%'
-UPDATE SYSTA SET TA008 = 'Group_BUYERFEED' WHERE TA001 = '1304'
-EXEC JALCRM_JALWWGD '','','','',''
+
 
 	公司 5685679900
-		TeamViewer：1138108363 密码：1aty52
+		TeamViewer：1138108363 密码：ejj935
     精深
         TeamViewer：1050799200 密码：ukn681
         向日葵：558147977 密码：6666
         sa `123qwer qaz，./123 291137
         易飞ERP 13668033333ywh
-        192.168.1.186
+        http://192.168.1.192/jsscm/main.html
+        http://www.zjjsscm.com/main.html
     大邦
         TeamViewer：1147742422 密码：742422(247)
         1197759004  717kzf(70)
         1143597722  jy3b67
         247密码：2016D@dobest
         http://www.dbdobest.cn/wxApi/Verify.do
-    金和美     录入客户价格、标准门非标门品号关系、多种算法、非标门是否有标准价、最低价
-        TeamViewer：987747460 密码：1134
-        向日葵：606356040 密码：1111
-        222
+    金和美
+      存货管理子系统-》录入品号信息
+        TeamViewer：987747460 密码：9453
+        222         易飞如何删除权限
+        如何通过多阶产品用量清单生成BOM
+         易飞如何删除权限
+         192.168.1.115：fwq@jhm213
         易飞ERP：DS 密码：680108
         000500 wzh
         000055 45678
         000056 456
-    海王  
-        TeamViewer：1050799200 密码：14xiy5
+
+    海王
+        TeamViewer：1050799200(错误) 密码：14xiy5
         向日葵：821164762   密码：1660
-        sa sktit123    用友 skt123456     192.168.0.250 
-        http://60.191.247.154:7000/SKTSCM/ 
+        sa sktit123 ERP服务器密码：123456    用友 skt123456     192.168.0.250
+        http://60.191.247.154:7000/SKTSCM/
+        Excel服务器生成二维码
     金奥兰
         TeamViewer：1132115376 密码：111111   
         服务器登录密码：Aa@123
-        http://122.226.51.130:9101/
+        http://122.226.51.130:9103/main.html
 	德世
 		TeamViewer：1162894117 密码：7404
-        向日葵：915631326 密码：8543
+        向日葵：915631326 密码：1968
         远程的服务器：QWE123qwe
         18服务器：admin123. 
 		sa ds_201801
 		德世无线网  TP-LINK_EB1E：waimao86
         http://192.168.1.65/dsscm/main.html
         http://223.94.69.72/dsscm/main.html
+        供应链：6034 123
 	
 一些bug:
     系统设计工具上的SQL时有WHERE条件、多表连接、子查询用不了ORDER BY,报表排序不带WHERE条件

@@ -14,9 +14,9 @@ import java.util.List;
 @Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {
 
-    //补充代码
+    //补充代码 WebMvcConfigurer
     @Autowired
-    UserArgumentResolver userArgumentResolver;
+    private UserArgumentResolver userArgumentResolver;
 
     @Override
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers){
