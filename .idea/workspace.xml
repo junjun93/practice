@@ -21,151 +21,10 @@
       <change beforePath="$PROJECT_DIR$/../concurrency/src/main/java/com/mmall/concurrency/ServletInitializer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../concurrency/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../concurrency/src/test/java/com/mmall/concurrency/ConcurrencyApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_core_2_0_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/JVM.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/Java.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/Java中设计模式的应用.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/Java英文术语.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/tips.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/思考.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/知识体系解析.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/设计模式.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/问题汇总.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/难的面试要求.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/0.语言基础/面向对象与集合.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/2.JavaScript/JS基础.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/2.JavaScript/demo[].html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/2.JavaScript/timeout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/2.JavaScript/北京爱情故事.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/2.JavaScript/易忽略点.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/2.JavaScript/语言基础.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/3.JavaSE/01-集合.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/3.JavaSE/02-异常.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/3.JavaSE/NIO.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/3.JavaSE/Thread.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/4.DataBase/MySQL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/4.DataBase/sql面试题.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/4.DataBase/student.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/4.DataBase/慕课项目问题汇总.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/Servlet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第10节jsp指令与九大内置对象.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第11节EL表达式与标签.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第12节JSTL标签.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第15节JDBC.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第16节JDBC加强.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第17节连接池.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第18节json与xml.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第3节http请求.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第4节http响应.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第5节路径映射与生命周期.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第6节自动加载与Config对象.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第7节ServletContext对象.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第8节Cookie与HttpSession对象.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/5.jsp/第9节jsp入门.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/6.Open source framework/Java笔试题.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/6.Open source framework/SSM框架.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/6.Open source framework/中小融辅笔试题.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/6.Open source framework/勤易科技笔试题.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/6.Open source framework/答案.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/Notes.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/Tools Use/git.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/Tools Use/online工具.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/images/7-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/images/8-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/正式期.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/生成送货单.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SCM/Notes/采购周计划明细.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ligerUI" beforeDir="false" afterPath="$PROJECT_DIR$/ligerUI" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ligerUI/demos/accordion/accordion.htm" beforeDir="false" afterPath="$PROJECT_DIR$/ligerUI/demos/accordion/accordion.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ligerUI/demos/tree/expandable.htm" beforeDir="false" afterPath="$PROJECT_DIR$/ligerUI/demos/tree/expandable.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/config/UserArgumentResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/config/UserArgumentResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/controller/MiaoshaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/controller/MiaoshaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/dao/GoodsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/redis/BasePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/redis/BasePrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/redis/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/service/BasePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/service/BasePrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/service/MiaoshaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/service/MiaoshaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/service/MiaoshaUserKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/service/MiaoshaUserKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/service/MiaoshaUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/service/MiaoshaUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/resources/templates/goods_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/resources/templates/goods_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/resources/templates/goods_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spike/src/main/resources/templates/order_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/spike/src/main/resources/templates/order_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-manage-system" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manage-system" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-manage-system/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-manage-system/package-lock.json" afterDir="false" />
     </list>
@@ -337,7 +196,7 @@
           <entry key="java" value="23334" />
           <entry key="js" value="4" />
           <entry key="jsp" value="50" />
-          <entry key="md" value="14316" />
+          <entry key="md" value="14320" />
           <entry key="properties" value="213" />
           <entry key="sql" value="3012" />
           <entry key="txt" value="6710" />
@@ -350,7 +209,7 @@
           <entry key="JAVA" value="23334" />
           <entry key="JSP" value="50" />
           <entry key="JavaScript" value="4" />
-          <entry key="Markdown" value="14235" />
+          <entry key="Markdown" value="14239" />
           <entry key="PLAIN_TEXT" value="6792" />
           <entry key="Properties" value="213" />
           <entry key="SQL" value="3016" />
@@ -384,7 +243,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServletDemo/Notes/Tools Use/online工具.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3507" />
+            <state relative-caret-position="-3311" />
           </provider>
         </entry>
       </file>
@@ -392,8 +251,8 @@
         <entry file="file://$PROJECT_DIR$/ServletDemo/Notes/Tools Use/git.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="17">
-                <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <first_editor relative-caret-position="304">
+                <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -508,7 +367,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/util/UUIDUtil.java" />
         <option value="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/validator/IsMobile.java" />
         <option value="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/validator/ValidatorUtil.java" />
         <option value="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/validator/IsMobileValidator.java" />
@@ -559,6 +417,7 @@
         <option value="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/dao/GoodsDao.java" />
         <option value="$PROJECT_DIR$/spike/src/main/resources/templates/order_detail.html" />
         <option value="$PROJECT_DIR$/spike/src/main/java/com/junjun/spike/controller/MiaoshaController.java" />
+        <option value="$PROJECT_DIR$/ServletDemo/Notes/Tools Use/git.md" />
       </list>
     </option>
   </component>
@@ -778,7 +637,7 @@
     <property name="SearchEverywhereHistoryKey" value="git&#9;FILE&#9;file:///Users/junjun/IDEA/practice/ServletDemo/Notes/Tools Use/git.md&#10;online&#9;FILE&#9;file:///Users/junjun/IDEA/practice/ServletDemo/Notes/Tools Use/online工具.txt&#10;order&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/order_detail.html&#10;miaos&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/java/com/junjun/spike/controller/MiaoshaController.java&#10;goodsc&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/java/com/junjun/spike/controller/GoodsController.java&#10;goo&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/goods_detail.html&#10;MiaoshaController&#9;FILE&#9;file:///Users/junjun/IDEA/practice/miaosha/src/main/java/com/imooc/miaosha/controller/MiaoshaController.java&#10;miaoshag&#9;PSI&#9;JAVA://com.junjun.spike.domain.MiaoshaGoods&#10;miaosha_fail&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/miaosha_fail.html&#10;order_detail&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/order_detail.html&#10;goods_&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/goods_detail.html&#10;GoodsController&#9;FILE&#9;file:///Users/junjun/IDEA/practice/miaosha/src/main/java/com/imooc/miaosha/controller/GoodsController.java&#10;goods&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/java/com/junjun/spike/controller/GoodsController.java&#10;re&#9;FILE&#9;file:///Users/junjun/IDEA/practice/README.md&#10;正式期&#9;FILE&#9;file:///Users/junjun/IDEA/practice/ServletDemo/Notes/正式期.txt&#10;html&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/skt.html&#10;sql&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/skt.sql&#10;read&#9;FILE&#9;file:///Users/junjun/IDEA/practice/README.md&#10;g&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/goods_list.html&#10;RedisService&#9;PSI&#9;JAVA://com.imooc.miaosha.redis.RedisService&#10;BasePrefix&#9;PSI&#9;JAVA://com.junjun.spike.redis.BasePrefix&#10;good&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/goods_list.html&#10;pro&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/application.properties&#10;spi&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/pom.xml&#10;二期&#9;FILE&#9;file:///Users/junjun/IDEA/practice/ServletDemo/Notes/Tools Use/Geely老师二期笔记.md&#10;web&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/java/com/junjun/spike/config/WebConfig.java&#10;zz&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/zz.sql&#10;UserArgumentResolver&#9;PSI&#9;JAVA://com.imooc.miaosha.config.UserArgumentResolver&#10;WebConfig&#9;PSI&#9;JAVA://com.imooc.miaosha.config.WebConfig&#10;WebMvcConfigurer&#9;PSI&#9;JAVA://org.springframework.web.servlet.config.annotation.WebMvcConfigurer&#10;MiaoshaUser&#9;FILE&#9;file:///Users/junjun/IDEA/practice/miaosha/src/main/java/com/imooc/miaosha/domain/MiaoshaUser.java&#10;goods_li&#9;FILE&#9;file:///Users/junjun/IDEA/practice/miaosha/src/main/resources/templates/goods_list.html&#10;skt&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/skt.html&#10;r&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/java/com/junjun/spike/controller/GoodsController.java&#10;we&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/java/com/junjun/spike/config/WebConfig.java&#10;user&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/java/com/junjun/spike/config/UserArgumentResolver.java&#10;glo&#9;PSI&#9;JAVA://com.junjun.spike.exception.GlobalExceptionHandler&#10;webcon&#9;PSI&#9;JAVA://com.imooc.miaosha.config.WebConfig&#10;onl&#9;FILE&#9;file:///Users/junjun/IDEA/practice/ServletDemo/Notes/Tools Use/online工具.txt&#10;onlin&#9;FILE&#9;file:///Users/junjun/IDEA/practice/ServletDemo/Notes/Tools Use/online工具.txt&#10;goods_l&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/goods_list.html&#10;pom.xml&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/pom.xml&#10;properties&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/application.properties&#10;rea&#9;FILE&#9;file:///Users/junjun/IDEA/practice/README.md&#10;框架&#9;FILE&#9;file:///Users/junjun/IDEA/practice/ServletDemo/Notes/6.Open source framework/SSM框架.txt&#10;.md&#9;FILE&#9;file:///Users/junjun/IDEA/practice/SCM/Notes/0.语言基础/难的面试要求.md&#10;miaoshauser&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/java/com/junjun/spike/service/MiaoshaUserService.java&#10;MiaoshaUserService&#9;PSI&#9;JAVA://com.imooc.miaosha.service.MiaoshaUserService&#10;loginc&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/java/com/junjun/spike/controller/LoginController.java&#10;goods_de&#9;FILE&#9;file:///Users/junjun/IDEA/practice/spike/src/main/resources/templates/goods_detail.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539496154984" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539496760263" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/permission/src/Notes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -1312,7 +1171,7 @@
       <workItem from="1539065410330" duration="19430000" />
       <workItem from="1539179789885" duration="4309000" />
       <workItem from="1539242649257" duration="16770000" />
-      <workItem from="1539339200876" duration="15816000" />
+      <workItem from="1539339200876" duration="16121000" />
     </task>
     <servers />
   </component>
@@ -1322,7 +1181,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="984655000" />
+    <option name="totallyTimeSpent" value="984960000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1335,6 +1194,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" x="514" y="25" width="252" height="750" id="Project" order="0" sideWeight="0.48205927" weight="0.24878837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24959612" />
@@ -1394,7 +1254,40 @@
                 <collection />
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
+                <collection>
+                  <UserGroup>
+                    <option name="users">
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </option>
+                  </UserGroup>
+                  <UserGroup>
+                    <option name="users">
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </option>
+                  </UserGroup>
+                  <UserGroup>
+                    <option name="users">
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </option>
+                  </UserGroup>
+                </collection>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
               </option>
               <option name="COLUMN_ORDER">
                 <list>
@@ -1849,14 +1742,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ServletDemo/Notes/Tools Use/online工具.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3507" />
+        <state relative-caret-position="-3311" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServletDemo/Notes/Tools Use/git.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="17">
-            <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <first_editor relative-caret-position="304">
+            <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>
